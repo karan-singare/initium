@@ -2,7 +2,7 @@
   grid-column: full-start/full-end;
   grid-row: 2/3;
   height: 60vh;
-  margin-top: -15rem;
+  margin-top: -10rem;
   padding-top: 20rem;
   color: #000;
   background-image: url('../images/pattern-1.png');
@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
 
   display: grid;
-  grid-row-gap: 5rem;
+  grid-row-gap: 2rem;
 
   grid-template-columns: 20% 60% 20%;
   justify-items: center;

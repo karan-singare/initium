@@ -1,0 +1,44 @@
+.video {
+  height: 30vh;
+
+  grid-column: full-start/full-end;
+  background-image: url('../images/pattern-1.png');
+
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  margin-bottom: 10rem;
+  margin-top: -20rem;
+
+  &__img {
+    grid-column: 2/-2;
+    margin-top: -20rem;
+    background-color: red;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 4rem rgba(27, 25, 27, 0.78);
+    background-image: linear-gradient(rgba(23, 54, 145, 0.4), rgba(23, 54, 145, 0.4)), url('../images/teaser1.png');
+    background-size: cover;
+
+    display: grid;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: #fff;
+    // text-align: center;
+    text-shadow: 2rem 2rem 4rem black;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 2rem;
+  }
+  &__btn {
+    width: 9rem;
+    height: 9rem;
+    background-color: $yellow;
+    border-radius: 50%;
+    align-self: end;
+    justify-self: center;
+    fill: #fff;
+    padding: 2rem;
+
+  }
+}
