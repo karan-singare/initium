@@ -1,0 +1,12 @@
+.nav {
+  & ul {
+    list-style: none;
+    font-size: 2rem;
+
+     & a {
+       color: #fff;
+       text-decoration: none;
+     }
+  }
+  
+}
