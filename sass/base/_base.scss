@@ -36,5 +36,5 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] 25rem [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 25rem [full-end];
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(2, 1fr);
 }

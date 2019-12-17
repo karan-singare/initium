@@ -18,7 +18,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] 25rem [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 25rem [full-end];
-  grid-template-rows: 1fr; }
+  grid-template-rows: repeat(2, 1fr); }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -41,14 +41,15 @@ body {
 .btn {
   font-size: 2rem;
   padding: 1rem 2rem;
-  border-radius: 1rem;
+  border-radius: .5rem;
   border: none;
   box-shadow: 0px 1rem 3rem rgba(51, 54, 44, 0.8);
   text-transform: uppercase; }
   .btn--pink {
     background-color: #ff006a;
     color: #fff;
-    transition: all .1s; }
+    transition: all .1s;
+    border: 2px solid transparent; }
     .btn--pink:hover {
       background: transparent;
       border: 2px solid #ff006a;
@@ -56,7 +57,8 @@ body {
   .btn--violet {
     background-color: #ae1ec7;
     color: #fff;
-    transition: all .1s; }
+    transition: all .1s;
+    border: 2px solid transparent; }
     .btn--violet:hover {
       background: #ffa116;
       border: 2px solid #ffa116; }
@@ -123,6 +125,28 @@ body {
     text-align: center;
     grid-column-gap: 2rem; }
 
+.vision {
+  grid-column: full-start/full-end;
+  grid-row: 2/3;
+  height: 60vh;
+  margin-top: -15rem;
+  padding-top: 20rem;
+  color: #000;
+  background-image: url("../images/pattern-1.png");
+  background-repeat: no-repeat;
+  display: grid;
+  grid-row-gap: 5rem;
+  grid-template-columns: 20% 60% 20%;
+  justify-items: center;
+  align-items: center;
+  text-align: center; }
+  .vision > * {
+    grid-column: 2/-2; }
+  .vision .heading__primary {
+    text-transform: capitalize; }
+  .vision__text {
+    font-size: 1.6rem; }
+
 .brand {
   display: grid;
   grid-template-columns: repeat(3, max-content); }
@@ -156,6 +180,7 @@ body {
     text-decoration: none; }
 
 .count {
+  z-index: 10;
   color: #000000;
   padding: 2rem;
   border-radius: 1rem;
