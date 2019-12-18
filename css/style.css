@@ -614,3 +614,38 @@ body {
     right: 1rem;
     width: 8rem;
     z-index: 10; }
+
+.newsletter {
+  grid-column: center-start/center-end;
+  height: 25rem;
+  width: 100%;
+  background-color: #ae1ec7;
+  background-image: url("../images/pattern-3.png");
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.56);
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  color: #fff;
+  padding: 5rem 0; }
+  .newsletter h4 {
+    font-weight: 300; }
+  .newsletter input {
+    width: 45%;
+    height: 5rem;
+    padding: 1rem; }
+    .newsletter input:focus, .newsletter input:active {
+      outline: 0; }
+  .newsletter img {
+    display: block; }
+  .newsletter .left__img {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .newsletter .right__img {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
