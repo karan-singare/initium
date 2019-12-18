@@ -99,6 +99,12 @@ body {
   100% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5) 100%); } }
 
+@keyframes plusRotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(720deg); } }
+
 .header {
   background-image: linear-gradient(rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71)), url("../images/background1.jpg");
   background-size: cover;
@@ -267,6 +273,63 @@ body {
   .events__items {
     width: 100%;
     height: 100%; }
+
+.gallery {
+  grid-column: full-start/full-end;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center; }
+  .gallery__heading {
+    grid-column: 1/-1;
+    color: #000;
+    font-weight: bold; }
+  .gallery__item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative; }
+    .gallery__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 0, 106, 0.8);
+      width: 100%;
+      height: 10rem;
+      opacity: 0;
+      transition: opacity .2s ease-in, transform .6s ease-in; }
+    .gallery__item:hover::before {
+      opacity: 1;
+      transform: scaleY(10); }
+  .gallery__img {
+    width: 100%;
+    height: 100%; }
+  .gallery__plus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .2s ease-in .8s; }
+    .gallery__plus svg {
+      fill: #fff;
+      width: 8rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .gallery__item:hover .gallery__plus {
+    visibility: visible;
+    opacity: 1;
+    animation: plusRotate 2s;
+    animation-delay: .7s; }
 
 .brand {
   display: grid;
