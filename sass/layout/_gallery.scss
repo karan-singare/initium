@@ -31,26 +31,11 @@
       opacity: 0;
       transition: opacity .2s ease-in, transform .6s ease-in;
     }
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 50%;
-    //   left: 50%;
-    //   width: 10rem;
-    //   height: 10rem;
-    //   transform: translate(-50%, -50%);
-    //   background-color: red;
-    //   // z-index: 10;
-    // }
 
     &:hover::before {
-      // width: 100%;
       opacity: 1;
       transform: scaleY(10);
-
     }
-
-
   }
   &__img {
     width: 100%;
@@ -67,14 +52,13 @@
     cursor: pointer;
     transition: opacity .2s ease-in .8s;
 
-
     & svg {
       fill: #fff;
       width: 8rem;
       @include absCenter;
     }
   }
-
+  
   &__item:hover &__plus {
     visibility: visible;
     opacity: 1;
