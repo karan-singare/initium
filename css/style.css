@@ -239,6 +239,35 @@ body {
   .team__member--8 {
     grid-column: 5/span 1; }
 
+.events {
+  grid-column: full-start/full-end;
+  height: 100vh;
+  background-image: url("../images/background/2.png");
+  background-size: cover;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
+  grid-template-columns: 10% 80% 10%;
+  justify-items: center;
+  align-items: center; }
+  .events > * {
+    grid-column: 2/-2; }
+  .events__title {
+    grid-row: 1/span 1;
+    color: #000000; }
+  .events__days {
+    grid-row: 2/span 1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    padding: 0 2rem;
+    align-items: center; }
+  .events__items {
+    width: 100%;
+    height: 100%; }
+
 .brand {
   display: grid;
   grid-template-columns: repeat(3, max-content); }
@@ -348,3 +377,59 @@ body {
     transform: translate(-50%, -50%);
     visibility: visible;
     opacity: 1; }
+
+.day {
+  background-color: #a321b9;
+  background: #a321b9 url("../images/timerback.png") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  width: 30rem;
+  height: 20rem;
+  padding: 5% 5%;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  border-bottom: 0.5rem solid #ff006a; }
+  .day h1 {
+    font-size: 3rem;
+    font-weight: 400; }
+
+.event {
+  width: 100%;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 20% 10% 70%;
+  border-bottom: 1px dotted black;
+  align-items: center;
+  grid-column-gap: 2rem;
+  justify-items: center;
+  padding: 3rem;
+  transition: all .3s ease-in; }
+  .event__photo {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    grid-column: 1/span 1;
+    grid-row: 1/2;
+    object-fit: cover;
+    overflow: hidden; }
+  .event__img {
+    width: 100%;
+    height: 100%; }
+  .event__time {
+    font-size: 2.5rem;
+    color: #000000; }
+  .event__details {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 100%;
+    padding-right: 2rem; }
+    .event__details h1 {
+      color: #000000; }
+    .event__details h3 {
+      font-weight: 300; }
+  .event:hover {
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.82);
+    border-radius: 1rem;
+    border-color: #ffa116; }
