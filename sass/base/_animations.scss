@@ -1,0 +1,17 @@
+@keyframes memberAnimation {
+  0% {
+    background-image: linear-gradient(rgba(transparent, .5) 0%);
+  }
+  10% {
+    background-image: linear-gradient(rgba(transparent, .5) 10%);
+  }
+  30% {
+    background-image: linear-gradient(rgba(transparent, .5) 30%);
+  }
+  60% {
+    background-image: linear-gradient(rgba(transparent, .5) 60%);
+  }
+  100% {
+    background-image: linear-gradient(rgba(transparent, .5) 100%);
+  }
+}

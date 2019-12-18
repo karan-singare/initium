@@ -30,6 +30,18 @@
       border: 2px solid $yellow;
     }
   }
+  &--yellow {
+    background-color: $yellow;
+    color: #fff;
+    transition: all .1s;
+    border: 2px solid transparent;
+    transition: all .2s ease-in;
+
+    &:hover {
+      background: transparent;
+      border: 2px solid $yellow;
+    }
+  }
 }
 
 .heading__primary {
