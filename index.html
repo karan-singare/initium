@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Initium | TechFest of Mining Engineering</title>
   <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -394,7 +397,38 @@
       </div>
     </div>
 
-    <div class="newsletter">
+
+    <div class="connectivity">
+      <div class="connectivity__heading heading__primary">Connectivity</div>
+      <div class="connectivity__map">
+        <div id="mapid"></div>
+      </div>
+      <div class="connectivity__item connectivity__item--1">
+        <svg>
+          <use xlink:href="images/sprite.svg#icon-train1"></use>
+        </svg>
+        <h3>Nearest Railway Station <span>: Howrah Junction</span></h3>
+        <h3>Distance from Railway Station <span>: 6km</span></h3>
+      </div>
+      <div class="connectivity__item connectivity__item--2">
+        <svg>
+          <use xlink:href="images/sprite.svg#icon-train"></use>
+        </svg>
+        <h3>Nearest Metro Station <span>: Ravindra Sadan, Kolkata</span></h3>
+        <h3>Distance from Metro Station <span>: 6km</span></h3>
+      </div>
+      <div class="connectivity__item connectivity__item--3">
+        <svg>
+          <use xlink:href="images/sprite.svg#icon-aircraft"></use>
+        </svg>
+        <h3>Nearest Airport <span>: Netaji Subhash Chandra Bose International Airport, Kolkata</span></h3>
+        <h3>Distance from Airport <span>: 25km</span></h3>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="newsletter">
       <img src="images/icon-17.png" alt="" class="left__img">
       <img src="images/icon-18.png" alt="" class="right__img">
       <div class="newsletter__form">
@@ -403,10 +437,32 @@
         <input type="email" name="" value="" placeholder="Your Email*">
         <button class="btn btn--pink">subscribe</button>
       </div>
+    </div> -->
+
+    <div class="newsletter-container">
+
+      <div class="newsletter">
+        <img src="images/icon-17.png" alt="" class="left__img">
+        <img src="images/icon-18.png" alt="" class="right__img">
+        <div class="newsletter__form">
+          <h4>Get The Latest Updates</h6>
+          <h1>Signup For Newsletter</h2>
+          <input type="email" name="" value="" placeholder="Your Email*">
+          <button class="btn btn--pink">subscribe</button>
+        </div>
+      </div>
     </div>
+    <footer class="footer">
+
+    </footer>
 
   </div>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin="">
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/animation.js" charset="utf-8"></script>
+  <script src="js/map.js" charset="utf-8"></script>
 </body>
 </html>
