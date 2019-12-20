@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Initium | TechFest of Mining Engineering</title>
+  <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__brand brand">
+        <div class="brand__logo">
+          <img src="images/logo.png" alt="site logo">
+        </div>
+        <div class="brand__name">
+          Initium 6.0
+        </div>
+        <div class="brand__slogan">
+          Mining TechFest of IIEST
+        </div>
+      </div>
+      <nav class="header__nav nav">
+        <ul>
+          <a href="." class="nav__links"><li>Home</li></a>
+          <a href="events.html" class="nav__links"><li>Events</li></a>
+          <a href="gallery.html" class="nav__links"><li>Gallery</li></a>
+          <a href="about.html" class="nav__links"><li>About Us</li></a>
+          <a href="contact.html" class="nav__links"><li>Contact Us</li></a>
+        </ul>
+      </nav>
+      <button class="header__btn btn btn--pink login">Login</button>
+      <button class="header__btn btn btn--pink register">Register</button>
+
+      <div class="header__details">
+        <h1 class="heading__primary mb-md">
+          Initium 6.0 Mining TechFest IIEST 2019
+        </h1>
+        <h3 class="heading__tertiary mb-md">
+          Janurary 20-23, IIEST, botanical gardens, shibpur howrah
+        </h3>
+        <button class="header__btn btn btn--violet login mb-sm">Register for events</button>
+      </div>
+
+      <div class="header__count count">
+        <div class="count__title">
+          <h2 class="heading__secondary">
+            Until TechFest Start
+          </h2>
+          <h4 class="heading__4">
+            Time Remainig
+          </h4>
+        </div>
+        <div class="count__time">
+          <ul>
+            <li>04 <span>Days</span> </li>
+            <li>: <span  class="hide">Days</span> </li>
+            <li>11 <span>Hours</span> </li>
+            <li>: <span class="hide">Days</span> </li>
+            <li>56 <span>Minutes</span> </li>
+            <li>: <span class="hide">Days</span> </li>
+            <li>59 <span>Seconds</span> </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="vision">
+      <div class="vision__title">
+        <h1 class="heading__primary">Our vision</h1>
+      </div>
+      <div class="vision__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <button class="vision__btn btn btn--pink">read more</button>
+    </div>
+
+    <div class="video">
+      <div class="video__img">
+        <svg class="video__btn">
+          <use xlink:href="images/sprite.svg#icon-play3"></use>
+        </svg>
+        <h2 class="video__title heading__secondary">teaser of initium 6.0</h2>
+      </div>
+    </div>
+
+    <div class="team">
+      <h1 class="team__heading heading__primary">Our Management Teams</h1>
+
+      <div class="team__member team__member--1 member">
+        <figure class="member__photo">
+          <img src="images/team-1.jpg" alt="" class="member__img">
+          <div class="member__contact">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            +919340137741
+          </div>
+        </figure>
+        <div class="member__name">Karan Singare</div>
+        <div class="member__position">Developer</div>
+      </div>
+      <div class="team__member team__member--2 member">
+        <figure class="member__photo">
+          <img src="images/team-1.jpg" alt="" class="member__img">
+          <div class="member__contact">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            +919340137741
+          </div>
+        </figure>
+        <div class="member__name">Karan Singare</div>
+        <div class="member__position">Developer</div>
+      </div>
+      <div class="team__member team__member--3 member">
+        <figure class="member__photo">
+          <img src="images/team-1.jpg" alt="" class="member__img">
+          <div class="member__contact">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            +919340137741
+          </div>
+        </figure>
+        <div class="member__name">Karan Singare</div>
+        <div class="member__position">Developer</div>
+      </div>
+      <div class="team__member team__member--4 member">
+        <figure class="member__photo">
+          <img src="images/team-1.jpg" alt="" class="member__img">
+          <div class="member__contact">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            +919340137741
+          </div>
+        </figure>
+        <div class="member__name">Karan Singare</div>
+        <div class="member__position">Developer</div>
+      </div>
+      <div class="team__member team__member--5 member">
+        <figure class="member__photo">
+          <img src="images/team-1.jpg" alt="" class="member__img">
+          <div class="member__contact">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            +919340137741
+          </div>
+        </figure>
+        <div class="member__name">Karan Singare</div>
+        <div class="member__position">Developer</div>
+      </div>
+      <div class="team__member team__member--6 member">
+        <figure class="member__photo">
+          <img src="images/team-1.jpg" alt="" class="member__img">
+          <div class="member__contact">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            +919340137741
+          </div>
+        </figure>
+        <div class="member__name">Karan Singare</div>
+        <div class="member__position">Developer</div>
+      </div>
+      <div class="team__member team__member--7 member">
+        <figure class="member__photo">
+          <img src="images/team-1.jpg" alt="" class="member__img">
+          <div class="member__contact">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            +919340137741
+          </div>
+        </figure>
+        <div class="member__name">Karan Singare</div>
+        <div class="member__position">Developer</div>
+      </div>
+      <div class="team__member team__member--8 member">
+        <figure class="member__photo">
+          <img src="images/team-1.jpg" alt="" class="member__img">
+          <div class="member__contact">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            +919340137741
+          </div>
+        </figure>
+        <div class="member__name">Karan Singare</div>
+        <div class="member__position">Developer</div>
+      </div>
+
+      <button class="team__btn btn btn--yellow">view all members</button>
+    </div>
+
+    <div class="events">
+      <h1 class="events__title heading__primary">Events</h1>
+      <div class="events__items">
+        <div class="event">
+          <figure class="event__photo">
+            <img src="images/team-1.jpg" alt="" class="event__img">
+          </figure>
+          <div class="event__time">
+            <p>9:00 am</p>
+            <p>----</p>
+            <p>11:00 am</p>
+          </div>
+          <div class="event__details">
+            <h3 class="">Karan Singh Singare</h3>
+            <h1 class="event__name">Industry - Academia Panel Discussion</h1>
+            <p class="event__text">
+              Panelists from the industry will discuss on the challenges faced by the mining industry and their possible solutions. Students will be invited to provide innovative solutions too.
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <figure class="event__photo">
+            <img src="images/team-1.jpg" alt="" class="event__img">
+          </figure>
+          <div class="event__time">
+            <p>9:00 am</p>
+            <p>----</p>
+            <p>11:00 am</p>
+          </div>
+          <div class="event__details">
+            <h3 class="">Karan Singh Singare</h3>
+            <h1 class="event__name">Industrial Problem Solving</h1>
+            <p class="event__text">
+              A case study to be prepared by a mining company, which is to be solved by the students in groups within a stipulated time.
+            </p>
+          </div>
+        </div>
+        <div class="event">
+          <figure class="event__photo">
+            <img src="images/team-1.jpg" alt="" class="event__img">
+          </figure>
+          <div class="event__time">
+            <p>9:00 am</p>
+            <p>----</p>
+            <p>11:00 am</p>
+          </div>
+          <div class="event__details">
+            <h3 class="">Karan Singh Singare</h3>
+            <h1 class="event__name">Paper Presentation</h1>
+            <p class="event__text">
+              Selected students will present research papers in front of an esteemed jury....
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="events__btn btn btn--pink">view more info</div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery__heading heading__primary">Gallery</div>
+      <figure class="gallery__item gallery__item--1">
+        <img src="images/gal-1.jpg" alt="" class="gallery__img">
+        <div class="gallery__plus">
+          <svg>
+            <use xlink:href="images/sprite.svg#icon-add"></use>
+          </svg>
+        </div>
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img src="images/gal-2.jpg" alt="" class="gallery__img">
+        <div class="gallery__plus">
+          <svg>
+            <use xlink:href="images/sprite.svg#icon-add"></use>
+          </svg>
+        </div>
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img src="images/gal-3.jpg" alt="" class="gallery__img">
+        <div class="gallery__plus">
+          <svg>
+            <use xlink:href="images/sprite.svg#icon-add"></use>
+          </svg>
+        </div>
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img src="images/gal-4.jpg" alt="" class="gallery__img">
+        <div class="gallery__plus">
+          <svg>
+            <use xlink:href="images/sprite.svg#icon-add"></use>
+          </svg>
+        </div>
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img src="images/gal-5.jpg" alt="" class="gallery__img">
+        <div class="gallery__plus">
+          <svg>
+            <use xlink:href="images/sprite.svg#icon-add"></use>
+          </svg>
+        </div>
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <img src="images/gal-6.jpg" alt="" class="gallery__img">
+        <div class="gallery__plus">
+          <svg>
+            <use xlink:href="images/sprite.svg#icon-add"></use>
+          </svg>
+        </div>
+      </figure>
+      <figure class="gallery__item gallery__item--7">
+        <img src="images/gal-7.jpg" alt="" class="gallery__img">
+        <div class="gallery__plus">
+          <svg>
+            <use xlink:href="images/sprite.svg#icon-add"></use>
+          </svg>
+        </div>
+      </figure>
+      <figure class="gallery__item gallery__item--8">
+        <img src="images/gal-8.jpg" alt="" class="gallery__img">
+        <div class="gallery__plus">
+          <svg>
+            <use xlink:href="images/sprite.svg#icon-add"></use>
+          </svg>
+        </div>
+      </figure>
+    </div>
+
+    <div class="testimonial">
+      <div class="testimonial__heading heading__primary">Testimonials</div>
+      <div class="testimony testimonial__item testimonial__item--1">
+        <div class="testimony__text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="testimony__name">
+          <h3>Karan Singare</h2>
+          <h4>Developer</h4>
+        </div>
+        <div class="testimony__photo">
+          <img src="images/team-1.jpg" alt="">
+        </div>
+      </div>
+      <div class="testimony testimonial__item testimonial__item--2">
+        <div class="testimony__text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="testimony__name">
+          <h3>Karan Singare</h2>
+          <h4>Developer</h4>
+        </div>
+        <div class="testimony__photo">
+          <img src="images/team-1.jpg" alt="">
+        </div>
+      </div>
+      <div class="testimony testimonial__item testimonial__item--3">
+        <div class="testimony__text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="testimony__name">
+          <h3>Karan Singare</h2>
+          <h4>Developer</h4>
+        </div>
+        <div class="testimony__photo">
+          <img src="images/team-1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="sponsor">
+      <div class="sponsor__heading heading__primary">big thanks for sponsors</div>
+      <div class="sponsor__item sponsor__item--1">
+        <img src="images/sponsors/sp1.png" alt="">
+      </div>
+      <div class="sponsor__item sponsor__item--2">
+        <img src="images/sponsors/sp2.gif" alt="">
+      </div>
+      <div class="sponsor__item sponsor__item--3">
+        <img src="images/sponsors/sp3.png" alt="">
+      </div>
+      <div class="sponsor__item sponsor__item--4">
+        <img src="images/sponsors/sp4.png" alt="">
+      </div>
+      <div class="sponsor__item sponsor__item--5">
+        <img src="images/sponsors/sp5.png" alt="">
+      </div>
+      <div class="sponsor__item sponsor__item--6">
+        <img src="images/sponsors/sp6.png" alt="">
+      </div>
+      <div class="sponsor__item sponsor__item--7">
+        <img src="images/sponsors/sp7.png" alt="">
+      </div>
+    </div>
+
+
+    <div class="connectivity">
+      <div class="connectivity__heading heading__primary">Connectivity</div>
+      <div class="connectivity__map">
+        <div id="mapid"></div>
+      </div>
+      <div class="connectivity__item connectivity__item--1">
+        <svg>
+          <use xlink:href="images/sprite.svg#icon-train1"></use>
+        </svg>
+        <h3>Nearest Railway Station <span>: Howrah Junction</span></h3>
+        <h3>Distance from Railway Station <span>: 6km</span></h3>
+      </div>
+      <div class="connectivity__item connectivity__item--2">
+        <svg>
+          <use xlink:href="images/sprite.svg#icon-train"></use>
+        </svg>
+        <h3>Nearest Metro Station <span>: Ravindra Sadan, Kolkata</span></h3>
+        <h3>Distance from Metro Station <span>: 6km</span></h3>
+      </div>
+      <div class="connectivity__item connectivity__item--3">
+        <svg>
+          <use xlink:href="images/sprite.svg#icon-aircraft"></use>
+        </svg>
+        <h3>Nearest Airport <span>: Netaji Subhash Chandra Bose International Airport, Kolkata</span></h3>
+        <h3>Distance from Airport <span>: 25km</span></h3>
+      </div>
+    </div>
+
+
+
+    <!-- <div class="newsletter">
+      <img src="images/icon-17.png" alt="" class="left__img">
+      <img src="images/icon-18.png" alt="" class="right__img">
+      <div class="newsletter__form">
+        <h4>Get The Latest Updates</h6>
+        <h1>Signup For Newsletter</h2>
+        <input type="email" name="" value="" placeholder="Your Email*">
+        <button class="btn btn--pink">subscribe</button>
+      </div>
+    </div> -->
+
+    <div class="newsletter-container">
+
+      <div class="newsletter">
+        <img src="images/icon-17.png" alt="" class="left__img">
+        <img src="images/icon-18.png" alt="" class="right__img">
+        <div class="newsletter__form">
+          <h4>Get The Latest Updates</h6>
+          <h1>Signup For Newsletter</h2>
+          <input type="email" name="" value="" placeholder="Your Email*">
+          <button class="btn btn--pink">subscribe</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+
+    </footer>
+
+  </div>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin="">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/animation.js" charset="utf-8"></script>
+  <script src="js/map.js" charset="utf-8"></script>
+</body>
+</html>
