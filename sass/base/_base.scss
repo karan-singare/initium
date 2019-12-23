@@ -14,6 +14,10 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Arimo', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+//RESPONSIVE BREAKPOINTS
+$bp-huge: 87.5em;
+
+
 *,
 *::before,
 *::after {
@@ -37,4 +41,6 @@ body {
   display: grid;
   grid-template-columns: [full-start] 25rem [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 25rem [full-end];
   grid-template-rows: repeat(2, 1fr);
+
+  
 }

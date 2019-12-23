@@ -106,50 +106,57 @@ body {
     transform: rotate(720deg); } }
 
 .header {
+  grid-column: full-start/full-end;
+  padding: 2rem;
   background-image: linear-gradient(rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71)), url("../images/background1.jpg");
   background-size: cover;
   background-position: center;
-  padding-top: 2rem;
-  padding-left: 5rem;
   height: 100vh;
-  grid-column: full-start/full-end;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 20% 50% 30%;
-  justify-content: center;
-  align-items: center; }
-  .header__nav {
-    grid-column: 3/6; }
-    .header__nav ul {
+  color: #fff;
+  display: grid; }
+  .header__main {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-gap: 10rem; }
+    @media only screen and (max-width: 87.5em) {
+      .header__main {
+        grid-template-rows: repeat(2, min-content); } }
+    .header__main__nav {
+      list-style: none;
+      font-size: 1.8rem;
       display: grid;
-      grid-template-columns: repeat(5, minmax(10rem, 1fr));
-      grid-gap: 1rem;
-      justify-items: end; }
-      .header__nav ul li {
+      grid-template-columns: repeat(5, minmax(10rem, 1fr)); }
+      @media only screen and (max-width: 87.5em) {
+        .header__main__nav {
+          grid-row: 2/3; } }
+      .header__main__nav a {
+        color: #fff;
+        text-decoration: none; }
+      .header__main__nav li {
         border-bottom: 4px solid transparent;
         transition: all .5s; }
-      .header__nav ul li:hover {
+      .header__main__nav li:hover {
         color: #ffa116;
         border-bottom: 4px solid #ae1ec7; }
-  .header__btn {
-    justify-self: center; }
-    .header__btn.login {
-      grid-column: 7/8; }
-    .header__btn.register {
-      grid-column: 8/9; }
+    .header__main__btns {
+      justify-self: end;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+      grid-gap: 5rem; }
   .header__details {
-    grid-column: 2/5;
-    color: #fff; }
+    grid-row: 2/3;
+    justify-self: center; }
     .header__details h3 {
       text-transform: capitalize; }
   .header__count {
-    grid-column: 2/7;
     background-color: #ffffff;
+    justify-self: center;
+    width: 70vw;
+    height: 70%;
     display: grid;
     grid-template-columns: 3fr 7fr;
-    align-items: center;
-    align-content: center;
-    text-align: center;
     grid-column-gap: 2rem; }
 
 .vision {
@@ -488,28 +495,37 @@ body {
 
 .brand {
   display: grid;
-  grid-template-columns: repeat(3, max-content); }
+  grid-template-columns: repeat(6, 10rem);
+  grid-template-rows: min-content;
+  align-items: center;
+  grid-gap: 2rem; }
   .brand__logo {
+    grid-column: 1/2;
     width: 15rem;
     height: 12rem; }
     .brand__logo img {
       width: 100%;
       height: 100%; }
+  .brand__details {
+    grid-column: 2/5;
+    margin-top: 3rem; }
   .brand__name {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
     font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
-    font-weight: bold;
-    align-self: center;
-    grid-column: 2/3;
-    margin-left: -3rem; }
+    font-weight: bold; }
   .brand__slogan {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
     font-size: 1.5rem;
     color: #fff;
-    text-transform: uppercase;
-    align-self: start;
-    grid-column: 2/4;
-    transform: translate(-3rem, -5rem); }
+    text-transform: uppercase; }
 
 .nav ul {
   list-style: none;
@@ -528,10 +544,12 @@ body {
   background-size: cover; }
   .count__title {
     text-align: center;
-    align-self: center; }
+    align-self: center;
+    font-size: 1.8rem;
+    line-height: 1; }
   .count__time ul {
     list-style: none;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: bold;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -540,7 +558,8 @@ body {
     .count__time ul .hide {
       visibility: hidden; }
     .count__time ul span {
-      font-size: 2rem;
+      font-size: 1.6rem;
+      font-weight: 300;
       display: block;
       margin-top: -2rem;
       color: #ff006a; }

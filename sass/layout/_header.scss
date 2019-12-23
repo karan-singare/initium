@@ -1,4 +1,7 @@
 .header {
+  grid-column: full-start/full-end;
+  padding: 2rem;
+
   background-image: linear-gradient(rgba(12, 10, 87, 0.71),
                     rgba(12, 10, 87, 0.71),
                     rgba(12, 10, 87, 0.71),
@@ -6,25 +9,38 @@
                     url('../images/background1.jpg');
   background-size: cover;
   background-position: center;
-
-  padding-top: 2rem;
-  padding-left: 5rem;
   height: 100vh;
-  grid-column: full-start/full-end;
+  color: #fff;
 
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 20% 50% 30%;
-  justify-content: center;
-  align-items: center;
 
-  &__nav {
-  grid-column: 3/6;
-    & ul {
+  &__main {
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-gap: 10rem;
+
+    @media only screen and (max-width: $bp-huge) {
+      grid-template-rows: repeat(2, min-content);
+    }
+
+    &__nav {
+
+      @media only screen and (max-width: $bp-huge) {
+        grid-row: 2/3;
+      }
+
+      list-style: none;
+      font-size: 1.8rem;
+
       display: grid;
       grid-template-columns: repeat(5, minmax(10rem, 1fr));
-      grid-gap: 1rem;
-      justify-items: end;
+
+      & a {
+        color: #fff;
+        text-decoration: none;
+      }
       & li {
         border-bottom: 4px solid transparent;
         transition: all .5s;
@@ -34,39 +50,38 @@
         border-bottom: 4px solid $violet;
       }
     }
-  }
 
-  &__btn {
-    &.login {
-      grid-column: 7/8;
+    &__btns {
+      justify-self: end;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // justify-content: center;
+      align-items: start;
+      grid-gap: 5rem;
     }
-    &.register {
-      grid-column: 8/9;
-    }
-    justify-self: center;
   }
 
   &__details {
-    grid-column: 2/5;
-    color: #fff;
+    grid-row: 2/3;
+    justify-self: center;
+
     & h3 {
       text-transform: capitalize;
     }
   }
 
   &__count {
-    grid-column: 2/7;
-    background-color: #ffffff;
 
-    // border-radius: 1.5rem;
-    // box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.69);
-    // padding: 2rem;
+    background-color: #ffffff;
+    justify-self: center;
+    width: 70vw;
+    // height: minmax(10vw, min-content);
+
+    height: 70%;
 
     display: grid;
     grid-template-columns: 3fr 7fr;
-    align-items: center;
-    align-content: center;
-    text-align: center;
     grid-column-gap: 2rem;
   }
 

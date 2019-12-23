@@ -1,8 +1,13 @@
 .brand {
   display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(6, 10rem);
+  grid-template-rows: min-content;
+  align-items: center;
+  grid-gap: 2rem;
 
   &__logo {
+    grid-column: 1/2;
+
     width: 15rem;
     height: 12rem;
 
@@ -12,21 +17,31 @@
     }
   }
 
+  &__details {
+    grid-column: 2/5;
+    margin-top: 3rem;
+  }
+
   &__name {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
     font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    align-self: center;
-    grid-column: 2/3;
-    margin-left: -3rem;
+
+
   }
   &__slogan {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
     font-size: 1.5rem;
     color: #fff;
     text-transform: uppercase;
-    align-self: start;
-    grid-column: 2/4;
-    transform: translate(-3rem,-5rem);
+
   }
 }
