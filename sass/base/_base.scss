@@ -20,7 +20,11 @@ $bp-largest: 75em;
 $bp-large: 62.5em;
 $bp-medium: 50em; //800px
 $bp-small: 37.5em; //600px
+<<<<<<< HEAD
 $bp-smallest: 34.375em; //500px
+=======
+$bp-smallest: 34.375em; //600px
+>>>>>>> reconfigure
 
 
 *,
@@ -53,5 +57,4 @@ body {
   display: grid;
   grid-template-columns: [full-start] 25rem [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 25rem [full-end];
   grid-template-rows: repeat(2, 1fr);
-
 }

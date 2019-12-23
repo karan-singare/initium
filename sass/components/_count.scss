@@ -11,34 +11,20 @@
 
   &__title {
     text-align: center;
-    align-self: center;
     font-size: 1.8rem;
     line-height: 1;
   }
 
   &__time {
-    & ul {
-      list-style: none;
-      font-size: 6rem;
-      font-weight: bold;
 
-      & .hide {
-        visibility: hidden;
-      }
-
-      & span {
-        font-size: 1.6rem;
-        font-weight: 300;
-        display: block;
-        margin-top: -2rem;
-        color: $pink;
-      }
-
+<<<<<<< HEAD
       display: grid;
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
       grid-column-gap: 1rem;
       align-items: center;
     }
+=======
+>>>>>>> reconfigure
   }
 
   @media only screen and (max-width: $bp-small) {

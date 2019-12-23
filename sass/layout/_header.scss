@@ -54,6 +54,9 @@
         justify-self: center;
         justify-items: center;
       }
+      @media only screen and (max-width: $bp-small) {
+        justify-self: start;
+      }
 
     }
 
@@ -75,6 +78,11 @@
         grid-row: 3/-1;
         justify-self: center;
       }
+
+      @media only screen and (max-width: $bp-small) {
+        justify-self: start;
+        padding-left: 2rem;
+      }
     }
 
 
@@ -85,8 +93,11 @@
       grid-template-rows: repeat(3, min-content);
       grid-template-columns: 1fr;
       grid-row-gap: 2rem;
-      justify-content: center;
-      justify-items: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-rows: repeat(3, min-content);
+      grid-template-columns: min-content;
     }
 
   }
@@ -100,6 +111,7 @@
     }
   }
 
+<<<<<<< HEAD
   &__count {
 
     background-color: #ffffff;
@@ -131,4 +143,6 @@
     }
   }
 
+=======
+>>>>>>> reconfigure
 }
