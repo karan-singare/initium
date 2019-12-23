@@ -1,0 +1,22 @@
+.footer {
+  grid-column: full-start/full-end;
+  background-color: #131144;
+  height: 100vh;
+  margin-top: 20rem;
+  position: relative;
+
+  // background-image: url('../images/pattern-1.png');
+  // background-repeat: no-repeat;
+  // background-position: top;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    height: 11.2rem;
+    background-color: #131144;
+    background-image: url('../images/pattern-4.png');
+    background-repeat: no-repeat;
+  }
+}

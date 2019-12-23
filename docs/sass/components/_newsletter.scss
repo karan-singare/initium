@@ -1,0 +1,53 @@
+.newsletter {
+  // grid-column: full-start/full-end;
+  height: 25rem;
+  width: 130rem;
+  background-color: #ae1ec7;
+  background-image: url('../images/pattern-3.png');
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.56);
+
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  color: #fff;
+  padding: 5rem 0;
+  margin: 20rem 0rem;
+
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+
+  & h4 {
+    font-weight: 300;
+  }
+  & input {
+    width: 45%;
+    height: 5rem;
+    padding: 1rem;
+
+    &:focus,
+    &:active {
+      outline: 0;
+    }
+  }
+  & img {
+    display: block;
+  }
+  & .left__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  & .right__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

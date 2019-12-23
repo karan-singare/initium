@@ -1,0 +1,86 @@
+%heading {
+  font-weight: 400;
+}
+
+.heading-1 {
+  font-size: 5.5rem;
+}
+.heading-2 {
+
+}
+.heading-3 {
+
+}
+.heading-4 {
+  font-size: 2rem;
+  font-weight: 300;
+
+}
+.heading-5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+
+.btn {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: 0px 1rem 3rem rgba(51, 54, 44, 0.8);
+  text-transform: uppercase;
+
+
+  &--pink {
+    background-color: $pink;
+    color: #fff;
+    transition: all .1s;
+    border: 2px solid transparent;
+
+    &:hover {
+      background: transparent;
+      border: 2px solid $pink;
+      color: $pink;
+    }
+  }
+  &--violet {
+    background-color: $violet;
+    color: #fff;
+    transition: all .1s;
+    border: 2px solid transparent;
+
+    &:hover {
+      background: $yellow;
+      border: 2px solid $yellow;
+    }
+  }
+  &--yellow {
+    background-color: $yellow;
+    color: #fff;
+    transition: all .1s;
+    border: 2px solid transparent;
+    transition: all .2s ease-in;
+
+    &:hover {
+      background: transparent;
+      border: 2px solid $yellow;
+    }
+  }
+}
+
+.heading__primary {
+  font-size: 6.6rem;
+  line-height: 1;
+}
+.heading__secondary {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.heading__tertiary {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.heading__4 {
+  font-size:1.8rem;
+}

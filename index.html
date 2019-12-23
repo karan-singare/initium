@@ -14,28 +14,33 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header__brand brand">
-        <div class="brand__logo">
-          <img src="images/logo.png" alt="site logo">
+
+      <div class="header__main">
+        <div class="header__brand brand">
+          <div class="brand__logo">
+            <img src="images/logo.png" alt="site logo">
+          </div>
+          <div class="brand__details">
+            <div class="brand__name">
+              Initium 6.0
+            </div>
+            <div class="brand__slogan">
+              Mining TechFest of IIEST
+            </div>
+          </div>
         </div>
-        <div class="brand__name">
-          Initium 6.0
-        </div>
-        <div class="brand__slogan">
-          Mining TechFest of IIEST
+        <ul class="header__main__nav nav">
+            <a href="." class="nav__links"><li>Home</li></a>
+            <a href="events.html" class="nav__links"><li>Events</li></a>
+            <a href="gallery.html" class="nav__links"><li>Gallery</li></a>
+            <a href="about.html" class="nav__links"><li>About Us</li></a>
+            <a href="contact.html" class="nav__links"><li>Contact Us</li></a>
+        </ul>
+        <div class="header__main__btns">
+          <button class="header__btn btn btn--pink login">Login</button>
+          <button class="header__btn btn btn--pink register">Register</button>
         </div>
       </div>
-      <nav class="header__nav nav">
-        <ul>
-          <a href="." class="nav__links"><li>Home</li></a>
-          <a href="events.html" class="nav__links"><li>Events</li></a>
-          <a href="gallery.html" class="nav__links"><li>Gallery</li></a>
-          <a href="about.html" class="nav__links"><li>About Us</li></a>
-          <a href="contact.html" class="nav__links"><li>Contact Us</li></a>
-        </ul>
-      </nav>
-      <button class="header__btn btn btn--pink login">Login</button>
-      <button class="header__btn btn btn--pink register">Register</button>
 
       <div class="header__details">
         <h1 class="heading__primary mb-md">
@@ -49,7 +54,7 @@
 
       <div class="header__count count">
         <div class="count__title">
-          <h2 class="heading__secondary">
+          <h2>
             Until TechFest Start
           </h2>
           <h4 class="heading__4">
@@ -69,7 +74,7 @@
         </div>
       </div>
     </header>
-
+<!--
     <div class="vision">
       <div class="vision__title">
         <h1 class="heading__primary">Our vision</h1>
@@ -439,7 +444,7 @@
       </div>
     </div> -->
 
-    <div class="newsletter-container">
+    <!-- <div class="newsletter-container">
 
       <div class="newsletter">
         <img src="images/icon-17.png" alt="" class="left__img">
@@ -454,7 +459,7 @@
     </div>
     <footer class="footer">
 
-    </footer>
+    </footer> --> -->
 
   </div>
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
