@@ -121,6 +121,13 @@
     }
     @media only screen and (max-width: $bp-small) {
       width: 90vw;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      // grid-template-columns: 1fr;
+      // grid-template-rows: repeat(2, min-content);
+      // width: 100%;
     }
   }
 
