@@ -22,4 +22,8 @@
       text-align: left;
     }
   }
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-column: full-start/full-end;
+  }
 }
