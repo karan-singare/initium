@@ -1,7 +1,7 @@
 .header {
   grid-column: full-start/full-end;
-  padding: 2rem;
 
+  padding: 2rem;
   background-image: linear-gradient(rgba(12, 10, 87, 0.71),
                     rgba(12, 10, 87, 0.71),
                     rgba(12, 10, 87, 0.71),
@@ -33,7 +33,7 @@
       font-size: 1.8rem;
 
       display: grid;
-      grid-template-columns: repeat(5, minmax(10rem, 1fr));
+      grid-template-columns: repeat(5, minmax(min-content, 1fr));
 
       & a {
         color: #fff;
@@ -54,10 +54,6 @@
         justify-self: center;
         justify-items: center;
       }
-      @media only screen and (max-width: $bp-small) {
-        justify-self: start;
-      }
-
     }
 
     &__btns {
@@ -78,11 +74,6 @@
         grid-row: 3/-1;
         justify-self: center;
       }
-
-      @media only screen and (max-width: $bp-small) {
-        justify-self: start;
-        padding-left: 2rem;
-      }
     }
 
 
@@ -95,11 +86,6 @@
       grid-row-gap: 2rem;
     }
 
-    @media only screen and (max-width: $bp-small) {
-      grid-template-rows: repeat(3, min-content);
-      grid-template-columns: min-content;
-    }
-
   }
 
   &__details {
@@ -109,6 +95,38 @@
     & h3 {
       text-transform: capitalize;
     }
-  }
 
+  }
+}
+
+.header {
+  @media only screen and (max-width: $bp-mobile) {
+    grid-template-rows: min-content;
+    grid-column: 1/-1;
+
+    &__main {
+      padding: 0;
+      grid-template-rows: min-content;
+      justify-items: start;
+      .header__brand {
+        grid-row: 1/2;
+        justify-self: start;
+      }
+      &__nav {
+        grid-row: 2/3;
+        justify-self: start;
+        justify-items: start;
+
+        font-size: 1.4rem;
+      }
+      &__btns {
+        grid-row: 3/4;
+        justify-self: start;
+      }
+    }
+
+    &__details {
+      align-self: center;
+    }
+  }
 }

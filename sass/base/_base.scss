@@ -19,6 +19,7 @@ $bp-huge: 87.5em;
 $bp-largest: 75em;
 $bp-large: 62.5em;
 $bp-medium: 50em; //800px
+$bp-mobile: 43.75em; //700px
 $bp-small: 37.5em; //600px
 $bp-smallest: 34.375em; //600px
 
@@ -48,6 +49,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] 25rem [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 25rem [full-end];
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
+  grid-template-rows: repeat(1, 1fr);
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-template-rows: min-content;
+  }
 }
