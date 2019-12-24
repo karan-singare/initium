@@ -1,34 +1,51 @@
-.testimonial {
-  grid-column: full-start/full-end;
-
-  padding-top: 4rem;
+.testimonials {
+  grid-column: center-start/center-end;
 
   display: grid;
-  grid-template-rows: 2fr 8fr;
-  grid-template-columns: 1fr repeat(3, 1fr) 1fr;
-  grid-column-gap: 3rem;
-  grid-row-gap: 4rem;
+  grid-template-rows: min-content;
+  grid-gap: 10rem;
 
   &__heading {
     grid-column: 1/-1;
-    grid-row: 1/2;
-    color: #000000;
-    font-weight: bold;
     text-align: center;
+    color: #000000;
   }
-  &__item {
-    &--1 {
-      grid-row: 2/3;
-      grid-column: 2/span 1;
-    }
-    &--2 {
-      grid-row: 2/3;
-      grid-column: 3/span 1;
-    }
-    &--3 {
-      grid-row: 2/3;
-      grid-column: 4/span 1;
+
+  &__content {
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+
+.testimonial {
+  display: grid;
+  grid-row-gap: 2.5rem;
+
+  &__content {
+    font-size: 1.7rem;
+  }
+
+  &__author {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: 2.5rem;
+    align-self: end;
+  }
+  &__photo {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
     }
   }
 
+  &__name {
+    align-self: center;
+  }
 }

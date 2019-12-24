@@ -1,50 +1,100 @@
 .team {
-  margin-top: -10rem;
-  padding-top: 10rem;
-  height: 120vh;
-  background-color: $blue;
   grid-column: full-start/full-end;
 
+  position: relative;
+  background-color: $blue;
+  padding: 6rem;
+
   display: grid;
-  grid-template-columns: 20% repeat(4, 1fr) 20%;
-  grid-template-rows: 10% repeat(2, 1fr) 10%;
-  grid-row-gap: 5rem;
+  grid-template-rows: repeat(3, min-content);
+  grid-row-gap: 10rem;
+  justify-items: center;
 
   &__heading {
-    grid-column: 2/-2;
+    grid-row: 1/span 1;
     text-align: center;
     color: #fff;
   }
-  &__btn {
-    grid-column: 2/-2;
-    grid-row: 4/-1;
-    align-self: center;
-    justify-self: center;
+  &__members {
+    grid-row: 2/span 1;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    width: 60%;
   }
-  &__member {
-    &--1 {
-      grid-column: 2/span 1;
+  &__btn {
+    grid-row: -2/-1;
+    align-self: center;
+  }
+
+}
+
+.member {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-rows: 70% 20% 10%;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  transition: all .5s ease-in;
+
+  &__photo {
+    width: 20rem;
+    height: 20rem;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path:circle(50% at 50% 50%);
+    position: relative;
+  }
+
+  &__img {
+    height: 100%;
+    transition: all .5s;
+  }
+
+  &__contact {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    text-align: center;
+
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+
+    & svg {
+      fill: #fff;
+      width: 3rem;
+      height: 3rem;
     }
-    &--2 {
-      grid-column: 3/span 1;
-    }
-    &--3 {
-      grid-column: 4/span 1;
-    }
-    &--4 {
-      grid-column: 5/span 1;
-    }
-    &--5 {
-      grid-column: 2/span 1;
-    }
-    &--6 {
-      grid-column: 3/span 1;
-    }
-    &--7 {
-      grid-column: 4/span 1;
-    }
-    &--8 {
-      grid-column: 5/span 1;
-    }
+  }
+  &__name {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 300;
+  }
+  &__position {
+    font-size: 2rem;
+    color: $pink;
+    font-weight: 300;
+  }
+
+  &:hover {
+    background: rgba(transparent, .3);
+    box-sizing: 0 2rem 4rem rgba(0, 0, 0, 0.88);
+  }
+
+  &:hover &__img {
+    filter:  blur(.1rem)  brightness(50%);
+    transform: scale(1.1);
+  }
+
+  &:hover &__contact {
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
   }
 }

@@ -12,6 +12,7 @@
   object-fit: cover;
   overflow: hidden;
   cursor: pointer;
+  z-index: 100;
 
   & img {
     width: 100%;
