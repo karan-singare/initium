@@ -558,24 +558,55 @@ body {
 
 .newsletter-container {
   grid-column: full-start/full-end;
-  height: 20rem;
   position: relative; }
 
 .footer {
   grid-column: full-start/full-end;
   background-color: #131144;
-  height: 100vh;
-  margin-top: 20rem;
-  position: relative; }
-  .footer::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    width: 100%;
-    height: 11.2rem;
-    background-color: #131144;
-    background-image: url("../images/pattern-4.png");
-    background-repeat: no-repeat; }
+  color: #fff;
+  font-size: 300;
+  margin-top: -10rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-content: center;
+  grid-column-gap: 4rem;
+  padding: 10rem;
+  font-size: 1.6rem; }
+  .footer ul {
+    list-style: none; }
+    .footer ul li {
+      text-transform: capitalize;
+      margin-bottom: 1rem; }
+  .footer a {
+    text-decoration: none;
+    color: #fff; }
+  .footer p {
+    margin-bottom: 2rem; }
+  .footer__item__heading {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 2rem; }
+  .footer__explore ul {
+    list-style: none; }
+  .footer__follow svg {
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: #fff; }
+
+@media only screen and (max-width: 43.75em) {
+  .footer {
+    grid-template: min-content/minmax(25rem, 1fr);
+    font-size: 1.2rem;
+    grid-row-gap: 5rem;
+    padding: 5rem; }
+    .footer__item__heading {
+      display: none; }
+    .footer ul {
+      display: flex;
+      padding-right: 1rem; }
+      .footer ul li {
+        margin-right: 1rem; } }
 
 .top {
   grid-template: min-content/min-content;
@@ -790,8 +821,6 @@ body {
           margin-left: 0; } }
 
 .newsletter {
-  height: 25rem;
-  width: 130rem;
   background-color: #ae1ec7;
   background-image: url("../images/pattern-3.png");
   background-size: cover;
@@ -804,12 +833,7 @@ body {
   position: relative;
   color: #fff;
   padding: 5rem 0;
-  margin: 20rem 0rem;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10; }
+  margin: 20rem 0rem; }
   .newsletter h4 {
     font-weight: 300; }
   .newsletter input {

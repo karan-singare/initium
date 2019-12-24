@@ -1,22 +1,77 @@
 .footer {
   grid-column: full-start/full-end;
   background-color: #131144;
-  height: 100vh;
-  margin-top: 20rem;
+  color: #fff;
+  font-size: 300;
+  margin-top: -10rem;
+
   position: relative;
 
-  // background-image: url('../images/pattern-1.png');
-  // background-repeat: no-repeat;
-  // background-position: top;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-content: center;
+  grid-column-gap: 4rem;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    width: 100%;
-    height: 11.2rem;
-    background-color: #131144;
-    background-image: url('../images/pattern-4.png');
-    background-repeat: no-repeat;
+  padding: 10rem;
+  font-size: 1.6rem;
+
+  & ul {
+    list-style: none;
+    & li {
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: #fff;
+  }
+  & p {
+    margin-bottom: 2rem;
+  }
+
+  &__item {
+
+    &__heading {
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__explore {
+    & ul {
+      list-style: none;
+    }
+  }
+
+  &__follow {
+    & svg {
+      width: 4.5rem;
+      height: 4.5rem;
+      fill: #fff;
+    }
+  }
+}
+
+.footer {
+  @media only screen and (max-width: $bp-mobile) {
+    grid-template: min-content/minmax(25rem, 1fr);
+    font-size: 1.2rem;
+    grid-row-gap: 5rem;
+    padding: 5rem;
+    
+    &__item__heading {
+      display: none;
+    }
+
+    & ul {
+      display: flex;
+      padding-right: 1rem;
+
+      & li {
+        margin-right: 1rem;
+      }
+    }
   }
 }
