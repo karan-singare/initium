@@ -35,7 +35,8 @@
   padding: 1rem;
 
   display: grid;
-  grid-template-rows: 70% 20% 10%;
+  // grid-template-rows: 70% 20% 10%;
+  grid-template-rows: min-content;
   grid-template-columns: 1fr;
   justify-items: center;
   transition: all .5s ease-in;
@@ -72,12 +73,12 @@
     }
   }
   &__name {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
     font-weight: 300;
   }
   &__position {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: $pink;
     font-weight: 300;
   }
