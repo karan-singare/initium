@@ -33,6 +33,7 @@
 
       display: grid;
       grid-template-columns: repeat(5, minmax(min-content, 1fr));
+      justify-items: center;
 
       & a {
         color: #fff;

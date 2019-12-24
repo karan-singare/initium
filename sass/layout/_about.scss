@@ -1,0 +1,25 @@
+.about {
+  grid-column: center-start/center-end;
+  text-align: center;
+  padding: 6rem;
+
+  // display: grid;
+  // grid-template-rows: max-content;
+
+  &__heading {
+    color: #000000;
+  }
+
+  &__details {
+    font-size: 1.6rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+    padding: 6rem;
+    border-radius: 1rem;
+    hyphens: auto;
+
+    @media only screen and (max-width: $bp-mobile) {
+      padding: 1.5rem;
+      text-align: left;
+    }
+  }
+}
