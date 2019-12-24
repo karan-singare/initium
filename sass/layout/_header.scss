@@ -116,6 +116,7 @@
       &__nav {
         grid-row: 2/3;
         justify-items: stretch;
+        grid-column-gap: 1rem;
 
         font-size: 1.4rem;
       }
