@@ -49,7 +49,7 @@
   @media only screen and (max-width: $bp-mobile) {
     grid-template-columns: min-content;
     grid-gap: 0;
-
+    
     &__details {
       margin-left: -3rem;
       margin-top: 3rem;

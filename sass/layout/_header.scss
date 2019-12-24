@@ -9,7 +9,6 @@
                     url('../images/background1.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
   color: #fff;
 
   display: grid;
@@ -102,6 +101,7 @@
 .header {
   @media only screen and (max-width: $bp-mobile) {
     grid-template-rows: min-content;
+    grid-row-gap: 10rem;
     grid-column: 1/-1;
 
     &__main {
@@ -110,23 +110,22 @@
       justify-items: start;
       .header__brand {
         grid-row: 1/2;
-        justify-self: start;
+        justify-self: center;
       }
       &__nav {
         grid-row: 2/3;
-        justify-self: start;
-        justify-items: start;
+        justify-items: stretch;
 
         font-size: 1.4rem;
       }
       &__btns {
         grid-row: 3/4;
-        justify-self: start;
+        justify-self: center;
       }
     }
 
     &__details {
-      align-self: center;
+      // align-self: center;
     }
   }
 }

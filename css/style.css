@@ -24,10 +24,10 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
-  grid-template-rows: repeat(1, 1fr); }
+  grid-template-rows: 100vh repeat(1, 1fr); }
   @media only screen and (max-width: 43.75em) {
     .container {
-      grid-template-rows: min-content; } }
+      grid-template-rows: 100vh; } }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -83,7 +83,7 @@ body {
   @media only screen and (max-width: 43.75em) {
     .btn {
       font-size: 1.5rem;
-      padding: .8rem 1.6rem; } }
+      padding: .6rem 1.2rem; } }
 
 .heading__primary {
   font-size: 6.6rem;
@@ -131,7 +131,6 @@ body {
   background-image: linear-gradient(rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71)), url("../images/background1.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
   color: #fff;
   display: grid; }
   .header__main {
@@ -195,6 +194,7 @@ body {
 @media only screen and (max-width: 43.75em) {
   .header {
     grid-template-rows: min-content;
+    grid-row-gap: 10rem;
     grid-column: 1/-1; }
     .header__main {
       padding: 0;
@@ -202,17 +202,14 @@ body {
       justify-items: start; }
       .header__main .header__brand {
         grid-row: 1/2;
-        justify-self: start; }
+        justify-self: center; }
       .header__main__nav {
         grid-row: 2/3;
-        justify-self: start;
-        justify-items: start;
+        justify-items: stretch;
         font-size: 1.4rem; }
       .header__main__btns {
         grid-row: 3/4;
-        justify-self: start; }
-    .header__details {
-      align-self: center; } }
+        justify-self: center; } }
 
 .vision {
   grid-column: full-start/full-end;

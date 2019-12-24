@@ -54,9 +54,9 @@ body {
 .container {
   display: grid;
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-rows: 100vh repeat(1, 1fr);
 
   @media only screen and (max-width: $bp-mobile) {
-    grid-template-rows: min-content;
+    grid-template-rows: 100vh;
   }
 }
