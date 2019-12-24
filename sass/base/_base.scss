@@ -21,7 +21,11 @@ $bp-large: 62.5em;
 $bp-medium: 50em; //800px
 $bp-mobile: 43.75em; //700px
 $bp-small: 37.5em; //600px
+<<<<<<< HEAD
+$bp-smallest: 34.375em; //500px
+=======
 $bp-smallest: 34.375em; //600px
+>>>>>>> reconfigure
 
 
 *,
@@ -38,6 +42,9 @@ html {
 
   @media only screen and (max-width: $bp-largest) {
     font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 45%;
   }
 }
 body {

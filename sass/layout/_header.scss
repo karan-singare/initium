@@ -99,6 +99,7 @@
   }
 }
 
+<<<<<<< HEAD
 .header {
   @media only screen and (max-width: $bp-mobile) {
     grid-template-rows: min-content;
@@ -129,4 +130,40 @@
       align-self: center;
     }
   }
+=======
+<<<<<<< HEAD
+  &__count {
+
+    background-color: #ffffff;
+    justify-self: center;
+    width: 70vw;
+    // height: minmax(10vw, min-content);
+
+    height: 70%;
+
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-column-gap: 2rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 90vw;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 80vw;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 90vw;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      // grid-template-columns: 1fr;
+      // grid-template-rows: repeat(2, min-content);
+      // width: 100%;
+    }
+  }
+
+=======
+>>>>>>> reconfigure
+>>>>>>> master
 }
