@@ -22,6 +22,7 @@ body {
   line-height: 1.6; }
 
 .container {
+  position: relative;
   display: grid;
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
   grid-template-rows: 100vh repeat(1, 1fr);
@@ -125,6 +126,14 @@ body {
     transform: rotate(0deg); }
   100% {
     transform: rotate(720deg); } }
+
+@keyframes eventAnime {
+  0% {
+    width: 0%; }
+  10% {
+    width: 10%; }
+  100% {
+    width: 100%; } }
 
 .header {
   grid-column: full-start/full-end;
@@ -305,33 +314,18 @@ body {
     grid-column: 5/span 1; }
 
 .events {
-  grid-column: full-start/full-end;
-  height: 100vh;
-  background-image: url("../images/background/2.png");
-  background-size: cover;
-  overflow: hidden;
+  grid-column: center-start/center-end;
   display: grid;
-  grid-template-rows: 20% 70% 10%;
-  grid-template-columns: 10% 80% 10%;
-  justify-items: center;
-  align-items: center; }
-  .events > * {
-    grid-column: 2/-2; }
+  grid-row-gap: 5rem; }
   .events__title {
-    grid-row: 1/span 1;
-    color: #000000; }
-  .events__days {
-    grid-row: 2/span 1;
+    color: #000000;
+    justify-self: center;
+    text-align: center; }
+  .events__items {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2rem;
-    padding: 0 2rem;
-    align-items: center; }
-  .events__items {
-    width: 100%;
-    height: 100%; }
+    grid-row-gap: 5rem; }
 
 .gallery {
   grid-column: full-start/full-end;
@@ -529,6 +523,23 @@ body {
     background-image: url("../images/pattern-4.png");
     background-repeat: no-repeat; }
 
+.top {
+  grid-template: min-content/min-content;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 50%;
+  border: none;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer; }
+  .top img {
+    width: 100%;
+    height: 100%; }
+
 .brand {
   display: grid;
   grid-template-columns: repeat(6, 10rem);
@@ -647,43 +658,132 @@ body {
     font-weight: 400; }
 
 .event {
-  width: 100%;
-  height: 20rem;
+  position: relative;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-image: linear-gradient(rgba(227, 227, 227, 0.1), rgba(227, 227, 227, 0.1));
+  color: rgba(0, 0, 0, 0.8);
+  padding: 4rem;
   display: grid;
-  grid-template-columns: 20% 10% 70%;
-  border-bottom: 1px dotted black;
-  align-items: center;
-  grid-column-gap: 2rem;
-  justify-items: center;
-  padding: 3rem;
-  transition: all .3s ease-in; }
-  .event__photo {
+  grid-template-columns: repeat(2, min-content) minmax(min-content, 80rem);
+  grid-column-gap: 10rem;
+  align-items: center; }
+  .event:hover .event__cover {
+    visibility: visible; }
+  .event:hover .event__cover {
+    animation: eventAnime .3s ease-in;
+    width: 100%; }
+    .event:hover .event__cover > * {
+      visibility: visible;
+      opacity: 1; }
+  .event:hover:before {
+    animation: eventAnime .5s ease;
+    visibility: visible; }
+  .event::before {
+    visibility: hidden;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: yellow;
+    background-color: rgba(3, 3, 3, 0.8);
+    border-radius: 1rem;
+    transition: all .2s ease; }
+  .event > * {
+    grid-row: 1/2; }
+  .event__photo {
     grid-column: 1/span 1;
-    grid-row: 1/2;
+    width: 40rem;
+    height: 20rem;
     object-fit: cover;
-    overflow: hidden; }
+    overflow: hidden;
+    border-radius: 1rem; }
   .event__img {
     width: 100%;
     height: 100%; }
   .event__time {
-    font-size: 2.5rem;
-    color: #000000; }
+    font-size: 2em;
+    grid-column: 2/3; }
   .event__details {
-    text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-column: -2/-1; }
+  .event__name {
+    line-height: 1; }
+  .event__cover {
+    visibility: hidden;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: 10;
+    height: 100%;
     width: 100%;
-    padding-right: 2rem; }
-    .event__details h1 {
-      color: #000000; }
-    .event__details h3 {
-      font-weight: 300; }
-  .event:hover {
-    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.82);
-    border-radius: 1rem;
-    border-color: #ffa116; }
+    font-size: 2rem;
+    color: #fff;
+    display: grid;
+    grid-template-columns: max-content repeat(2, min-content);
+    grid-template-rows: min-content;
+    grid-column-gap: 10rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center; }
+    .event__cover > * {
+      visibility: hidden;
+      opacity: 0;
+      transition: all .1s ease-in .4s; }
+    .event__cover svg {
+      line-height: 1;
+      width: 4.5rem;
+      fill: #fff; }
+    .event__cover a {
+      text-decoration: none; }
+    .event__cover p {
+      margin-left: -9.5rem; }
+  @media only screen and (max-width: 68.75em) {
+    .event {
+      grid-column-gap: 3rem;
+      padding: 2rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .event {
+      grid-template-columns: repeat(2, minmax(min-content, 1fr));
+      justify-items: center;
+      grid-row-gap: 5rem; }
+      .event__details {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+        justify-self: start; }
+      .event__time {
+        align-self: center;
+        font-size: 3rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .event {
+      grid-template-columns: min-content;
+      grid-template-rows: repeat(3, min-content);
+      justify-content: center;
+      grid-row-gap: 1rem; }
+      .event > * {
+        grid-column: 1/-1; }
+      .event__photo {
+        grid-row: 1/2; }
+      .event__time {
+        grid-row: 2/3;
+        display: flex; }
+      .event__details {
+        grid-row: 3/-1; }
+      .event__cover {
+        padding: 4rem;
+        grid-template-rows: min-content;
+        grid-template-columns: max-content;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        grid-row-gap: 2rem; }
+        .event__cover svg {
+          height: 4.5rem; }
+        .event__cover p {
+          margin-left: 0; } }
 
 .testimony {
   width: 40rem;

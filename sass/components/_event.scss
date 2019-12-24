@@ -1,51 +1,176 @@
 .event {
-  width: 100%;
-  height: 20rem;
+  position: relative;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-image: linear-gradient(rgba(227, 227, 227, 0.1), rgba(227, 227, 227, 0.1));
+  color: rgba(#000000, 0.8);
+  padding: 4rem;
 
   display: grid;
-  grid-template-columns: 20% 10% 70%;
-  border-bottom: 1px dotted black;
+  grid-template-columns: repeat(2, min-content) minmax(min-content, 80rem);
+  grid-column-gap: 10rem;
   align-items: center;
-  grid-column-gap: 2rem;
-  justify-items: center;
-  padding: 3rem;
-  transition: all .3s ease-in;
 
-  &__photo {
+  &:hover &__cover {
+    visibility: visible;
+  }
+  &:hover &__cover {
+    animation: eventAnime .3s ease-in;
     width: 100%;
-    height: 100%;
-    background-color: yellow;
-    grid-column: 1/span 1;
-    grid-row: 1/2;
-    object-fit: cover;
-    overflow: hidden;
+
+    & > * {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
+  &:hover:before {
+    animation: eventAnime .5s ease;
+    visibility: visible;
+  }
+
+  &::before {
+    visibility: hidden;
+
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#030303, 0.8);
+    border-radius: 1rem;
+    transition: all .2s ease ;
+  }
+  & > * {
+    grid-row: 1/2;
+  }
+  &__photo {
+    grid-column: 1/span 1;
+    width: 40rem;
+    height: 20rem;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 1rem;
+
+  }
   &__img {
     width: 100%;
     height: 100%;
   }
   &__time {
-    font-size: 2.5rem;
-    color: #000000;
+    font-size: 2em;
+    grid-column: 2/3;
   }
+
   &__details {
-    text-align: center;
-    font-size: 1.8rem;
-    width: 100%;
-    padding-right: 2rem;
+    font-size: 1.7rem;
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-column: -2/-1;
+  }
+  &__name {
+    line-height: 1;
+  }
+  &__cover {
 
-    & h1 {
-      color: #000000;
+    & > * {
+      visibility: hidden;
+      opacity: 0;
+
+      transition: all .1s ease-in .4s;
     }
-     & h3 {
-       font-weight: 300;
-     }
+    visibility: hidden;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+
+    // transition: all .2s ease-in;
+
+    display: grid;
+    grid-template-columns: max-content repeat(2, min-content);
+    grid-template-rows: min-content;
+    grid-column-gap: 10rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    & svg {
+      line-height: 1;
+      width: 4.5rem;
+      fill: #fff;
+    }
+    & a {
+      text-decoration: none;
+    }
+    & p {
+      margin-left: -9.5rem;
+    }
   }
 
-  &:hover {
-    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.82);
-    border-radius: 1rem;
-    border-color: #ffa116;
+  @media only screen and (max-width: 68.75em) {
+    grid-column-gap: 3rem;
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: repeat(2, minmax(min-content,1fr));
+    justify-items: center;
+    grid-row-gap: 5rem;
+
+    &__details {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+      justify-self: start;
+    }
+    &__time {
+      align-self: center;
+      font-size: 3rem;
+    }
+  }
+  @media only screen and (max-width: $bp-mobile) {
+    grid-template-columns: min-content;
+    grid-template-rows: repeat(3, min-content);
+    justify-content: center;
+    grid-row-gap: 1rem;
+    & > * {
+      // justify-self: start;
+      grid-column: 1/-1;
+    }
+
+    &__photo {
+      grid-row: 1/2;
+    }
+    &__time {
+      grid-row: 2/3;
+      display: flex;
+
+    }
+    &__details {
+      grid-row: 3/-1;
+    }
+    &__cover {
+
+      padding: 4rem;
+      grid-template-rows: min-content;
+      grid-template-columns: max-content;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      grid-row-gap: 2rem;
+
+      & svg {
+        height: 4.5rem;
+      }
+      & p {
+        margin-left: 0;
+      }
+    }
   }
 }

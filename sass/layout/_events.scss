@@ -1,41 +1,19 @@
 .events {
-  grid-column: full-start/full-end;
-  height: 100vh;
-  background-image: url('../images/background/2.png');
-  background-size: cover;
-  overflow: hidden;
+  grid-column: center-start/center-end;
 
   display: grid;
-  grid-template-rows: 20% 70% 10%;
-  grid-template-columns: 10% 80% 10%;
-  justify-items: center;
-  align-items: center;
-
-  & > * {
-    grid-column: 2/-2;
-  }
-
+  grid-row-gap: 5rem;
   &__title {
-    grid-row: 1/span 1;
     color: #000000;
+    justify-self: center;
+    text-align: center;
   }
-  &__days {
-    grid-row: 2/span 1;
+
+  &__items {
     width: 100%;
     height: 100%;
 
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 2rem;
-    padding: 0 2rem;
-    align-items: center;
+    grid-row-gap: 5rem;
   }
-  &__items {
-    width: 100%;
-    height: 100%;
-  }
-  &__btn {
-
-  }
-
 }
