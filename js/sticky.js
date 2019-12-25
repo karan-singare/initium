@@ -1,6 +1,6 @@
 $(document).ready(function() {
   ScrollOut({
-        targets: ".sticky-header",
+        targets: ".sticky",
         offset: 400
       });
   ScrollOut({
