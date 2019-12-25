@@ -24,6 +24,9 @@ body {
   body a:focus {
     outline: none; }
 
+.active {
+  border-bottom: 2px solid #ff006a; }
+
 .container {
   position: relative;
   display: grid;
@@ -282,7 +285,8 @@ body {
         grid-template-columns: repeat(7, minmax(min-content, 1fr)); } }
     .sticky__nav a {
       text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      transition: all .5s ease-in; }
     .sticky__nav .btn--login {
       display: none; }
     @media only screen and (max-width: 75em) {
@@ -298,8 +302,7 @@ body {
 .about {
   grid-column: center-start/center-end;
   text-align: center;
-  padding: 6rem;
-  background-color: red; }
+  padding: 6rem; }
   .about__heading {
     color: #000000; }
   .about__details {

@@ -65,6 +65,10 @@ body {
   // background-attachment: fixed;
 }
 
+.active {
+  border-bottom: 2px solid $pink;
+}
+
 .container {
   position: relative;
 
