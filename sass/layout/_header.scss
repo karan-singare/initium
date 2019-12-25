@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   grid-column: full-start/full-end;
 
   padding: 2rem;
@@ -95,8 +97,8 @@
     & h3 {
       text-transform: capitalize;
     }
-
   }
+
 }
 
 .header {
@@ -130,4 +132,15 @@
       // align-self: center;
     }
   }
+}
+
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+  z-index: 10;
 }

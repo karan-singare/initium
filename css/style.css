@@ -34,6 +34,15 @@ body {
     .container {
       grid-template-rows: 100vh; } }
 
+[data-scroll] {
+  transition: opacity 1s; }
+
+[data-scroll="in"] {
+  opacity: 1; }
+
+[data-scroll="out"] {
+  opacity: 0; }
+
 .mb-sm {
   margin-bottom: 2rem; }
 
@@ -139,6 +148,7 @@ body {
     width: 100%; } }
 
 .header {
+  position: relative;
   grid-column: full-start/full-end;
   padding: 2rem;
   background-image: linear-gradient(rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71)), url("../images/background1.jpg");
@@ -225,6 +235,15 @@ body {
       .header__main__btns {
         grid-row: 3/4;
         justify-self: center; } }
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  z-index: 10; }
 
 .about {
   grid-column: center-start/center-end;
