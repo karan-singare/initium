@@ -279,17 +279,21 @@ body {
     @media only screen and (max-width: 43.75em) {
       .sticky__nav {
         grid-column-gap: .4rem;
-        grid-template-columns: repeat(6, minmax(min-content, 1fr)); } }
+        grid-template-columns: repeat(7, minmax(min-content, 1fr)); } }
     .sticky__nav a {
       text-decoration: none;
       color: #fff; }
+    .sticky__nav .btn--login {
+      display: none; }
     @media only screen and (max-width: 75em) {
       .sticky__nav .btn {
         font-size: 1.5rem;
         padding: .6rem 1.2rem; } }
     @media only screen and (max-width: 43.75em) {
       .sticky__nav .btn {
-        display: none; } }
+        display: none; }
+        .sticky__nav .btn--login {
+          display: block; } }
 
 .about {
   grid-column: center-start/center-end;

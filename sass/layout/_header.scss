@@ -189,7 +189,7 @@
     }
     @media only screen and (max-width: $bp-mobile) {
       grid-column-gap: .4rem;
-      grid-template-columns: repeat(6, minmax(min-content, 1fr));
+      grid-template-columns: repeat(7, minmax(min-content, 1fr));
     }
     &  a {
       text-decoration: none;
@@ -197,12 +197,21 @@
     }
 
     & .btn {
+
+      &--login {
+        display: none;
+      }
+
       @media only screen and (max-width: $bp-largest) {
         font-size: 1.5rem;
         padding: .6rem 1.2rem;
       }
       @media only screen and (max-width: $bp-mobile) {
         display: none;
+
+        &--login {
+          display: block;
+        }
       }
     }
 
