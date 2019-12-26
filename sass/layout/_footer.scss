@@ -55,7 +55,8 @@
 }
 
 .footer {
-  @media only screen and (max-width: 100em) {
+  @media only screen and (max-width: 56.25em) {
+    
     grid-template: min-content/minmax(25rem, 1fr);
     font-size: 1.2rem;
     grid-row-gap: 5rem;

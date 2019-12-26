@@ -723,7 +723,7 @@ body {
     height: 4.5rem;
     fill: #fff; }
 
-@media only screen and (max-width: 100em) {
+@media only screen and (max-width: 56.25em) {
   .footer {
     grid-template: min-content/minmax(25rem, 1fr);
     font-size: 1.2rem;
