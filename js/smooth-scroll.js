@@ -19,7 +19,7 @@ $(document).ready(function() {
       console.log(sectionOffset);
 
 
-      if (sectionOffset <= scrollbarLocation) {
+      if ((sectionOffset-2) < scrollbarLocation) {
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
       }

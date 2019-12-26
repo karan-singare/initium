@@ -1,5 +1,7 @@
 .events {
-  grid-column: center-start/center-end;
+  grid-column: full-start/full-end;
+  justify-content: center;
+  justify-items: center;
 
   display: grid;
   grid-row-gap: 5rem;
@@ -10,10 +12,10 @@
   }
 
   &__items {
-    width: 100%;
-    height: 100%;
+    width: 80%;
 
     display: grid;
     grid-row-gap: 5rem;
+    justify-items: center;
   }
 }

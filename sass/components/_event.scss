@@ -7,6 +7,7 @@
   background-image: linear-gradient(rgba(227, 227, 227, 0.1), rgba(227, 227, 227, 0.1));
   color: rgba(#000000, 0.8);
   padding: 4rem;
+  width: 100%;
 
   display: grid;
   grid-template-columns: repeat(2, min-content) minmax(min-content, 80rem);
@@ -27,12 +28,13 @@
   }
 
   &:hover:before {
-    animation: eventAnime .5s ease;
     visibility: visible;
+    opacity: 1;
   }
 
   &::before {
     visibility: hidden;
+    opacity: 0;
 
     position: absolute;
     content: '';
@@ -42,7 +44,7 @@
     height: 100%;
     background-color: rgba(#030303, 0.8);
     border-radius: 1rem;
-    transition: all .2s ease ;
+    transition: all 1s ease-in-out;
   }
   & > * {
     grid-row: 1/2;
@@ -135,12 +137,10 @@
     }
   }
   @media only screen and (max-width: $bp-mobile) {
-    grid-template-columns: min-content;
     grid-template-rows: repeat(3, min-content);
     justify-content: center;
     grid-row-gap: 1rem;
     & > * {
-      // justify-self: start;
       grid-column: 1/-1;
     }
 
