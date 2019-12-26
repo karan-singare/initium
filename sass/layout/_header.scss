@@ -41,10 +41,12 @@
       & a {
         color: #fff;
         text-decoration: none;
+        cursor: pointer;
       }
       & li {
         border-bottom: 4px solid transparent;
         transition: all .5s;
+        cursor: pointer;
       }
       & li:hover {
         color: $orange;

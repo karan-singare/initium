@@ -177,10 +177,12 @@ body {
       justify-items: center; }
       .header__main__nav a {
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        cursor: pointer; }
       .header__main__nav li {
         border-bottom: 4px solid transparent;
-        transition: all .5s; }
+        transition: all .5s;
+        cursor: pointer; }
       .header__main__nav li:hover {
         color: #ffa116;
         border-bottom: 4px solid #ae1ec7; }
