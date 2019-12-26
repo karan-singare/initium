@@ -3,7 +3,6 @@
 
   position: relative;
   background-color: $blue;
-  padding: 6rem;
 
   display: grid;
   grid-template-rows: repeat(3, min-content);
@@ -20,7 +19,8 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    width: 60%;
+    grid-gap: 5rem;
+    width: 90%;
   }
   &__btn {
     grid-row: -2/-1;

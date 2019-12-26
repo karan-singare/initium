@@ -79,6 +79,9 @@ body {
   @media only screen and (max-width: $bp-mobile) {
     grid-template-rows: 100vh;
   }
+  & > * {
+    padding: 10rem;
+  }
 }
 
 [data-scroll] {
