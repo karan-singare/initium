@@ -25,6 +25,11 @@
       grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
       grid-gap: 5rem;
     }
+    @media only screen and (max-height: $android) {
+      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      grid-gap: 5rem;
+    }
   }
   &__item {
     width: 30rem;
@@ -36,6 +41,10 @@
     overflow: hidden;
 
     @media only screen and (max-width: $android) {
+      width: 15rem;
+      height: 7.5rem;
+    }
+    @media only screen and (max-height: $android) {
       width: 15rem;
       height: 7.5rem;
     }
@@ -67,6 +76,15 @@
       }
 
       @media only screen and (max-width: $android) {
+        font-size: 1.2rem;
+        padding: .5rem;
+        & svg {
+
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+      @media only screen and (max-height: $android) {
         font-size: 1.2rem;
         padding: .5rem;
         & svg {

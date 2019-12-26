@@ -178,7 +178,6 @@
 
 .event {
   @media only screen and (max-width: $android) {
-    // grid-template-columns: minmax(min-content, 30rem);
     grid-template-columns: min-content;
     grid-template-rows: repeat(3, min-content);
     padding: 0;
@@ -228,6 +227,28 @@
         opacity: 1;
       }
       visibility: visible;
+    }
+  }
+  @media only screen and (max-height: $android) {
+    // width: 100%;
+    // height: 100%;
+
+    &__photo {
+
+    }
+    &__img {
+
+    }
+    &__time {
+
+    }
+    &__details {
+
+
+    }
+    &__cover {
+      @include absCenter;
+      transform: translate(-50%,0%);
     }
   }
 }

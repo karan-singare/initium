@@ -55,6 +55,25 @@
 }
 
 .footer {
+  @media only screen and (max-width: 100em) {
+    grid-template: min-content/minmax(25rem, 1fr);
+    font-size: 1.2rem;
+    grid-row-gap: 5rem;
+    padding: 5rem;
+
+    &__item__heading {
+      display: none;
+    }
+
+    & ul {
+      display: flex;
+      padding-right: 1rem;
+
+      & li {
+        margin-right: 1rem;
+      }
+    }
+  }
   @media only screen and (max-width: $bp-mobile) {
     grid-template: min-content/minmax(25rem, 1fr);
     font-size: 1.2rem;

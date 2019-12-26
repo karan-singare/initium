@@ -15,19 +15,26 @@
   background-attachment: fixed;
 
   display: grid;
+  grid-template-rows: min-content;
 
   &__main {
     grid-row: 1/2;
 
     display: grid;
-    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    // grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-template-columns: repeat(3, minmax(max-content, 1fr));
     grid-column-gap: 10rem;
+    align-items: center;
 
     .header__brand {
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: $bp-huge) {
         justify-self: center;
         justify-content: center;
       }
+      // @media only screen and (max-width: $bp-large) {
+      //   justify-self: center;
+      //   justify-content: center;
+      // }
     }
 
     &__nav {
@@ -54,10 +61,10 @@
       }
 
       @media only screen and (max-width: $bp-huge) {
-        grid-row: 2/3;
-        grid-column: 1/-1;
-        justify-self: center;
-        justify-items: center;
+        // grid-row: 2/3;
+        // grid-column: 1/-1;
+        // justify-self: center;
+        // justify-items: center;
       }
     }
 
@@ -71,31 +78,41 @@
       grid-gap: 5rem;
 
       @media only screen and (max-width: $bp-huge) {
-        grid-row: 1/2;
-        grid-column: -2/-1;
-        align-self: center;
+        // grid-row: 1/2;
+        // grid-column: -2/-1;
+        // align-self: center;
       }
-      @media only screen and (max-width: $bp-large) {
+      @media only screen and (max-width: $bp-huge) {
         grid-row: 3/-1;
         justify-self: center;
       }
+      // @media only screen and (max-width: $bp-large) {
+      //   grid-row: 3/-1;
+      //   justify-self: center;
+      // }
     }
 
 
     @media only screen and (max-width: $bp-huge) {
-      grid-template-rows: repeat(2, min-content);
+      // grid-template-rows: repeat(2, min-content);
     }
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-huge) {
       grid-template-rows: repeat(3, min-content);
       grid-template-columns: 1fr;
       grid-row-gap: 2rem;
     }
+    // @media only screen and (max-width: $bp-large) {
+    //   grid-template-rows: repeat(3, min-content);
+    //   grid-template-columns: 1fr;
+    //   grid-row-gap: 2rem;
+    // }
 
   }
 
   &__details {
     grid-row: 2/3;
     justify-self: center;
+    align-self: center;
 
     & h3 {
       text-transform: capitalize;
@@ -106,84 +123,36 @@
 
 .header {
   @media only screen and (max-width: $bp-mobile) {
-    grid-template-rows: min-content;
-    grid-row-gap: 10rem;
-    grid-column: 1/-1;
-
-    &__main {
-      padding: 0;
-      grid-template-rows: min-content;
-      justify-items: start;
-      .header__brand {
-        grid-row: 1/2;
-        justify-self: center;
-      }
-      &__nav {
-        grid-row: 2/3;
-        justify-items: stretch;
-        grid-column-gap: 1rem;
-
-        font-size: 1.4rem;
-      }
-      &__btns {
-        grid-row: 3/4;
-        justify-self: center;
-      }
-    }
-
-    &__details {
-      // align-self: center;
-    }
+    // grid-template-rows: min-content;
+    // grid-row-gap: 10rem;
+    // grid-column: 1/-1;
+    //
+    // &__main {
+    //   padding: 0;
+    //   grid-template-rows: min-content;
+    //   justify-items: start;
+    //   .header__brand {
+    //     grid-row: 1/2;
+    //     justify-self: center;
+    //   }
+    //   &__nav {
+    //     grid-row: 2/3;
+    //     justify-items: stretch;
+    //     grid-column-gap: 1rem;
+    //
+    //     font-size: 1.4rem;
+    //   }
+    //   &__btns {
+    //     grid-row: 3/4;
+    //     justify-self: center;
+    //   }
+    // }
+    //
+    // &__details {
+    //   // align-self: center;
+    // }
   }
 
-
-  @media only screen and (max-height: $bp-small) {
-    grid-template-rows: min-content;
-    grid-row-gap: 5rem;
-    grid-column: 1/-1;
-
-    & .btn {
-      font-size: 1.5rem;
-      padding: .6rem 1.2rem;
-    }
-
-    &__main {
-      padding: 0;
-      grid-template-rows: min-content;
-      justify-items: start;
-      grid-row-gap: 1rem;
-      .header__brand {
-        grid-row: 1/2;
-        justify-self: center;
-
-        .brand__logo {
-          width: 20rem;
-          height: 8rem;
-        }
-
-        & img {
-
-        }
-      }
-      &__nav {
-        grid-row: 2/3;
-        justify-items: stretch;
-        grid-column-gap: 1rem;
-
-        font-size: 1.4rem;
-      }
-      &__btns {
-        grid-row: 3/4;
-        justify-self: center;
-      }
-    }
-
-    &__details {
-      & .heading__primary {
-        font-size: 4rem;
-      }
-    }
-  }
 }
 
 
@@ -232,15 +201,18 @@
     @media only screen and (max-width: $bp-largest) {
       grid-column-gap: 2rem;
     }
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-huge) {
       grid-column-gap: 1rem;
     }
+    // @media only screen and (max-width: $bp-large) {
+    //   grid-column-gap: 1rem;
+    // }
     @media only screen and (max-width: $bp-medium) {
       justify-self: stretch;
     }
     @media only screen and (max-width: $bp-mobile) {
-      grid-column-gap: .4rem;
-      grid-template-columns: repeat(7, minmax(min-content, 1fr));
+      // grid-column-gap: .4rem;
+      // grid-template-columns: repeat(7, minmax(min-content, 1fr));
     }
     &  a {
       text-decoration: none;

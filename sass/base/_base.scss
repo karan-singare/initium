@@ -23,7 +23,8 @@ $bp-mobile: 43.75em; //700px
 $bp-small: 37.5em; //600px
 
 $bp-smallest: 34.375em; //500px
-$android: 25em; //500px
+$android: 43.75em; //500px
+// $android: 25em; //500px
 
 
 *,
@@ -86,6 +87,11 @@ body {
   & > * {
     padding: 10rem;
     @media only screen and (max-width: $android) {
+      padding: 5rem;
+    }
+  }
+  & > * {
+    @media only screen and (max-height: $android) {
       padding: 5rem;
     }
   }
