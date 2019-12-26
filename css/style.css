@@ -756,7 +756,6 @@ body {
         margin-right: 1rem; } }
 
 .top {
-  grid-template: min-content/min-content;
   position: fixed;
   bottom: 1rem;
   right: 1rem;

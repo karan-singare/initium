@@ -1,5 +1,4 @@
 .top {
-  grid-template: min-content/min-content;
 
   position: fixed;
   bottom: 1rem;
@@ -7,6 +6,7 @@
   width: 5rem;
   height: 5rem;
   background-color: rgba(0, 0, 0, 0.02);
+  // background-color: red;
   border-radius: 50%;
   border: none;
   object-fit: cover;
