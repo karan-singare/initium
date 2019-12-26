@@ -23,6 +23,7 @@ $bp-mobile: 43.75em; //700px
 $bp-small: 37.5em; //600px
 
 $bp-smallest: 34.375em; //500px
+$android: 25em; //500px
 
 
 *,
@@ -42,6 +43,9 @@ html {
   }
   @media only screen and (max-width: $bp-small) {
     font-size: 45%;
+  }
+  @media only screen and (max-width: $android) {
+    font-size: 40%;
   }
 }
 body {
@@ -81,6 +85,9 @@ body {
   }
   & > * {
     padding: 10rem;
+    @media only screen and (max-width: $android) {
+      padding: 5rem;
+    }
   }
 }
 

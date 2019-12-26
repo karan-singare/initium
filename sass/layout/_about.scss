@@ -1,6 +1,6 @@
 .about {
   grid-column: full-start/full-end;
-  
+
   text-align: center;
   display: grid;
 
@@ -20,9 +20,13 @@
     hyphens: auto;
 
     @media only screen and (max-width: $bp-mobile) {
-      padding: 1.5rem;
+      padding: 4rem;
       width: 100%;
       text-align: left;
+    }
+
+    @media only screen and (max-width: $android) {
+      width: 100%;
     }
   }
 

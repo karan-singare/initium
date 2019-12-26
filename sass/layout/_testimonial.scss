@@ -1,10 +1,6 @@
 .testimonials {
   grid-column: center-start/center-end;
 
-  display: grid;
-  grid-template-rows: min-content;
-  grid-gap: 10rem;
-
   &__heading {
     grid-column: 1/-1;
     text-align: center;

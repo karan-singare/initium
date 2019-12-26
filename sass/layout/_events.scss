@@ -4,7 +4,7 @@
   justify-items: center;
 
   display: grid;
-  grid-row-gap: 5rem;
+
   &__title {
     color: #000000;
     justify-self: center;
@@ -17,5 +17,9 @@
     display: grid;
     grid-row-gap: 5rem;
     justify-items: center;
+
+    @media only screen and (max-width: $android) {
+      width: 100%;
+    }
   }
 }
