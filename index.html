@@ -9,6 +9,78 @@
   <link rel="icon" href="images/logo1.png">
 </head>
 <body>
+
+  <div class="card">
+    <div class="card__header">
+      <h3 class="card__heading heading__tertiary">Login</h3>
+      <svg class="card__logo">
+        <use xlink:href="images/sprite.svg#icon-lock"></use>
+      </svg>
+    </div>
+    <div class="card__body">
+      <div class="card__input">
+        <input type="text" name="username" value="" placeholder="Enter Username/Email">
+        <svg class="card__input icon icon--success">
+          <use xlink:href="images/sprite.svg#icon-check-circle"></use>
+        </svg>
+        <div class="error">This email alreay exists</div>
+      </div>
+      <div class="card__input">
+        <input type="password" name="password" value="" placeholder="Enter Password">
+        <svg class="card__input icon icon--success">
+          <use xlink:href="images/sprite.svg#icon-loader"></use>
+        </svg>
+        <div class="error">This email alreay exists</div>
+      </div>
+      <button type="submit" name="submit" class="btn btn--violet">Login</button>
+      <a href="#">Don't have an account?</a>
+    </div>
+  </div>
+
+
+  <div class="card" style="display: none;">
+    <div class="card__header">
+      <h3 class="card__heading heading__tertiary">Signup</h3>
+      <svg class="card__logo">
+        <use xlink:href="images/sprite.svg#icon-user-plus"></use>
+      </svg>
+    </div>
+    <div class="card__body">
+      <div class="card__input">
+        <input type="text" name="username" value="" placeholder="Enter Username">
+        <svg class="card__input icon icon--success">
+          <use xlink:href="images/sprite.svg#icon-check-circle"></use>
+        </svg>
+        <div class="error">This email alreay exists</div>
+      </div>
+      <div class="card__input">
+        <input type="email" name="email" value="" placeholder="Enter Email">
+        <svg class="card__input icon icon--success">
+          <use xlink:href="images/sprite.svg#icon-check-circle"></use>
+        </svg>
+        <div class="error">This email alreay exists</div>
+      </div>
+      <div class="card__input">
+        <input type="password" name="password" value="" placeholder="Enter Password">
+        <svg class="card__input icon icon--success">
+          <use xlink:href="images/sprite.svg#icon-loader"></use>
+        </svg>
+        <div class="error">This email alreay exists</div>
+      </div>
+      <div class="card__input">
+        <input type="password" name="confirm" value="" placeholder="Confirm Password">
+        <svg class="card__input icon icon--danger">
+          <!-- <use xlink:href="images/sprite.svg#icon-check-circle"></use> -->
+          <use xlink:href="images/sprite.svg#icon-notification"></use>
+        </svg>
+        <div class="error">This email alreay exists</div>
+      </div>
+      <button type="submit" name="submit" class="btn btn--violet">Signup</button>
+      <a href="#">Already have an account?</a>
+    </div>
+  </div>
+
+
   <div class="sticky">
     <img src="images/logo1.png" class="sticky__img">
     <ul class="sticky__nav nav">
@@ -23,7 +95,6 @@
         <a href="#login" class="btn btn--pink btn--2 btn--login"><li>Login</li></a>
     </ul>
   </div>
-
 
   <a href="#top" class="top scroll"><img src="images/circle-up.png" alt=""></a>
   <div class="container" id="top">

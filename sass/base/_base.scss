@@ -63,6 +63,8 @@ html {
   }
 }
 body {
+  position: relative;
+
   font-family: $font-primary;
   color: $color-grey-dark-2;
   font-weight: 300;
@@ -88,6 +90,7 @@ body {
 }
 
 .container {
+  // display: none !important;
   position: relative;
 
   display: grid;
