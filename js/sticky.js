@@ -7,4 +7,5 @@ $(document).ready(function() {
         targets: ".top",
         offset: 400
       });
+
 });

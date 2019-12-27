@@ -1,6 +1,5 @@
 $(document).ready(function() {
   var scrollLink = $(".scroll");
-
   //Smooth scrolling
   scrollLink.click(function(e) {
     e.preventDefault();
@@ -16,8 +15,6 @@ $(document).ready(function() {
 
     scrollLink.each(function() {
       var sectionOffset = $(this.hash).offset().top;
-      console.log(sectionOffset);
-
 
       if ((sectionOffset-2) < scrollbarLocation) {
         $(this).addClass("active");
