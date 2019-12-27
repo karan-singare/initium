@@ -19,7 +19,7 @@ html {
       font-size: 40%; } }
 
 body {
-  font-family: "Arimo", sans-serif;
+  font-family: "BioRhyme", serif;
   color: #6D5D4B;
   font-weight: 300;
   line-height: 1.6; }
@@ -80,7 +80,8 @@ body {
   border-radius: .5rem;
   border: none;
   box-shadow: 0px 1rem 3rem rgba(51, 54, 44, 0.8);
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "BioRhyme", serif; }
   .btn--pink {
     background-color: #ff006a;
     color: #fff;
@@ -165,11 +166,11 @@ body {
   position: relative;
   grid-column: full-start/full-end;
   padding: 2rem;
-  background-image: linear-gradient(rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71), rgba(12, 10, 87, 0.71)), url("../images/background1.jpg");
+  background-image: linear-gradient(68.1deg, rgba(255, 200, 69, 0.71) -0.3%, rgba(239, 69, 115, 0.71) 100.2%), url("../images/background/background.jpg");
   background-size: cover;
   background-position: center;
-  color: #fff;
   background-attachment: fixed;
+  color: #fff;
   display: grid;
   grid-template-rows: min-content; }
   .header__main {
@@ -204,7 +205,8 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: start;
-      grid-gap: 5rem; }
+      grid-gap: 5rem;
+      font-family: "BioRhyme", serif; }
       @media only screen and (max-width: 87.5em) {
         .header__main__btns {
           grid-row: 3/-1;
@@ -278,6 +280,12 @@ body {
 
 .about {
   grid-column: full-start/full-end;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #fff6ec 39.5%, rgba(100, 46, 122, 0.23) 100.2%), url("../images/background/background4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  object-fit: cover;
   text-align: center;
   display: grid; }
   .about__heading {
@@ -346,7 +354,8 @@ body {
   background-color: #131144;
   text-align: center;
   display: grid;
-  justify-items: center; }
+  justify-items: center;
+  background-image: linear-gradient(68.1deg, rgba(255, 200, 69, 0.8) -0.3%, rgba(239, 69, 115, 0.8) 100.2%); }
   .team__heading {
     grid-row: 1/span 1;
     text-align: center;
@@ -428,6 +437,11 @@ body {
   grid-column: full-start/full-end;
   justify-content: center;
   justify-items: center;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #fff6ec 39.5%, rgba(100, 46, 122, 0.23) 100.2%), url("../images/background/background5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: grid; }
   .events__title {
     color: #000000;
@@ -542,9 +556,10 @@ body {
 
 .sponsor {
   grid-column: full-start/full-end;
-  background-image: url("../images/background/3.png");
-  background-color: #110e3e;
+  background-image: linear-gradient(68.1deg, rgba(255, 200, 69, 0.71) -0.3%, rgba(239, 69, 115, 0.71) 100.2%);
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   display: grid;
   justify-content: stretch; }
@@ -696,11 +711,11 @@ body {
 
 .footer {
   grid-column: full-start/full-end;
-  background-color: #131144;
   color: #fff;
   font-size: 300;
   margin-top: -10rem;
   position: relative;
+  background-image: linear-gradient(68.1deg, #ffc845 -0.3%, #ef4573 100.2%);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   justify-content: center;

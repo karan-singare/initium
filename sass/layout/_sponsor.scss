@@ -1,9 +1,12 @@
 .sponsor {
   grid-column: full-start/full-end;
 
-  background-image: url('../images/background/3.png');
-  background-color: #110e3e;
+  background-image: linear-gradient( 68.1deg,  rgba(255,200,69,.71) -0.3%, rgba(239,69,115,.71) 100.2% );
+
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  // background-color: #110e3e;
   background-repeat: no-repeat;
 
   display: grid;

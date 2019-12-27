@@ -1,6 +1,17 @@
 .about {
   grid-column: full-start/full-end;
 
+  // background-image: linear-gradient(rgba(rgba(60, 95, 182, 0.64),),
+  //                   rgba(60, 95, 182, 0.64)),
+  //                   url('../images/background/background4.jpg');
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,246,236,1) 39.5%, rgba(100,46,122,0.23) 100.2% ),
+    url('../images/background/background4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  object-fit: cover;
+
   text-align: center;
   display: grid;
 

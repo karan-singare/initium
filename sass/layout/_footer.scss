@@ -1,11 +1,13 @@
 .footer {
   grid-column: full-start/full-end;
-  background-color: #131144;
+  // background-color: #131144;
   color: #fff;
   font-size: 300;
   margin-top: -10rem;
 
   position: relative;
+  background-image: linear-gradient( 68.1deg,  rgba(255,200,69,1) -0.3%, rgba(239,69,115,1) 100.2% );
+
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -56,7 +58,7 @@
 
 .footer {
   @media only screen and (max-width: 56.25em) {
-    
+
     grid-template: min-content/minmax(25rem, 1fr);
     font-size: 1.2rem;
     grid-row-gap: 5rem;
