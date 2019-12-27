@@ -1,6 +1,5 @@
 .card {
-  // opacity: 0;
-  // visibility: hidden;
+  visibility: hidden;
 
   position: fixed;
   bottom: 4vh;
@@ -39,14 +38,27 @@
     font-size: 4rem;
   }
 
+  &__close {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    right: -1rem;
+    top: -1rem;
+  }
+
   &__input {
     display: grid;
     grid-template-columns: repeat(2, min-content);
     align-items: center;
+    border: 1.5px solid transparent;
     // padding: 1rem;
 
     & .icon {
       margin-left: -3rem;
+    }
+
+    & svg {
+      fill: transparent;
     }
   }
 
@@ -79,8 +91,24 @@
     & a {
       color: rgba(67, 8, 152, 0.92);
       text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
     }
   }
+
+
+  // &::after {
+  //   content: ' \00D7';
+  //
+  //   position: absolute;
+  //   top: -6rem;
+  //   right: 0rem;
+  //   font-size: 8rem;
+  //   color: rgba(#e21919, 0.81);
+  //   cursor: pointer;
+  // }
+
 }
 
 .icon {
@@ -96,5 +124,23 @@
 }
 
 .error {
-  color: rgba(#e21919, 1);
+  color: rgba(#e21919, 1) !important;
+  font-size: 1.2rem;
+}
+.info {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.border-red {
+  border-color: rgba(#e21919, 1) !important;
+}
+
+.red-fill {
+  fill: rgba(#e21919, 0.81) !important;
+  animation: shake .6s !important;
+}
+.green-fill {
+  fill: rgba(#0cd76a, 0.9) !important;
+  animation: fadeIn 1s !important;
 }

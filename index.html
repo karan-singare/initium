@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <div class="card">
+  <div class="card card--login">
     <div class="card__header">
       <h3 class="card__heading heading__tertiary">Login</h3>
       <svg class="card__logo">
@@ -35,10 +35,13 @@
       <button type="submit" name="submit" class="btn btn--violet">Login</button>
       <a href="#">Don't have an account?</a>
     </div>
+    <svg class="icon--danger card__close">
+      <use xlink:href="images/sprite.svg#icon-clear"></use>
+    </svg>
   </div>
 
 
-  <div class="card" style="display: none;">
+  <div class="card card--signup">
     <div class="card__header">
       <h3 class="card__heading heading__tertiary">Signup</h3>
       <svg class="card__logo">
@@ -46,26 +49,26 @@
       </svg>
     </div>
     <div class="card__body">
-      <div class="card__input">
+      <div class="card__input" id="username">
         <input type="text" name="username" value="" placeholder="Enter Username">
         <svg class="card__input icon icon--success">
           <use xlink:href="images/sprite.svg#icon-check-circle"></use>
         </svg>
-        <div class="error">This email alreay exists</div>
+        <div class="username-error info">Alphabates, dashes and hyphens only</div>
       </div>
       <div class="card__input">
         <input type="email" name="email" value="" placeholder="Enter Email">
         <svg class="card__input icon icon--success">
           <use xlink:href="images/sprite.svg#icon-check-circle"></use>
         </svg>
-        <div class="error">This email alreay exists</div>
+        <div class="email-error info"></div>
       </div>
       <div class="card__input">
         <input type="password" name="password" value="" placeholder="Enter Password">
         <svg class="card__input icon icon--success">
           <use xlink:href="images/sprite.svg#icon-loader"></use>
         </svg>
-        <div class="error">This email alreay exists</div>
+        <div class="password-error info"></div>
       </div>
       <div class="card__input">
         <input type="password" name="confirm" value="" placeholder="Confirm Password">
@@ -73,11 +76,14 @@
           <!-- <use xlink:href="images/sprite.svg#icon-check-circle"></use> -->
           <use xlink:href="images/sprite.svg#icon-notification"></use>
         </svg>
-        <div class="error">This email alreay exists</div>
+        <div class="confirm-error info"></div>
       </div>
       <button type="submit" name="submit" class="btn btn--violet">Signup</button>
       <a href="#">Already have an account?</a>
     </div>
+    <svg class="icon--danger card__close">
+      <use xlink:href="images/sprite.svg#icon-clear"></use>
+    </svg>
   </div>
 
 
@@ -125,7 +131,7 @@
           Initium 6.0 Mining TechFest IIEST 2019
         </h1>
         <h3 class="heading__tertiary mb-md">
-          Janurary 20-23, IIEST, botanical gardens, shibpur howrah
+          Janurary 20-23, IIEST, Shibpur, botanical gardens,  howrah
         </h3>
         <button class="header__btn btn btn--violet login mb-sm">Register for events</button>
       </div>
@@ -589,12 +595,13 @@
 
 
   <script src="js/jquery.js"></script>
-  <script src="js/gsap.min.js"></script>
+  <!-- <script src="js/gsap.min.js"></script> -->
   <script src="js/scroll-out.min.js"></script>
-  <script src="js/animation.js" charset="utf-8"></script> -->
+  <!-- <script src="js/animation.js" charset="utf-8"></script> -->
   <script src="js/sticky.js" charset="utf-8"></script>
-  <script src="js/parallax.js" charset="utf-8"></script>
-  <script src="js/smooth-scroll.js" charset="utf-8"></script>
+  <!-- <script src="js/parallax.js" charset="utf-8"></script> -->
+  <!-- <script src="js/smooth-scroll.js" charset="utf-8"></script> -->
+  <script src="js/signup.js" charset="utf-8"></script>
 
 
 </body>

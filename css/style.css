@@ -3611,6 +3611,7 @@ body {
     animation-iteration-count: 1 !important; } }
 
 .card {
+  visibility: hidden;
   position: fixed;
   bottom: 4vh;
   right: 2vw;
@@ -3638,12 +3639,21 @@ body {
     letter-spacing: 1rem;
     text-transform: uppercase;
     font-size: 4rem; }
+  .card__close {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    right: -1rem;
+    top: -1rem; }
   .card__input {
     display: grid;
     grid-template-columns: repeat(2, min-content);
-    align-items: center; }
+    align-items: center;
+    border: 1.5px solid transparent; }
     .card__input .icon {
       margin-left: -3rem; }
+    .card__input svg {
+      fill: transparent; }
   .card__body {
     display: grid;
     grid-template-rows: min-content;
@@ -3667,6 +3677,8 @@ body {
     .card__body a {
       color: rgba(67, 8, 152, 0.92);
       text-decoration: none; }
+      .card__body a:hover {
+        color: #fff; }
 
 .icon {
   width: 3rem;
@@ -3677,4 +3689,20 @@ body {
     fill: rgba(226, 25, 25, 0.81); }
 
 .error {
-  color: #e21919; }
+  color: #e21919 !important;
+  font-size: 1.2rem; }
+
+.info {
+  color: #000;
+  font-size: 1.2rem; }
+
+.border-red {
+  border-color: #e21919 !important; }
+
+.red-fill {
+  fill: rgba(226, 25, 25, 0.81) !important;
+  animation: shake .6s !important; }
+
+.green-fill {
+  fill: rgba(12, 215, 106, 0.9) !important;
+  animation: fadeIn 1s !important; }
