@@ -1,8 +1,8 @@
 $(document).ready(function() {
   /* Animation for header */
 
-  gsap.from('.nav__links', {opacity: 0, duration: 1.2, x: -50, stagger: .2, delay: 2});
-  gsap.from('.header__btn', {opacity: 0, duration: .4, x: -50, stagger: .2, delay: 3});
+  gsap.from('.nav__links', {opacity: 0, duration: 1.2, x: -50, stagger: .2, delay: 1});
+  gsap.from('.header__btn', {opacity: 0, duration: .4, x: -50, stagger: .2, delay: 2});
   $('.brand__logo').css({"animation" : "rollIn 1s ease-in"});
 
 

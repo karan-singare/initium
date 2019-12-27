@@ -11,10 +11,20 @@ $color-grey-dark-1: #54483A;
 $color-grey-dark-2: #6D5D4B;
 
 // FONT VARIABLES
-$font-primary: 'Arimo', sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
-$font-primary: 'BioRhyme', serif;
-$font-display: 'BioRhyme', serif;
+@import url('https://fonts.googleapis.com/css?family=Corben:400,700|Katibeh&display=swap');
+// <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i&display=swap" rel="stylesheet">
+// <link href="https://fonts.googleapis.com/css?family=BioRhyme:300,400,700,800&display=swap" rel="stylesheet">
+
+// $font-primary: 'Arimo', sans-serif;
+// $font-display: 'Josefin Sans', sans-serif;
+// $font-primary: 'BioRhyme', serif;
+// $font-display: 'BioRhyme', serif;
+
+$font-display: 'Corben', cursive;
+$font-primary: 'Corben', cursive;
+
+
+
 
 //RESPONSIVE BREAKPOINTS
 $bp-huge: 87.5em;
@@ -40,6 +50,7 @@ $android: 43.75em; //500px
 html {
   box-sizing: border-box;
   font-size: 62.5%; //10px/16px = 62.5% => 1rem = 10px;
+  letter-spacing: .1rem;
 
   @media only screen and (max-width: $bp-largest) {
     font-size: 50%;

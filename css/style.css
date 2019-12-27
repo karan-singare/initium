@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Corben:400,700|Katibeh&display=swap");
 *,
 *::before,
 *::after {
@@ -7,7 +8,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  letter-spacing: .1rem; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
@@ -19,7 +21,7 @@ html {
       font-size: 40%; } }
 
 body {
-  font-family: "BioRhyme", serif;
+  font-family: "Corben", cursive;
   color: #6D5D4B;
   font-weight: 300;
   line-height: 1.6; }
@@ -81,9 +83,10 @@ body {
   border: none;
   box-shadow: 0px 1rem 3rem rgba(51, 54, 44, 0.8);
   text-transform: uppercase;
-  font-family: "BioRhyme", serif; }
+  font-family: "Corben", cursive; }
   .btn--pink {
     background-color: #ff006a;
+    background-color: #ef4573;
     color: #fff;
     transition: all .1s;
     border: 2px solid transparent; }
@@ -93,6 +96,7 @@ body {
       color: #ff006a; }
   .btn--violet {
     background-color: #ae1ec7;
+    background-color: #ffc845;
     color: #fff;
     transition: all .1s;
     border: 2px solid transparent; }
@@ -101,6 +105,7 @@ body {
       border: 2px solid #ffa116; }
   .btn--yellow {
     background-color: #ffa116;
+    background-color: #ffc845;
     color: #fff;
     transition: all .1s;
     border: 2px solid transparent;
@@ -206,7 +211,7 @@ body {
       grid-template-columns: 1fr 1fr;
       align-items: start;
       grid-gap: 5rem;
-      font-family: "BioRhyme", serif; }
+      font-family: "Corben", cursive; }
       @media only screen and (max-width: 87.5em) {
         .header__main__btns {
           grid-row: 3/-1;
@@ -280,7 +285,7 @@ body {
 
 .about {
   grid-column: full-start/full-end;
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, #fff6ec 39.5%, rgba(100, 46, 122, 0.23) 100.2%), url("../images/background/background4.jpg");
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #fff6ec 39.5%, rgba(100, 46, 122, 0.23) 100.2%);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -355,7 +360,7 @@ body {
   text-align: center;
   display: grid;
   justify-items: center;
-  background-image: linear-gradient(68.1deg, rgba(255, 200, 69, 0.8) -0.3%, rgba(239, 69, 115, 0.8) 100.2%); }
+  background-image: linear-gradient(68.1deg, #ffc845 -0.3%, #ef4573 100.2%); }
   .team__heading {
     grid-row: 1/span 1;
     text-align: center;
@@ -437,7 +442,7 @@ body {
   grid-column: full-start/full-end;
   justify-content: center;
   justify-items: center;
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, #fff6ec 39.5%, rgba(100, 46, 122, 0.23) 100.2%), url("../images/background/background5.jpg");
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #fff6ec 39.5%, rgba(100, 46, 122, 0.23) 100.2%);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -461,6 +466,7 @@ body {
 
 .gallery {
   grid-column: full-start/full-end;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #fff6ec 39.5%, rgba(100, 46, 122, 0.23) 100.2%);
   display: grid;
   grid-template-rows: repeat(3, min-content);
   grid-row-gap: 5rem;
@@ -522,7 +528,8 @@ body {
     animation-delay: .7s; }
 
 .testimonials {
-  grid-column: center-start/center-end; }
+  grid-column: full-start/full-end;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #fff6ec 39.5%, rgba(100, 46, 122, 0.23) 100.2%); }
   .testimonials__heading {
     grid-column: 1/-1;
     text-align: center;
@@ -556,7 +563,7 @@ body {
 
 .sponsor {
   grid-column: full-start/full-end;
-  background-image: linear-gradient(68.1deg, rgba(255, 200, 69, 0.71) -0.3%, rgba(239, 69, 115, 0.71) 100.2%);
+  background-image: linear-gradient(68.1deg, #ffc845 -0.3%, #ef4573 100.2%);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -835,6 +842,7 @@ body {
   border-right: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   background-image: linear-gradient(rgba(227, 227, 227, 0.1), rgba(227, 227, 227, 0.1));
+  background-image: linear-gradient(68.1deg, #ffc845 -0.3%, #ef4573 100.2%);
   color: rgba(0, 0, 0, 0.8);
   padding: 4rem;
   width: 100%;
