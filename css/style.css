@@ -226,6 +226,9 @@ body {
       .header__main__nav li:hover {
         color: #ffa116;
         border-bottom: 4px solid #ae1ec7; }
+      @media only screen and (max-width: 34.375em) {
+        .header__main__nav {
+          font-size: 1.4rem; } }
     .header__main__btns {
       justify-self: end;
       display: grid;

@@ -67,6 +67,9 @@
         // justify-self: center;
         // justify-items: center;
       }
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.4rem;
+      }
     }
 
     &__btns {
