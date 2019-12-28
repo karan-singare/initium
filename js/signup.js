@@ -283,18 +283,51 @@ $(document).ready(function(){
 $(document).ready(function() {
 
   $('.header__main__btns .register').click(function() {
-    $('.card--signup').css({
-      "visibility" : "visible",
-      "animation" : "slideInRight .3s ease-in-out"
-    });
+		let visibility =  $('.card--login').css("visibility");
+		if (visibility == "hidden") {
+			$('.card--signup').css({
+			  "visibility" : "visible",
+			  "animation" : "slideInRight .3s ease-in-out"
+			});
+		} else {
+			$('.card--login').css({"animation" : "slideOutDown .3s ease-in-out"});
+
+			setTimeout(function(){
+	      $('.card--login').css({ "visibility" : "hidden"});
+	      $('.card--signup').css({
+	        "animation" : "slideInRight .3s ease-in-out",
+	        "visibility" : "visible"
+	      });
+	    }, 500);
+		}
   });
 
-	$('.header__main__btns .login').click(function() {
-    $('.card--login').css({
-      "visibility" : "visible",
-      "animation" : "slideInRight .3s ease-in-out"
-    });
+  $('.header__main__btns .login').click(function() {
+		let visibility =  $('.card--signup').css("visibility");
+		if (visibility == "hidden") {
+			$('.card--login').css({
+			  "visibility" : "visible",
+			  "animation" : "slideInRight .3s ease-in-out"
+			});
+		} else {
+			$('.card--signup').css({"animation" : "slideOutDown .3s ease-in-out"});
+
+			setTimeout(function(){
+	      $('.card--signup').css({ "visibility" : "hidden"});
+	      $('.card--login').css({
+	        "animation" : "slideInRight .3s ease-in-out",
+	        "visibility" : "visible"
+	      });
+	    }, 500);
+		}
   });
+
+	// $('.header__main__btns .login').click(function() {
+  //   $('.card--login').css({
+  //     "visibility" : "visible",
+  //     "animation" : "slideInRight .3s ease-in-out"
+  //   });
+  // });
 	/* evnets for stickey header buttons*/
   $('.sticky .btn--1').click(function() {
     $('.card--signup').css({
@@ -319,7 +352,7 @@ $(document).ready(function() {
         "animation" : "slideInRight .3s ease-in-out",
         "visibility" : "visible"
       });
-    }, 300);
+    }, 500);
   });
 
 
@@ -332,14 +365,14 @@ $(document).ready(function() {
         "animation" : "slideInRight .3s ease-in-out",
         "visibility" : "visible"
       });
-    }, 300);
+    }, 500);
   });
 
   $('.card__close').click(function() {
     $('.card').css({"animation" : "slideOutUp .3s ease-in-out"});
     setTimeout(function(){
       $('.card').css({ "visibility" : "hidden"});
-    }, 300);
+    }, 500);
   });
 
 });
