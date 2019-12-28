@@ -212,7 +212,13 @@
       justify-items: center;
 
       @media only screen and (max-width: $bp-smallest) {
-      
+        & .btn {
+          padding: .3rem .6rem;
+        }
+        & svg {
+          height: 2.5rem;
+          width: 2.5rem;
+        }
       }
     }
   }
