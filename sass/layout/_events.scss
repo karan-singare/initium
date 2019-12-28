@@ -12,15 +12,15 @@
   background-repeat: no-repeat;
 
   display: grid;
-
   &__title {
+
     color: #000000;
     justify-self: center;
     text-align: center;
   }
 
   &__items {
-    width: 80%;
+
 
     display: grid;
     grid-row-gap: 5rem;

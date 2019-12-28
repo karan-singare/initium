@@ -477,7 +477,6 @@ body {
     justify-self: center;
     text-align: center; }
   .events__items {
-    width: 80%;
     display: grid;
     grid-row-gap: 5rem;
     justify-items: center; }
@@ -871,15 +870,17 @@ body {
   padding: 4rem;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, min-content) minmax(min-content, 80rem);
+  grid-template-columns: repeat(3, min-content);
   grid-template-rows: repeat(2, min-content);
-  grid-column-gap: 10rem;
+  grid-column-gap: 2rem;
   grid-row-gap: 5rem;
   align-items: center;
   justify-items: center; }
   .event__photo {
     grid-column: 1/span 1;
     grid-row: 1/span 2;
+    width: 40rem;
+    height: 30rem;
     object-fit: cover;
     overflow: hidden;
     border-radius: 1rem; }
