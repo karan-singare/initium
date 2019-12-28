@@ -22,6 +22,13 @@ $(document).ready(function(){
     icon.addClass("green-fill");
     return icon;
   }
+  function icon_loader(icon) {
+    let url = icon.children().attr("xlink:href");
+    let new_url = url.split("-")[0] + "-" + "loader";
+    icon.children().attr("xlink:href", new_url);
+    icon.addClass("loading");
+    return icon;
+  }
 	 // === Name Validations ===
 	$("#username").focusout(function(){
     var icon = $("#username svg");
@@ -36,13 +43,39 @@ $(document).ready(function(){
 
     	username = "";
   	}else if(name_reg.test(username_store)){
-      $(".username-error").html("");
-      $(".username-error").removeClass("error");
+      $.ajax({
+            type : 'POST',
+            url  : 'ajax/signup.php',
+            dataType : 'JSON',
+            beforeSend : function(){
+              $(".username-error").html("");
+              $(".username-error").removeClass("error");
 
-      let new_icon = icon_check(icon);
-      $("#username").add(new_icon);
+              let new_icon = icon_loader(icon);
+              $("#username").add(new_icon);
+            },
+            data : {'check_username' : username_store},
+            success : function(feedback){
+              setTimeout(function(){
+                if(feedback['msg'] == 'username_success'){
+                  let new_icon = icon_check(icon);
+                  new_icon.removeClass("loading");
+                  $("#username").add(new_icon);
 
-  	  username = username_store;
+                  username = username_store;
+              }else if(feedback['msg'] == 'username_fail'){
+                $(".username-error").html("Username already exists!");
+                $(".username-error").addClass("error");
+                let new_icon = icon_notification(icon);
+                new_icon.removeClass("loading");
+                $("#username").add(new_icon);
+
+                username = "";
+              }
+              },3000);
+
+            }
+      });
   	}else{
       $(".username-error").html("Alphabates, dashes and hyphens only");
     	$(".username-error").addClass("error");
@@ -58,131 +91,185 @@ $(document).ready(function(){
 
 	// * === Email Validation === *
 	$("#email").focusout(function(){
-		var email_store = $.trim($("#email").val());
-        if(email_store.length == ""){
+    var icon = $("#email svg");
+		var email_store = $.trim($("#email [name='email']").val());
+
+      if(email_store.length == ""){
         $(".email-error").html("Email is required!");
-	    $("#email").addClass("border-red");
-	    $("#email").removeClass("border-green");
-	    email = "";
-        }else if(email_reg.test(email_store)){
+        $(".email-error").addClass("error");
+
+        let new_icon = icon_notification(icon);
+        $("#email").add(new_icon);
+
+      	email = "";
+      }else if(email_reg.test(email_store)){
         	$.ajax({
                 type : 'POST',
                 url  : 'ajax/signup.php',
                 dataType : 'JSON',
                 beforeSend : function(){
-                $(".email-error").html('<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>');
+                  $(".email-error").html("");
+                  $(".email-error").removeClass("error");
+
+                  let new_icon = icon_loader(icon);
+                  $("#email").add(new_icon);
                 },
                 data : {'check_email' : email_store},
                 success : function(feedback){
                 	setTimeout(function(){
-                    if(feedback['error'] == 'email_success'){
-                		$(".email-error").html("<div class='text-success'><i class='fa fa-check-circle'></i> available</div>");
-	                    $("#email").addClass("border-green");
-	                    $("#email").removeClass("border-red");
+                    if(feedback['msg'] == 'email_success'){
+                      let new_icon = icon_check(icon);
+                      new_icon.removeClass("loading");
+                      $("#email").add(new_icon);
+
 	                    email = email_store;
-                	}else if(feedback['error'] == 'email_fail'){
-                		$(".email-error").html("Sorry this email is already exist!");
-	                    $("#email").addClass("border-red");
-	                    $("#email").removeClass("border-green");
-	                    email = "";
+                	}else if(feedback['msg'] == 'email_fail'){
+                		$(".email-error").html("Email already exists!");
+                    $(".email-error").addClass("error");
+                    let new_icon = icon_notification(icon);
+                    new_icon.removeClass("loading");
+                    $("#email").add(new_icon);
+
+                    email = "";
                 	}
                 	},3000);
 
                 }
         	});
-        }else{
-        $(".email-error").html("Invalid Email Formate!");
-	    $("#email").addClass("border-red");
-	    $("#email").removeClass("border-green");
-	    email = "";
-        }
+      }else{
+        $(".email-error").html("Invalid email");
+      	$(".email-error").addClass("error");
+
+        let new_icon = icon_notification(icon);
+        $("#email").add(new_icon);
+
+      	email = "";
+      }
 	})//Close Email Validations
 
 	// Validate Password
-	$("#password").focusout(function(){
-    var password_store = $.trim($("#password").val());
-    if(password_store.length == ""){
-    	$(".password-error").html("Password is required!");
-    	$("#password").addClass("border-red");
-	    $("#password").removeClass("border-green");
-	    password = "";
-    }else if(password_reg.test(password_store)){
-        $(".password-error").html("<div class='text-success'><i class='fa fa-check-circle'></i> Your Password Is Strong!</div>");
-    	$("#password").addClass("border-green");
-	    $("#password").removeClass("border-red");
-	    password = password_store;
-    }else{
-    	$(".password-error").html("8 characters or longer. Combine upper and lowercase letters and numbers");
-    	$("#password").addClass("border-red");
-	    $("#password").removeClass("border-green");
-	    password = "";
-    }
-	})//Close Password Validations
+  $("#password").focusout(function(){
+    var icon = $("#password svg");
+    var password_store = $.trim($("#password [name='password']").val());
 
-	// Validate Confirm Password
-	$("#confirm").focusout(function(){
-     var confirm_store = $.trim($("#confirm").val());
-     if(confirm_store.length == ""){
-     $(".confirm-error").html("Confirm Password is required!");
-     $("#confirm").addClass("border-red");
-	 $("#confirm").removeClass("border-green");
-	 confirm = "";
-     } else if(confirm_store != password){
-     $(".confirm-error").html("Password is not matched!");
-     $("#confirm").addClass("border-red");
-	 $("#confirm").removeClass("border-green");
-	 confirm = "";
-     }else{
-     $(".confirm-error").html("");
-     $("#confirm").addClass("border-green");
-	 $("#confirm").removeClass("border-red");
-	 confirm = confirm_store;
-     }
-	})//Close Confirm Password
+    if(password_store.length == ""){
+      $(".password-error").html("Password is required!");
+      $(".password-error").addClass("error");
+
+      let new_icon = icon_notification(icon);
+      $("#password").add(new_icon);
+
+      password = "";
+    }else if(password_reg.test(password_store)){
+      $(".password-error").html("");
+      $(".password-error").removeClass("error");
+
+      let new_icon = icon_check(icon);
+      $("#password").add(new_icon);
+      password = password_store;
+    }else{
+      $(".password-error").html("min 8 chars, use number, upper and lowercase atleast once");
+      $(".password-error").addClass("error");
+
+      let new_icon = icon_notification(icon);
+      $("#password").add(new_icon);
+
+      password = "";
+    }
+
+  })	//Close Password Validations
+
+	// Validate Confimr Password
+  $("#confirm").focusout(function(){
+    var icon = $("#confirm svg");
+    var confirm_store = $.trim($("#confirm [name='confirm']").val());
+
+    if(confirm_store.length == ""){
+      $(".confirm-error").html("Confirm Password is required!");
+      $(".confirm-error").addClass("error");
+
+      let new_icon = icon_notification(icon);
+      $("#confirm").add(new_icon);
+
+      confirm = "";
+    }else if(confirm_store !== password){
+      $(".confirm-error").html("Password does not match!");
+      $(".confirm-error").addClass("error");
+
+      let new_icon = icon_notification(icon);
+      $("#confirm").add(new_icon);
+
+      confirm = "";
+    }else{
+      $(".confirm-error").html("");
+      $(".confirm-error").removeClass("error");
+
+      let new_icon = icon_check(icon);
+      $("#confirm").add(new_icon);
+      confirm = confirm_store;
+    }
+
+  })	//Close Confirm Validations
+
 
     // * === Submit the form === *
-	$("#submit").click(function(){
-    if(name.length == ""){
-    $(".name-error").html("Name is required!");
-	$("#name").addClass("border-red");
-	$("#name").removeClass("border-green");
-	name = "";
+	$("#signup-submit").click(function(){
+
+    if(username.length == ""){
+      var icon = $("#username svg");
+      $(".username-error").html("Username is required!");
+      $(".username-error").addClass("error");
+
+      let new_icon = icon_notification(icon);
+      $("#username").add(new_icon);
     }
 
     if(email.length == ""){
-    $(".email-error").html("Email is required!");
-	$("#email").addClass("border-red");
-	$("#email").removeClass("border-green");
-	email = "";
+      var icon = $("#email svg");
+      $(".email-error").html("Email is required!");
+      $(".email-error").addClass("error");
+
+      let new_icon = icon_notification(icon);
+      $("#email").add(new_icon);
     }
 
     if(password.length == ""){
-    $(".password-error").html("Password is required!");
-	$("#password").addClass("border-red");
-	$("#password").removeClass("border-green");
-	password = "";
+      var icon = $("#password svg");
+      $(".password-error").html("Password is required!");
+      $(".password-error").addClass("error");
+
+      let new_icon = icon_notification(icon);
+      $("#password").add(new_icon);
+
+      password = "";
     }
 
     if(confirm.length == ""){
-    $(".confirm-error").html("Confirm Password is required!");
-	$("#confirm").addClass("border-red");
-	$("#confirm").removeClass("border-green");
-	confirm = "";
+      var icon = $("#confirm svg");
+      $(".confirm-error").html("Confirm Password is required!");
+      $(".confirm-error").addClass("error");
+
+      let new_icon = icon_notification(icon);
+      $("#confirm").add(new_icon);
+
+      confirm = "";
     }
-    if(name.length != "" && email.length != "" && password.length != "" && confirm.length != ""){
+    if(username.length != "" && email.length != "" && password.length != "" && confirm.length != ""){
     	$.ajax({
     		type : 'POST',
     		url  : 'ajax/signup.php?signup=true',
     		data : $("#signup_submit").serialize(),
     		dataType : 'JSON',
     		beforeSend : function(){
-            $(".show-progress").addClass('progress')
+            $('.card__submit svg').addClass('loading');
     		},
     		success : function(feedback){
     			setTimeout(function(){
-               if(feedback['error'] == "success"){
-    			location = feedback.msg;
-    			}
+              console.log(feedback);
+              location = ".";
+              if(feedback['error'] == "success"){
+        			location = feedback.msg;
+    			    }
     			},3000)
     		}
     	})
@@ -191,17 +278,33 @@ $(document).ready(function(){
 
 })
 
-
-
-
-
-
 /*code for sliding in out of the login and signup card*/
 
 $(document).ready(function() {
 
   $('.header__main__btns .register').click(function() {
     $('.card--signup').css({
+      "visibility" : "visible",
+      "animation" : "slideInRight .3s ease-in-out"
+    });
+  });
+
+	$('.header__main__btns .login').click(function() {
+    $('.card--login').css({
+      "visibility" : "visible",
+      "animation" : "slideInRight .3s ease-in-out"
+    });
+  });
+	/* evnets for stickey header buttons*/
+  $('.sticky .btn--1').click(function() {
+    $('.card--signup').css({
+      "visibility" : "visible",
+      "animation" : "slideInRight .3s ease-in-out"
+    });
+  });
+
+	$('.sticky .btn--2').click(function() {
+    $('.card--login').css({
       "visibility" : "visible",
       "animation" : "slideInRight .3s ease-in-out"
     });
@@ -219,12 +322,6 @@ $(document).ready(function() {
     }, 300);
   });
 
-  $('.header__main__btns .login').click(function() {
-    $('.card--login').css({
-      "visibility" : "visible",
-      "animation" : "slideInRight .3s ease-in-out"
-    });
-  });
 
   $('.card--login a').click(function() {
     $('.card--login').css({"animation" : "slideOutUp .3s ease-in-out"});

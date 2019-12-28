@@ -62,6 +62,19 @@
     }
   }
 
+  &__submit {
+    display: flex;
+    align-items: center;
+
+    & svg {
+      height: 4.5rem;
+      width: 4.5rem;
+      margin-left: 2rem;
+      fill: transparent;
+    }
+
+  }
+
 
   &__body {
     display: grid;
@@ -132,9 +145,6 @@
   font-size: 1.2rem;
 }
 
-.border-red {
-  border-color: rgba(#e21919, 1) !important;
-}
 
 .red-fill {
   fill: rgba(#e21919, 0.81) !important;
@@ -143,4 +153,9 @@
 .green-fill {
   fill: rgba(#0cd76a, 0.9) !important;
   animation: fadeIn 1s !important;
+}
+.loading {
+  fill: rgba(#0cd76a, 0.9) !important;
+  animation: rotateInPlace 2s infinite !important;
+  // animation-iteration-count: infinite;
 }
