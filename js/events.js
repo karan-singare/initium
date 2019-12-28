@@ -92,7 +92,28 @@ $(document).ready(function() {
 
   /*Events for event rules */
 
-  
+  $('.event__cover .info-btn').click(function() {
+    let id = $(this).attr("info-id");
+    $('#' + id).css({
+      "visibility" : "visible",
+      "animation" : "bounceIn 1s ease-in"
+    });
+    // console.log($('#' + id).children(".info__close"));
+    $('#' + id).children(".info__close").click(function() {
+      $('#' + id).css({
+        "animation" : "hinge 1s ease-in"
+
+      });
+      setTimeout(function () {
+        $('#' + id).css({
+          "visibility" : "hidden"
+        })
+      },1000);
+    })
+
+  });
+
+
 
 
 
