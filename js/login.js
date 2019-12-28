@@ -25,6 +25,12 @@ $(document).ready(function(){
     icon.addClass("loading");
     return icon;
   }
+  function icon_unlock(icon) {
+    let url = icon.children().attr("xlink:href");
+    let new_url = url.split("-")[0] + "-" + "unlock";
+    icon.children().attr("xlink:href", new_url);
+    return icon;
+  }
 	// === Username/Email Validations ===
 
 
@@ -92,17 +98,27 @@ $(document).ready(function(){
 			password = "";
 		}
 		if(password.length != "" && email.length != ""){
+			var icon = $(".login-submit svg")
 			$.ajax({
 				type : 'POST',
 				url  : 'ajax/login.php?login=true',
 				data : $("#login_submit").serialize(),
 				dataType : "JSON",
+				beforeSend: function() {
+					$('.card__submit svg').addClass("loading");
+				},
 				success : function(feedback){
-					if(feedback['error'] == 'success'){
-
+					if(feedback['msg'] == 'success'){
 						setTimeout(function(){
-                          location = feedback['msg'];
+							$('.card__submit svg').removeClass("loading");
+							new_icon = icon_check($('.card__submit svg'));
+							$('.card__submit').add(new_icon);
+							new_icon = icon_unlock($('.card__logo'));
+							$('#login_submit .card__logo').add(new_icon);
 						},2000);
+						setTimeout(function(){
+							location = ".";
+						}, 2300);
 
 					}else if(feedback['error'] == 'no_password'){
 						$("#login-password").addClass("border-red");
