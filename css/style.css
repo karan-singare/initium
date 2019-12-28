@@ -77,6 +77,22 @@ body {
 .mt-lg {
   margin-bottom: 4rem; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 1.5rem; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(68.1deg, rgba(255, 200, 69, 0.71) -0.3%, rgba(239, 69, 115, 0.71) 100.2%); }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(68.1deg, rgba(255, 200, 69, 0.71) -0.3%, rgba(239, 69, 115, 0.71) 100.2%); }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(68.1deg, rgba(255, 200, 69, 0.71) -0.3%, rgba(239, 69, 115, 0.71) 100.2%); }
+
 .btn {
   font-size: 2rem;
   padding: 1rem 2rem;
@@ -278,7 +294,7 @@ body {
     list-style: none;
     font-size: 1.6rem;
     display: grid;
-    grid-template-columns: repeat(8, minmax(min-content, 10rem));
+    grid-template-columns: repeat(8, minmax(max-content, 10rem));
     grid-column-gap: 4rem;
     justify-items: center;
     align-items: center; }
@@ -291,6 +307,10 @@ body {
     @media only screen and (max-width: 50em) {
       .sticky__nav {
         justify-self: stretch; } }
+    @media only screen and (max-width: 43.75em) {
+      .sticky__nav {
+        grid-column-gap: .3rem;
+        font-size: 1.4rem; } }
     .sticky__nav a {
       text-decoration: none;
       color: #fff;
@@ -299,7 +319,7 @@ body {
       display: none; }
     @media only screen and (max-width: 75em) {
       .sticky__nav .btn {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding: .6rem 1.2rem; } }
     @media only screen and (max-width: 43.75em) {
       .sticky__nav .btn {
@@ -408,7 +428,6 @@ body {
 .member {
   width: 100%;
   height: 100%;
-  padding: 1rem;
   display: grid;
   grid-template-rows: min-content;
   grid-template-columns: 1fr;
@@ -466,6 +485,7 @@ body {
   justify-content: center;
   justify-items: center;
   background-image: radial-gradient(circle farthest-corner at 10% 20%, #fff6ec 39.5%, rgba(100, 46, 122, 0.23) 100.2%);
+  background-image: linear-gradient(rgba(255, 200, 69, 0.81), rgba(255, 200, 69, 0.81));
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -3733,3 +3753,59 @@ body {
 .loading {
   fill: rgba(12, 215, 106, 0.9) !important;
   animation: rotateInPlace 2s infinite !important; }
+
+.info {
+  visibility: hidden;
+  position: fixed;
+  top: 25vh;
+  left: 50rem;
+  width: 90rem;
+  z-index: 10;
+  padding: 6rem;
+  font-size: 1.8rem;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.73), rgba(255, 200, 69, 0.81));
+  border: 2px solid rgba(255, 200, 69, 0.71);
+  box-shadow: 0 2rem 4rem #ffc845;
+  border-radius: 1rem;
+  color: rgba(33, 32, 32, 0.98);
+  color: #fff;
+  display: grid;
+  grid-template-columns: minmax(30rem, 1fr) 5rem;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  @media only screen and (max-width: 87.5em) {
+    .info {
+      left: 0; } }
+  .info__heading {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+    text-align: center; }
+  .info__close {
+    margin-right: -6rem;
+    grid-column: -2/-1;
+    position: absolute;
+    width: 4.6rem;
+    height: 5.5rem;
+    cursor: pointer;
+    right: -1rem;
+    top: -1rem;
+    fill: rgba(226, 25, 25, 0.81);
+    z-index: 20; }
+  .info__content {
+    grid-column: 1/-1;
+    max-height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden; }
+    .info__content ul {
+      list-style-image: url("../images/icons/point-right.png"); }
+  .info::-webkit-scrollbar {
+    width: 10px; }
+  .info::-webkit-scrollbar-track {
+    background: #f1f1f1; }
+  .info::-webkit-scrollbar-thumb {
+    background: black; }
+  .info::-webkit-scrollbar-thumb:hover {
+    background: #555; }

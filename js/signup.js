@@ -1,4 +1,4 @@
-$(document).ready(function(){
+iu	$(document).ready(function(){
 	var username     = "";
 	var email    = "";
 	var password = "";
@@ -277,69 +277,3 @@ $(document).ready(function(){
 	})
 
 })
-
-/*code for sliding in out of the login and signup card*/
-
-$(document).ready(function() {
-
-  $('.header__main__btns .register').click(function() {
-    $('.card--signup').css({
-      "visibility" : "visible",
-      "animation" : "slideInRight .3s ease-in-out"
-    });
-  });
-
-	$('.header__main__btns .login').click(function() {
-    $('.card--login').css({
-      "visibility" : "visible",
-      "animation" : "slideInRight .3s ease-in-out"
-    });
-  });
-	/* evnets for stickey header buttons*/
-  $('.sticky .btn--1').click(function() {
-    $('.card--signup').css({
-      "visibility" : "visible",
-      "animation" : "slideInRight .3s ease-in-out"
-    });
-  });
-
-	$('.sticky .btn--2').click(function() {
-    $('.card--login').css({
-      "visibility" : "visible",
-      "animation" : "slideInRight .3s ease-in-out"
-    });
-  });
-
-  $('.card--signup a').click(function() {
-    $('.card--signup').css({"animation" : "slideOutUp .3s ease-in-out"});
-
-    setTimeout(function(){
-      $('.card--signup').css({ "visibility" : "hidden"});
-      $('.card--login').css({
-        "animation" : "slideInRight .3s ease-in-out",
-        "visibility" : "visible"
-      });
-    }, 300);
-  });
-
-
-  $('.card--login a').click(function() {
-    $('.card--login').css({"animation" : "slideOutUp .3s ease-in-out"});
-
-    setTimeout(function(){
-      $('.card--login').css({ "visibility" : "hidden"});
-      $('.card--signup').css({
-        "animation" : "slideInRight .3s ease-in-out",
-        "visibility" : "visible"
-      });
-    }, 300);
-  });
-
-  $('.card__close').click(function() {
-    $('.card').css({"animation" : "slideOutUp .3s ease-in-out"});
-    setTimeout(function(){
-      $('.card').css({ "visibility" : "hidden"});
-    }, 300);
-  });
-
-});

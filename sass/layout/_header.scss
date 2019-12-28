@@ -198,7 +198,7 @@
     font-size: 1.6rem;
 
     display: grid;
-    grid-template-columns: repeat(8, minmax(min-content, 10rem));
+    grid-template-columns: repeat(8, minmax(max-content, 10rem));
     grid-column-gap: 4rem;
     justify-items: center;
     align-items: center;
@@ -216,6 +216,8 @@
       justify-self: stretch;
     }
     @media only screen and (max-width: $bp-mobile) {
+      grid-column-gap: .3rem;
+      font-size: 1.4rem;
       // grid-column-gap: .4rem;
       // grid-template-columns: repeat(7, minmax(min-content, 1fr));
     }
@@ -232,7 +234,7 @@
       }
 
       @media only screen and (max-width: $bp-largest) {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding: .6rem 1.2rem;
       }
       @media only screen and (max-width: $bp-mobile) {
