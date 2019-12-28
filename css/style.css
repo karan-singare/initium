@@ -3778,6 +3778,10 @@ body {
   @media only screen and (max-width: 87.5em) {
     .info {
       left: 0; } }
+  @media only screen and (max-width: 43.75em) {
+    .info {
+      left: 5rem;
+      width: 50rem; } }
   .info__heading {
     grid-row: 1/2;
     grid-column: 1/-1;
