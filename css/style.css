@@ -213,7 +213,7 @@ body {
       list-style: none;
       font-size: 1.8rem;
       display: grid;
-      grid-template-columns: repeat(6, minmax(min-content, 1fr));
+      grid-template-columns: repeat(5, minmax(min-content, 1fr));
       justify-items: center; }
       .header__main__nav a {
         color: #fff;
