@@ -18,6 +18,27 @@
   display: grid;
   grid-template-rows: min-content;
 
+
+  &::after {
+    content: '';
+    position: absolute;
+    // top: -70%;
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    height: 25rem;
+    transform: translate(-50%, -50%);
+    // background-color: green;
+    display: block;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 10;
+    background-image: url("../images/icons/iiest.png");
+    background-image: linear-gradient(rgba(239, 69, 115, 0.71), rgba(239, 69, 115, 0.71)), url("../images/icons/iiest.png");
+    background-image: linear-gradient(rgba(transparent, 0), rgba(transparent, 0)), url("../images/icons/iiest.png");
+    filter: brightness(60%);
+  }
+
   &__main {
     grid-row: 1/2;
 
