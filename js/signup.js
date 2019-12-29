@@ -1,4 +1,4 @@
-iu	$(document).ready(function(){
+$(document).ready(function(){
 	var username     = "";
 	var email    = "";
 	var password = "";
@@ -33,6 +33,7 @@ iu	$(document).ready(function(){
 	$("#username").focusout(function(){
     var icon = $("#username svg");
   	var username_store = $.trim($("#username [name='username']").val());
+		console.log(username_store);
 
   	if(username_store.length == ""){
     	$(".username-error").html("Username is required!");
@@ -56,6 +57,7 @@ iu	$(document).ready(function(){
             },
             data : {'check_username' : username_store},
             success : function(feedback){
+							console.log(feedback);
               setTimeout(function(){
                 if(feedback['msg'] == 'username_success'){
                   let new_icon = icon_check(icon);
@@ -265,10 +267,8 @@ iu	$(document).ready(function(){
     		},
     		success : function(feedback){
     			setTimeout(function(){
-              console.log(feedback);
-              location = ".";
-              if(feedback['error'] == "success"){
-        			location = feedback.msg;
+              if(feedback['msg'] == "signup_success"){
+        				location = "index.php";
     			    }
     			},3000)
     		}
