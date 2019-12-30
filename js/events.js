@@ -114,6 +114,23 @@ $(document).ready(function() {
   });
 
 
+  /*events for welcome message */
+
+  setTimeout(function() {
+    $('.welcome').css({
+      "visibility" : "visible",
+      "animation"  : "bounceInDown 1s ease-in"
+    });
+  },1000);
+
+  setTimeout(function() {
+    $('.welcome').css({
+      "animation"  : "fadeOut 1s ease-in",
+      "visibility" : "hidden"
+    });
+  },4000);
+
+
 
 
 

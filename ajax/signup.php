@@ -26,6 +26,7 @@
     $query->execute([$username, $email, $password]);
     if ($query) {
       $_SESSION['username'] = $username;
+      $_SESSION['first_time_login'] = "true";
       $feedback['msg'] = "signup_success";
 
       echo json_encode($feedback);

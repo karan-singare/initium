@@ -51,6 +51,7 @@ function login(){
 				$db_password = $data->password;
 				if (password_verify($password, $db_password)) {
 					$_SESSION['username'] = $data->username;
+					$_SESSION['first_time_login'] = "true";
 					$feedback['msg'] = "login_success";
 				} else {
 					$feedback['msg'] = "wrong_password";

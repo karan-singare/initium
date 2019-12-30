@@ -11,6 +11,7 @@
 </head>
 <body>
 
+  <?php require_once 'parts/welcome.php'; ?>
 
   <?php require_once 'parts/info.php'; ?>
 
@@ -27,6 +28,7 @@
 
     <?php require_once 'parts/about.php'; ?>
 
+    <?php require_once 'parts/sponsors.php'; ?>
     <?php require_once 'parts/sponsors.php'; ?>
 
     <?php require_once 'parts/events.php'; ?>
