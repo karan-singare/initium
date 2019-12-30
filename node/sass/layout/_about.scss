@@ -1,0 +1,49 @@
+.about {
+  grid-column: full-start/full-end;
+
+  // background-image: linear-gradient(rgba(rgba(60, 95, 182, 0.64),),
+  //                   rgba(60, 95, 182, 0.64)),
+  //                   url('../images/background/background4.jpg');
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,246,236,1) 39.5%, rgba(100,46,122,0.23) 100.2%),;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  text-align: center;
+  display: grid;
+
+
+  &__heading {
+    color: #000000;
+  }
+
+  &__details {
+    width: 80%;
+    justify-self: center;
+
+    font-size: 1.6rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+    padding: 6rem;
+    border-radius: 1rem;
+    hyphens: auto;
+
+    @media only screen and (max-width: $bp-mobile) {
+      padding: 4rem;
+      width: 100%;
+      text-align: left;
+    }
+
+    @media only screen and (max-width: $android) {
+      width: 100%;
+    }
+    @media only screen and (max-height: $android) {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    grid-column: full-start/full-end;
+  }
+}

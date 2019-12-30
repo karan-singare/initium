@@ -1,0 +1,67 @@
+// .member {
+//
+//   display: grid;
+//   // grid-template-columns: repeat(auto-fit, 25rem);
+//   justify-items: center;
+//   transition: all .5s ease-in;
+//
+//   &__photo {
+//     width: 20rem;
+//     height: 20rem;
+//     shape-outside: circle(50% at 50% 50%);
+//     clip-path:circle(50% at 50% 50%);
+//     position: relative;
+//   }
+//
+//   &__img {
+//     height: 100%;
+//     transition: all .5s;
+//   }
+//
+//   &__contact {
+//     color: #fff;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     font-size: 2rem;
+//     text-align: center;
+//
+//     transform: translate(-50%, 50%);
+//     visibility: hidden;
+//     opacity: 0;
+//
+//
+//
+//     & svg {
+//       fill: #fff;
+//       width: 3rem;
+//       height: 3rem;
+//     }
+//   }
+//   &__name {
+//     font-size: 3rem;
+//     color: #fff;
+//     font-weight: bold;
+//   }
+//   &__position {
+//     font-size: 2rem;
+//     color: $pink;
+//     font-weight: 300;
+//   }
+//
+//   &:hover {
+//     background: rgba(transparent, .3);
+//     box-sizing: 0 2rem 4rem rgba(0, 0, 0, 0.88);
+//   }
+//
+//   &:hover &__img {
+//     filter: blur(.5rem);
+//     transform: scale(1.1);
+//   }
+//
+//   &:hover &__contact {
+//     transform: translate(-50%, -50%);
+//     visibility: visible;
+//     opacity: 1;
+//   }
+// }

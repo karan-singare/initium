@@ -1,0 +1,85 @@
+.btn {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: none;
+  box-shadow: 0px 1rem 3rem rgba(51, 54, 44, 0.8);
+  text-transform: uppercase;
+  font-family: $font-display;
+
+
+  &--pink {
+    background-color: $pink;
+    background-color: rgba(239, 69, 115, 1);
+
+
+    color: #fff;
+    transition: all .1s;
+    border: 2px solid transparent;
+
+    &:hover {
+      background: transparent;
+      border: 2px solid $pink;
+      color: $pink;
+    }
+  }
+  &--violet {
+    background-color: $violet;
+    background-color: rgba(255, 200, 69, 1);
+
+    color: #fff;
+    transition: all .1s;
+    border: 2px solid transparent;
+
+    &:hover {
+      background: $yellow;
+      border: 2px solid $yellow;
+    }
+  }
+  &--yellow {
+    background-color: $yellow;
+    background-color: rgba(255, 200, 69, 1);
+    color: #fff;
+    transition: all .1s;
+    border: 2px solid transparent;
+    transition: all .2s ease-in;
+
+    &:hover {
+      background: transparent;
+      border: 2px solid $yellow;
+    }
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    font-size: 1.5rem;
+    padding: .6rem 1.2rem;
+  }
+}
+
+.heading__primary {
+  font-size: 6.6rem;
+  line-height: 1;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 4.5rem;
+  }
+}
+.heading__secondary {
+  font-size: 5rem;
+  line-height: 1;
+
+}
+
+.heading__tertiary {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2rem;
+  }
+}
+.heading__4 {
+  font-size:1.8rem;
+}

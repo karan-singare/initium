@@ -1,0 +1,271 @@
+.header {
+  position: relative;
+
+  grid-column: full-start/full-end;
+
+  padding: 2rem;
+  // background-image: linear-gradient(rgba(12, 10, 87, 0.71),
+  //                   rgba(12, 10, 87, 0.71),
+  //                   rgba(12, 10, 87, 0.71),
+  //                   rgba(12, 10, 87, 0.71)),
+  //                   url('../images/background/background.jpg');
+  background-image: linear-gradient( 68.1deg,  rgba(255,200,69,.71) -0.3%, rgba(239,69,115,.71) 100.2% ), url('../images/background/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+
+  display: grid;
+  grid-template-rows: min-content;
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    // top: -70%;
+    top: 50%;
+    left: 50%;
+    width: 25rem;
+    height: 25rem;
+    transform: translate(-50%, -50%);
+    // background-color: green;
+    display: block;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 10;
+    background-image: url("../images/icons/iiest.png");
+    background-image: linear-gradient(rgba(239, 69, 115, 0.71), rgba(239, 69, 115, 0.71)), url("../images/icons/iiest.png");
+    background-image: linear-gradient(rgba(transparent, 0), rgba(transparent, 0)), url("../images/icons/iiest.png");
+    filter: brightness(60%);
+  }
+
+  &__main {
+    grid-row: 1/2;
+
+    display: grid;
+    // grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-template-columns: repeat(3, minmax(max-content, 1fr));
+    grid-column-gap: 10rem;
+    align-items: center;
+
+    .header__brand {
+      @media only screen and (max-width: $bp-huge) {
+        justify-self: center;
+        justify-content: center;
+      }
+      // @media only screen and (max-width: $bp-large) {
+      //   justify-self: center;
+      //   justify-content: center;
+      // }
+    }
+
+    &__nav {
+      list-style: none;
+      font-size: 1.8rem;
+
+      display: grid;
+      grid-template-columns: repeat(5, minmax(min-content, 1fr));
+      justify-items: center;
+
+      & a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      & li {
+        border-bottom: 4px solid transparent;
+        transition: all .5s;
+        cursor: pointer;
+      }
+      & li:hover {
+        color: $orange;
+        border-bottom: 4px solid $violet;
+      }
+
+      @media only screen and (max-width: $bp-huge) {
+        // grid-row: 2/3;
+        // grid-column: 1/-1;
+        // justify-self: center;
+        // justify-items: center;
+      }
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__btns {
+      justify-self: end;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // justify-content: center;
+      align-items: start;
+      grid-gap: 5rem;
+      font-family: $font-display;
+
+      @media only screen and (max-width: $bp-huge) {
+        // grid-row: 1/2;
+        // grid-column: -2/-1;
+        // align-self: center;
+      }
+      @media only screen and (max-width: $bp-huge) {
+        grid-row: 3/-1;
+        justify-self: center;
+      }
+      // @media only screen and (max-width: $bp-large) {
+      //   grid-row: 3/-1;
+      //   justify-self: center;
+      // }
+    }
+
+
+    @media only screen and (max-width: $bp-huge) {
+      // grid-template-rows: repeat(2, min-content);
+    }
+    @media only screen and (max-width: $bp-huge) {
+      grid-template-rows: repeat(3, min-content);
+      grid-template-columns: 1fr;
+      grid-row-gap: 2rem;
+    }
+    // @media only screen and (max-width: $bp-large) {
+    //   grid-template-rows: repeat(3, min-content);
+    //   grid-template-columns: 1fr;
+    //   grid-row-gap: 2rem;
+    // }
+
+  }
+
+  &__details {
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+
+    & h3 {
+      text-transform: capitalize;
+    }
+  }
+
+}
+
+.header {
+  @media only screen and (max-width: $bp-mobile) {
+    // grid-template-rows: min-content;
+    // grid-row-gap: 10rem;
+    // grid-column: 1/-1;
+    //
+    // &__main {
+    //   padding: 0;
+    //   grid-template-rows: min-content;
+    //   justify-items: start;
+    //   .header__brand {
+    //     grid-row: 1/2;
+    //     justify-self: center;
+    //   }
+    //   &__nav {
+    //     grid-row: 2/3;
+    //     justify-items: stretch;
+    //     grid-column-gap: 1rem;
+    //
+    //     font-size: 1.4rem;
+    //   }
+    //   &__btns {
+    //     grid-row: 3/4;
+    //     justify-self: center;
+    //   }
+    // }
+    //
+    // &__details {
+    //   // align-self: center;
+    // }
+  }
+
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // height: 8rem;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
+  padding: 0 2rem;
+  z-index: 10;
+
+  display: grid;
+  grid-template-columns: 20rem minmax(min-content, 1fr);
+  align-items: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: max-content;
+    padding: 1rem 0;
+  }
+
+  &__img {
+    width: 15rem;
+    height: 8rem;
+  }
+
+  &__img {
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    justify-self: end;
+
+    list-style: none;
+    font-size: 1.6rem;
+
+    display: grid;
+    grid-template-columns: repeat(8, minmax(max-content, 10rem));
+    grid-column-gap: 4rem;
+    justify-items: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-largest) {
+      grid-column-gap: 2rem;
+    }
+    @media only screen and (max-width: $bp-huge) {
+      grid-column-gap: 1rem;
+    }
+    // @media only screen and (max-width: $bp-large) {
+    //   grid-column-gap: 1rem;
+    // }
+    @media only screen and (max-width: $bp-medium) {
+      justify-self: stretch;
+    }
+    @media only screen and (max-width: $bp-mobile) {
+      grid-column-gap: .3rem;
+      font-size: 1.4rem;
+      // grid-column-gap: .4rem;
+      // grid-template-columns: repeat(7, minmax(min-content, 1fr));
+    }
+    &  a {
+      text-decoration: none;
+      color: #fff;
+      transition: all .5s ease-in;
+    }
+
+    & .btn {
+
+      &--login {
+        display: none;
+      }
+
+      @media only screen and (max-width: $bp-largest) {
+        font-size: 1.4rem;
+        padding: .6rem 1.2rem;
+      }
+      @media only screen and (max-width: $bp-mobile) {
+        display: none;
+
+        &--login {
+          display: block;
+        }
+      }
+    }
+
+  }
+}

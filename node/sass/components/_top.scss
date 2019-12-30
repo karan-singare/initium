@@ -1,0 +1,21 @@
+.top {
+
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  // background-color: red;
+  border-radius: 50%;
+  border: none;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 100;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
