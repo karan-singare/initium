@@ -108,7 +108,8 @@ $(document).ready(function(){
 					$('.card__submit svg').addClass("loading");
 				},
 				success : function(feedback){
-					if(feedback['msg'] == 'success'){
+					console.log(feedback);
+					if(feedback['msg'] == 'login_success'){
 						setTimeout(function(){
 							$('.card__submit svg').removeClass("loading");
 							new_icon = icon_check($('.card__submit svg'));
@@ -117,17 +118,37 @@ $(document).ready(function(){
 							$('#login_submit .card__logo').add(new_icon);
 						},2000);
 						setTimeout(function(){
-							location = ".";
+							location = "index.php";
 						}, 2300);
 
-					}else if(feedback['error'] == 'no_password'){
-						$("#login-password").addClass("border-red");
-						$("#login-password").removeClass("border-green");
-						$(".login-error").html(feedback['msg']);
-					}else if(feedback['error'] == 'no_email'){
-						$("#login-email").removeClass("border-green");
-						$("#login-email").addClass("border-red");
-						$(".login-error").html(feedback['msg']);
+					}else if(feedback['msg'] == 'wrong_password'){
+						$('.card__submit svg').removeClass("loading");
+						var icon = $("#login-password svg");
+						$(".login-password-error").html("Incorrect Password!");
+						$(".login-password-error").addClass("error");
+
+						let new_icon = icon_notification(icon);
+						$("#login-password").add(new_icon);
+
+						password = "";
+					}else if(feedback['msg'] == "username_not_found"){
+						$('.card__submit svg').removeClass("loading");
+						var icon = $("#login-username svg");
+						$(".login-username-error").html("Username does not exist!");
+			      $(".login-username-error").addClass("error");
+
+			      let new_icon = icon_notification(icon);
+			      $("#login-username").add(new_icon);
+						username = "";
+					}else if (feedback['msg'] == 'email_not_found') {
+						$('.card__submit svg').removeClass("loading");
+						var icon = $("#login-username svg");
+						$(".login-username-error").html("Email does not exist!");
+			      $(".login-username-error").addClass("error");
+
+			      let new_icon = icon_notification(icon);
+			      $("#login-username").add(new_icon);
+						username = "";
 					}
 				}
 			})
