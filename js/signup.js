@@ -33,7 +33,6 @@ $(document).ready(function(){
 	$("#username").focusout(function(){
     var icon = $("#username svg");
   	var username_store = $.trim($("#username [name='username']").val());
-		console.log(username_store);
 
   	if(username_store.length == ""){
     	$(".username-error").html("Username is required!");
@@ -57,15 +56,14 @@ $(document).ready(function(){
             },
             data : {'check_username' : username_store},
             success : function(feedback){
-							console.log(feedback);
               setTimeout(function(){
-                if(feedback['msg'] == 'username_success'){
+                if(feedback['msg'] == 'username_not_found'){
                   let new_icon = icon_check(icon);
                   new_icon.removeClass("loading");
                   $("#username").add(new_icon);
 
                   username = username_store;
-              }else if(feedback['msg'] == 'username_fail'){
+              }else if(feedback['msg'] == 'username_found'){
                 $(".username-error").html("Username already exists!");
                 $(".username-error").addClass("error");
                 let new_icon = icon_notification(icon);
@@ -74,7 +72,7 @@ $(document).ready(function(){
 
                 username = "";
               }
-              },3000);
+						},1000);
 
             }
       });
@@ -118,14 +116,15 @@ $(document).ready(function(){
                 },
                 data : {'check_email' : email_store},
                 success : function(feedback){
+									console.log(feedback);
                 	setTimeout(function(){
-                    if(feedback['msg'] == 'email_success'){
+                    if(feedback['msg'] == 'email_not_found'){
                       let new_icon = icon_check(icon);
                       new_icon.removeClass("loading");
                       $("#email").add(new_icon);
 
 	                    email = email_store;
-                	}else if(feedback['msg'] == 'email_fail'){
+                	}else if(feedback['msg'] == 'email_found'){
                 		$(".email-error").html("Email already exists!");
                     $(".email-error").addClass("error");
                     let new_icon = icon_notification(icon);
@@ -134,7 +133,7 @@ $(document).ready(function(){
 
                     email = "";
                 	}
-                	},3000);
+								},1000);
 
                 }
         	});
