@@ -20,6 +20,7 @@
 
 
   <?php require_once 'parts/sticky_header.php'; ?>
+  <?php require_once 'parts/admin_btn.php'; ?>
 
   <div class="container" id="top">
 
