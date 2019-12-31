@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,8 @@
 </head>
 <body>
 
+
+  <?php require_once 'parts/collab.php'; ?>
 
   <?php require_once 'parts/info.php'; ?>
 
