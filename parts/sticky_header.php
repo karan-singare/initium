@@ -7,9 +7,13 @@
       <a href="#events" class="scroll"><li>Events</li></a>
       <a href="#management" class="scroll"><li>Contact Us</li></a>
       <a href="#gallery" class="scroll"><li>Gallery</li></a>
-      <a href="#register" class="btn btn--pink btn--1"><li>Register</li></a>
-      <a href="#login" class="btn btn--pink btn--2"><li>Login</li></a>
-      <a href="#login" class="btn btn--pink btn--2 btn--login"><li>Login</li></a>
+      <?php if ($_SESSION['username']): ?>
+        <a href="logout.php" class="header__btn btn btn--pink login"><li>Logout</li></a>
+      <?php else: ?>
+        <button type="button" class="btn btn--pink btn--2"><li>Login</li></button>
+        <button type="button" class="btn btn--pink btn--1"><li>Register</li></button>
+        <button type="button" class="btn btn--pink btn--2 btn--login"><li>Login</li></button>
+      <?php endif; ?>
   </ul>
 </div>
 

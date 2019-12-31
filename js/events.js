@@ -145,7 +145,15 @@ $(document).ready(function() {
     });
   },4000);
 
+  /*events for  message */
 
+  $('.message__close').click(function() {
+    $('.message').css({
+      "animation"  : "fadeOut 1s ease-in",
+      "visibility" : "hidden"
+    });
+    $('.message__text').text("");
+  });
 
 
 

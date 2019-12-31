@@ -17,8 +17,14 @@
         <a href="#gallery" class="nav__links scroll"><li>Gallery</li></a>
     </ul>
     <div class="header__main__btns">
-      <button class="header__btn btn btn--pink login">Login</button>
-      <button class="header__btn btn btn--pink register">Register</button>
+
+      <?php if ($_SESSION['username']): ?>
+        <a href="logout.php" class="header__btn btn btn--pink login">Logout</a>
+      <?php else: ?>
+        <button class="header__btn btn btn--pink login">Login</button>
+        <button class="header__btn btn btn--pink register">Register</button>
+      <?php endif; ?>
+
     </div>
   </div>
 

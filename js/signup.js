@@ -116,7 +116,6 @@ $(document).ready(function(){
                 },
                 data : {'check_email' : email_store},
                 success : function(feedback){
-									console.log(feedback);
                 	setTimeout(function(){
                     if(feedback['msg'] == 'email_not_found'){
                       let new_icon = icon_check(icon);

@@ -26,9 +26,13 @@ body {
   color: #6D5D4B;
   font-weight: 300;
   line-height: 1.6; }
+  body a {
+    text-decoration: none; }
   body a:active,
   body a:focus {
     outline: none; }
+  body a:hover {
+    color: #000; }
 
 .active {
   border-bottom: 2px solid #ff006a; }
@@ -3719,6 +3723,36 @@ body {
       bottom: 1rem;
       right: 1rem .collab __heading;
         right-font-size: 3rem; } }
+
+.message {
+  visibility: hidden;
+  position: fixed;
+  top: 20vh;
+  z-index: 2;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: max-content min-content; }
+  .message__text {
+    border: 2px solid rgba(255, 200, 69, 0.71);
+    box-shadow: 0 2rem 4rem #ffc845;
+    width: 100%;
+    background: #ffffff;
+    font-size: 2rem;
+    border-radius: .8rem;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: min-content;
+    align-content: center;
+    justify-items: center;
+    color: #0cd76a; }
+  .message__close {
+    fill: red;
+    width: 4rem;
+    height: 4rem;
+    margin-left: -4rem;
+    cursor: pointer; }
 
 .admin-btn {
   position: fixed;

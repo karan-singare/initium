@@ -20,8 +20,8 @@
         Karan Singh Singare
       </div>
       <div class="event__cover">
-        <a href="#" class="btn btn--yellow register-btn" name="enviro">Register</a>
-        <a href="#" class="btn btn--yellow registered-btn">Registered</a>
+        <button type="button" class="btn btn--yellow register-btn" name="enviro">Register</button>
+        <button type="button" class="btn btn--yellow registered-btn" name="enviro">Registered</button>
         <button type="button" class="btn btn--yellow info-btn" info-id='1'>Rules</button>
         <div class="event__contact">
           <svg >
@@ -50,8 +50,8 @@
         Karan Singh Singare
       </div>
       <div class="event__cover">
-        <a href="#" class="btn btn--yellow register-btn">Register</a>
-        <a href="#" class="btn btn--yellow registered-btn" name="mino">Registered</a>
+        <button type="button" class="btn btn--yellow register-btn" name="mino">Register</button>
+        <button type="button" class="btn btn--yellow registered-btn" name="mino">Registered</button>
         <button type="button" class="btn btn--yellow info-btn" info-id='2'>Rules</button>
         <div class="event__contact">
           <svg >
@@ -80,8 +80,8 @@
         Karan Singh Singare
       </div>
       <div class="event__cover">
-        <a href="#" class="btn btn--yellow register-btn" name="plantation">Register</a>
-        <a href="#" class="btn btn--yellow registered-btn">Registered</a>
+        <button type="button" class="btn btn--yellow register-btn" name="plantation">Register</button>
+        <button type="button" class="btn btn--yellow registered-btn" name="plantation">Registered</button>
         <button type="button" class="btn btn--yellow info-btn" info-id='3'>Rules</button>
         <div class="event__contact">
           <svg >
@@ -110,8 +110,8 @@
         Karan Singh Singare
       </div>
       <div class="event__cover">
-        <a href="#" class="btn btn--yellow register-btn" name="exhibition">Register</a>
-        <a href="#" class="btn btn--yellow registered-btn">Registered</a>
+        <button type="button" class="btn btn--yellow register-btn" name="exhibition">Register</button>
+        <button type="button" class="btn btn--yellow registered-btn" name="exhibition">Registered</button>
         <button type="button" class="btn btn--yellow info-btn" info-id='4'>Rules</button>
         <div class="event__contact">
           <svg >
@@ -140,8 +140,8 @@
         Karan Singh Singare
       </div>
       <div class="event__cover">
-        <a href="#" class="btn btn--yellow register-btn" name="presentation">Register</a>
-        <a href="#" class="btn btn--yellow registered-btn">Registered</a>
+        <button type="button" class="btn btn--yellow register-btn" name="presentation">Register</button>
+        <a href="#" class="btn btn--yellow registered-btn" name="presentation">Registered</a>
         <button type="button" class="btn btn--yellow info-btn" info-id='5'>Rules</button>
         <div class="event__contact">
           <svg >

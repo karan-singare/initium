@@ -12,6 +12,8 @@
 </head>
 <body>
 
+  <?php require_once 'parts/message.php'; ?>
+
   <?php require_once 'parts/welcome.php'; ?>
 
   <?php require_once 'parts/collab.php'; ?>
