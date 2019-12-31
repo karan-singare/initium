@@ -35,6 +35,7 @@
     <h3 class="heading__tertiary mb-md">
       Janurary 20-23, IIEST, Shibpur, botanical gardens,  howrah
     </h3>
-    <button class="header__btn btn btn--violet login mb-sm">Register for events</button>
+    <a href="#events" class="header__btn btn btn--violet login mb-sm">Register for events</a>
+    <button class="header__btn btn btn--violet login mb-sm">Tell us about you</button>
   </div>
 </header>

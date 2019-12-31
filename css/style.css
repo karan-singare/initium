@@ -273,7 +273,8 @@ body {
       grid-template-columns: 1fr 1fr;
       align-items: start;
       grid-gap: 5rem;
-      font-family: "Corben", cursive; }
+      font-family: "Corben", cursive;
+      cursor: pointer; }
       @media only screen and (max-width: 87.5em) {
         .header__main__btns {
           grid-row: 3/-1;
@@ -289,6 +290,8 @@ body {
     align-self: center; }
     .header__details h3 {
       text-transform: capitalize; }
+    .header__details button {
+      margin-left: 3rem; }
 
 .sticky {
   position: fixed;
@@ -3542,7 +3545,8 @@ body {
     width: 4rem;
     height: 4rem;
     right: -1rem;
-    top: -1rem; }
+    top: -1rem;
+    cursor: pointer; }
   .card__input {
     display: grid;
     grid-template-columns: repeat(2, min-content);
