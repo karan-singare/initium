@@ -37,7 +37,7 @@
   <div class="footer__legal footer__item">
     <div class="footer__item__heading">legal</div>
     <p>
-      All rights reserved to <a href=".">Initium 6.0</a> and Karan Singh Singare.
+      All rights reserved to <u><a href="index.php">Initium 6.0</a></u>.
     </p>
   </div>
 </footer>

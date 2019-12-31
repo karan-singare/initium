@@ -288,6 +288,8 @@ body {
     align-self: center; }
     .header__details h3 {
       text-transform: capitalize; }
+    .header__details button {
+      margin-left: 3rem; }
 
 .sticky {
   position: fixed;
