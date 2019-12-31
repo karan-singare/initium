@@ -113,6 +113,21 @@ $(document).ready(function() {
 
   });
 
+  /*event for associalted by*/
+  $(window).scroll(function() {
+    $(".collab").css({
+      "animation" : "slideRight 1s ease-in",
+      "visibility" : "hidden"
+    });
+    if ($(this).scrollTop() == 0) {
+      $(".collab").css({
+        "visibility" : "visible",
+        "animation" : "pulse 1s ease-in"
+
+      });
+    }
+  })
+
 
   /*events for welcome message */
 

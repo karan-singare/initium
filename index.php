@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,8 @@
 
   <?php require_once 'parts/welcome.php'; ?>
 
+  <?php require_once 'parts/collab.php'; ?>
+
   <?php require_once 'parts/info.php'; ?>
 
   <?php require_once 'parts/signup_card.php'; ?>
@@ -21,6 +24,7 @@
 
 
   <?php require_once 'parts/sticky_header.php'; ?>
+  <?php require_once 'parts/admin_btn.php'; ?>
 
   <div class="container" id="top">
 
