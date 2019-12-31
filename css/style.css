@@ -3556,6 +3556,8 @@ body {
       margin-left: -3rem; }
     .card__input svg {
       fill: transparent; }
+    .card__input select {
+      width: 20rem; }
   .card__submit {
     display: flex;
     align-items: center; }

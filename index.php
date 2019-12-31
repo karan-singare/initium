@@ -20,6 +20,8 @@
 
   <?php require_once 'parts/info.php'; ?>
 
+  <?php require_once 'parts/biodata_card.php'; ?>
+
   <?php require_once 'parts/signup_card.php'; ?>
 
   <?php require_once 'parts/login_card.php'; ?>
