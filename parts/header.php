@@ -18,7 +18,7 @@
     </ul>
     <div class="header__main__btns">
 
-      <?php if ($_SESSION['username']): ?>
+      <?php if (isset($_SESSION['username'])): ?>
         <a href="logout.php" class="header__btn btn btn--pink login">Logout</a>
       <?php else: ?>
         <button class="header__btn btn btn--pink login">Login</button>
