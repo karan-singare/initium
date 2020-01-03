@@ -7,7 +7,7 @@
       <a href="#events" class="scroll"><li>Events</li></a>
       <a href="#management" class="scroll"><li>Contact Us</li></a>
       <a href="#gallery" class="scroll"><li>Gallery</li></a>
-      <?php if ($_SESSION['username']): ?>
+      <?php if (isset($_SESSION['username'])): ?>
         <a href="logout.php" class="header__btn btn btn--pink login"><li>Logout</li></a>
       <?php else: ?>
         <button type="button" class="btn btn--pink btn--2"><li>Login</li></button>
