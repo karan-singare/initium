@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   gsap.from('.nav__links', {opacity: 0, duration: 1.2, x: -50, stagger: .2, delay: 1});
   gsap.from('.header__btn', {opacity: 0, duration: .4, x: -50, stagger: .2, delay: 2});
-  $('.brand__logo').css({"animation" : "rollIn 1s ease-in"});
+  $('.brand__logo').css({"animation" : "fadeIn 2.5s ease-in"});
 
 
 
@@ -73,9 +73,18 @@ $(document).ready(function() {
         gsap.from('.footer__item', {opacity: 0, duration: 1.2, y: -100, stagger: .3});
       }
     });
+    /* Header Slider */
 
-
-
+    var i = 0;
+    setInterval(function() {
+      i++;
+      $('.header').css({
+        'background-image' : `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://127.0.0.1:8000/images/background/background${i}.jpg')`
+      });
+      if (i == 3) {
+        i = 0;
+      }
+    }, 4000);
 
 });
 
