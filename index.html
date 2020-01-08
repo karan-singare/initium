@@ -474,7 +474,10 @@
 
 
   <div class="sticky">
-    <img src="images/logo.png" class="sticky__img">
+    <div class="sticky__img">
+      <img src="images/logo.png" alt="site logo">
+    </div>
+
     <ul class="sticky__nav nav">
         <!-- <a href="." class="active"><li>Home</li></a> -->
         <a href="#about" class="scroll"><li>About Us</li></a>
@@ -499,12 +502,16 @@
   <div class="container" id="top">
     <header class="header parallax--bg">
       <div class="header__main">
-        <a href=".">
-          <div class="header__brand brand">
+        <a href="." class="site">
+          <div class="header__brand brand site__brand">
             <div class="brand__logo">
               <img src="images/logo.png" alt="site logo">
             </div>
           </div>
+          <span class="site__details">
+            <h1 class="site__name">department of mining engineering</h1>
+            <h2 class="site__slogan">indian institue of engineering science and technology</h2>
+          </span>
         </a>
         <ul class="header__main__nav nav">
             <!-- <a href="." class="nav__links"><li>Home</li></a> -->
@@ -528,9 +535,11 @@
         <h1 class="heading__primary">
           initium 2020
         </h1>
-        <h3 class="heading__tertiary mb-md">
-          6th edition
-        </h3>
+        <div class="header__edtition">
+          <h3 class="heading__tertiary">
+            6th edition
+          </h3>
+        </div>
         <h5 class="mb-sm">
           the national mining tech festival
         </h5>
@@ -1065,10 +1074,11 @@
       <div class="footer__logo footer__item">
         <div class="footer__item__heading">initium 6.0</div>
         <a href=".">
-          <div class="brand">
-            <div class="brand__logo">
-              <img src="images/logo.png" alt="site logo">
-            </div>
+          <!-- <div class="brand">
+
+          </div> -->
+          <div class="brand__logo">
+            <img src="images/logo.png" alt="site logo">
           </div>
         </a>
       </div>
@@ -1112,7 +1122,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/gsap.min.js"></script>
   <script src="js/scroll-out.min.js"></script>
-  <script src="js/animation.js" charset="utf-8"></script>
+  <!-- <script src="js/animation.js" charset="utf-8"></script> -->
   <script src="js/sticky.js" charset="utf-8"></script>
   <script src="js/parallax.js" charset="utf-8"></script>
   <script src="js/smooth-scroll.js" charset="utf-8"></script>

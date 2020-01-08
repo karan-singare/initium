@@ -227,6 +227,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: #fff;
+  z-index: 11;
   display: grid;
   grid-template-rows: min-content; }
   .header__main {
@@ -295,27 +296,13 @@ body {
       text-transform: uppercase;
       font-size: 8rem;
       letter-spacing: 1rem;
-      margin-bottom: 1rem; }
+      margin-bottom: 5rem; }
     .header__details .heading__tertiary {
       position: relative;
       font-family: "Orbitron", sans-serif;
       text-transform: uppercase;
       font-size: 4rem;
       text-align: center; }
-      .header__details .heading__tertiary::before {
-        position: absolute;
-        color: #fff;
-        width: 100%;
-        height: 2px;
-        top: 0;
-        left: 0; }
-      .header__details .heading__tertiary::after {
-        position: absolute;
-        color: #fff;
-        width: 100%;
-        height: 2px;
-        top: 0;
-        right: 0; }
     .header__details h4 {
       font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
@@ -335,6 +322,31 @@ body {
     text-transform: uppercase;
     font-size: 2rem;
     text-align: center; }
+  .header__edtition {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: .5rem;
+    align-items: center; }
+    @media only screen and (max-width: 43.75em) {
+      .header__edtition {
+        grid-template-columns: 1fr 2fr 1fr; } }
+    .header__edtition::after, .header__edtition::before {
+      content: '';
+      position: absolute;
+      height: .5rem;
+      width: 100%;
+      background-color: #ffffff; }
+    .header__edtition .heading__tertiary {
+      grid-column: 2/span 1;
+      letter-spacing: .5rem; }
+      @media only screen and (max-width: 43.75em) {
+        .header__edtition .heading__tertiary {
+          font-size: 4rem; } }
+    .header__edtition::after {
+      grid-column: -2/-1; }
+    .header__edtition::before {
+      grid-column: 1/span 1; }
 
 @media only screen and (max-width: 43.75em) {
   .header__main {
@@ -343,7 +355,13 @@ body {
     justify-items: start; }
     .header__main .header__brand .brand__logo {
       width: 25rem;
-      height: 8rem; }
+      height: 10rem; } }
+    @media only screen and (max-width: 43.75em) and (max-width: 43.75em) {
+      .header__main .header__brand .brand__logo {
+        width: 10rem;
+        height: 4rem; } }
+
+@media only screen and (max-width: 43.75em) {
     .header__main > a {
       grid-row: 1/2;
       grid-column: 1/-1; }
@@ -356,11 +374,14 @@ body {
     .header__main__btns {
       grid-row: 1/2;
       grid-column: 1/-1;
-      justify-self: end; }
+      justify-self: end; } }
+    @media only screen and (max-width: 43.75em) and (max-width: 43.75em) {
+      .header__main__btns .header__btn {
+        padding: .3rem .6rem; } }
+
+@media only screen and (max-width: 43.75em) {
   .header__details .heading__primary {
     font-size: 6rem; }
-  .header__details .heading__tertiary {
-    font-size: 4rem; }
   .header__details h4 {
     font-size: 2.2rem; }
   .header__details h5 {
@@ -372,7 +393,7 @@ body {
   left: 0;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/background/autumn.jpg);
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   z-index: 10;
   box-shadow: 0 2rem 4rem rgba(255, 255, 255, 0.41);
   display: grid;
@@ -384,7 +405,14 @@ body {
       padding: 1rem 0; } }
   .sticky__img {
     width: 20rem;
-    height: 6rem; }
+    height: 8rem;
+    background-image: url("../images/logo_new.png");
+    background-size: cover;
+    background-position: center; }
+    .sticky__img img {
+      width: 100%;
+      height: 100%;
+      opacity: 0; }
   @media only screen and (max-width: 50em) {
     .sticky__img {
       display: none; } }
@@ -410,7 +438,10 @@ body {
     @media only screen and (max-width: 43.75em) {
       .sticky__nav {
         grid-column-gap: .3rem;
-        font-size: 1.4rem; } }
+        font-size: 1.4rem; }
+        .sticky__nav .brand__logo {
+          width: 20rem;
+          height: 8rem; } }
     .sticky__nav a {
       text-decoration: none;
       color: #fff;
@@ -827,15 +858,19 @@ body {
   grid-gap: 2rem; }
   .brand__logo {
     grid-column: 1/2;
-    width: 28rem;
-    height: 11rem; }
+    width: 20rem;
+    height: 8rem;
+    background-image: url("../images/logo_new.png");
+    background-size: cover;
+    background-position: center; }
     @media only screen and (max-width: 43.75em) {
       .brand__logo {
-        width: 20rem;
+        width: 25rem;
         height: 10rem; } }
     .brand__logo img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      opacity: 0; }
 
 .nav ul {
   list-style: none;
@@ -3734,6 +3769,24 @@ body {
     height: 4rem;
     margin-left: -4rem;
     cursor: pointer; }
+
+.site {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-column-gap: 1rem; }
+  .site__details {
+    grid-column: 2/span 1;
+    grid-row: 1/ span 1;
+    align-items: center;
+    text-transform: uppercase;
+    align-self: center;
+    color: #ffffff;
+    letter-spacing: 0px; }
+  .site__name {
+    font-size: 1.2rem; }
+  .site__slogan {
+    font-size: 1rem;
+    align-self: center; }
 
 .admin-btn {
   position: fixed;
