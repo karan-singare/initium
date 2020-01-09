@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 
-<?php require_once 'parts/os.php'; ?>
+<?php //require_once 'parts/os.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,25 +14,7 @@
 </head>
 <body>
 
-  <?php //require_once 'parts/os.php'; ?>
 
-
-  <?php require_once 'parts/message.php'; ?>
-
-  <?php require_once 'parts/welcome.php'; ?>
-
-
-  <?php require_once 'parts/info.php'; ?>
-
-  <?php require_once 'parts/biodata_card.php'; ?>
-
-  <?php require_once 'parts/signup_card.php'; ?>
-
-  <?php require_once 'parts/login_card.php'; ?>
-
-
-  <?php require_once 'parts/sticky_header.php'; ?>
-  <?php require_once 'parts/admin_btn.php'; ?>
 
   <div class="container" id="top">
 
@@ -57,6 +39,27 @@
 
   </div>
 
+
+
+  <?php require_once 'parts/os.php'; ?>
+
+
+  <?php require_once 'parts/message.php'; ?>
+
+  <?php require_once 'parts/welcome.php'; ?>
+
+
+  <?php require_once 'parts/info.php'; ?>
+
+  <?php require_once 'parts/biodata_card.php'; ?>
+
+  <?php require_once 'parts/signup_card.php'; ?>
+
+  <?php require_once 'parts/login_card.php'; ?>
+
+
+  <?php require_once 'parts/sticky_header.php'; ?>
+  <?php require_once 'parts/admin_btn.php'; ?>
 
 
   <?php require_once 'parts/js_script.php'; ?>
