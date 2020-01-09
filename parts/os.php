@@ -1,4 +1,5 @@
-<?php
-  $os = php_uname('s');
-  echo "<script>console.log('$os');</script>";
- ?>
+<script>
+  if (navigator.appVersion.indexOf("Win")!=-1) {
+    console.log("windows");
+  }
+</script>
