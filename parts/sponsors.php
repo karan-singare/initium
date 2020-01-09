@@ -1,5 +1,4 @@
-
-    <div class="sponsor" id="sponsors">
+<div class="sponsor" id="sponsors">
       <div class="sponsor__heading heading__primary">our sponsors</div>
       <div class="sponsor__items">
         <div class="sponsor__item sponsor__item--1">

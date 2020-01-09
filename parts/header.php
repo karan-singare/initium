@@ -4,12 +4,15 @@
     <a href=".">
       <div class="header__brand brand">
         <div class="brand__logo">
-          <img src="images/logo1.png" alt="site logo">
+          <img src="images/logos/logo.png" alt="site logo">
         </div>
       </div>
+      <span class="site__details">
+        <h1 class="site__name">department of mining engineering</h1>
+        <h2 class="site__slogan">indian institue of engineering science and technology</h2>
+      </span>
     </a>
     <ul class="header__main__nav nav">
-        <!-- <a href="." class="nav__links"><li>Home</li></a> -->
         <a href="#about" class="nav__links scroll"><li>About Us</li></a>
         <a href="#sponsors" class="nav__links scroll"><li>Sponsors</li></a>
         <a href="#events" class="nav__links scroll"><li>Events</li></a>
@@ -28,13 +31,26 @@
     </div>
   </div>
 
+  <div class="header__depart">
+    <h3>department of mining engineering</h3>
+    <h3>iiest shibpur</h3>
+  </div>
+
   <div class="header__details">
-    <h1 class="heading__primary mb-md">
-      Initium 6.0 Mining TechFest <span>IIEST</span> 2019
+    <h1 class="heading__primary">
+      initium 2020
     </h1>
-    <h3 class="heading__tertiary mb-md">
-      Janurary 20-23, IIEST, Shibpur, botanical gardens,  howrah
-    </h3>
+    <div class="header__edtition">
+      <h3 class="heading__tertiary">
+        6th edition
+      </h3>
+    </div>
+    <h5 class="mb-sm">
+      the national mining tech festival
+    </h5>
+    <h4 class="mb-sm">
+      5th - 6th february 2020
+    </h4>
     <a href="#events" class="header__btn btn btn--violet login mb-sm">Register for events</a>
     <button class="header__btn btn btn--violet login mb-sm">Tell us about you</button>
   </div>

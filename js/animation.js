@@ -78,9 +78,20 @@ $(document).ready(function() {
     var i = 0;
     setInterval(function() {
       i++;
+      let url = $('.header').css("background-image");
+      let url_part = url.split('background/');
+      
+      if (url !== "") {
+        $('.header').css({
+          "background-image" : ""
+        });
+      }
+
       $('.header').css({
-        'background-image' : `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://127.0.0.1:8000/images/background/background${i}.jpg')`
+        'background-image' : `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${url_part[0]}background/background${i}.jpg`
       });
+
+      console.log($('.header').css("background-image"));
       if (i == 3) {
         i = 0;
       }
