@@ -1,5 +1,7 @@
 <?php session_start(); ?>
 
+<?php require_once 'parts/os.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +13,9 @@
   <link rel="icon" href="images/logos/logo.png">
 </head>
 <body>
+
+  <?php //require_once 'parts/os.php'; ?>
+
 
   <?php require_once 'parts/message.php'; ?>
 

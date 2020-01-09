@@ -1,7 +1,7 @@
 <header class="header parallax--bg">
 
   <div class="header__main">
-    <a href=".">
+    <a href="." class="site">
       <div class="header__brand brand">
         <div class="brand__logo">
           <img src="images/logos/logo.png" alt="site logo">
