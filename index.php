@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Initium | TechFest of Mining Engineering</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/logo1.png">
+  <link rel="icon" href="images/logos/logo.png">
 </head>
 <body>
 
@@ -16,7 +16,6 @@
 
   <?php require_once 'parts/welcome.php'; ?>
 
-  <?php require_once 'parts/collab.php'; ?>
 
   <?php require_once 'parts/info.php'; ?>
 

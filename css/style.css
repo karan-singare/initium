@@ -804,7 +804,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/background/autumn.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/background/footer.jpg);
   padding: 1rem 2rem;
   z-index: 10;
   box-shadow: 0 2rem 4rem rgba(255, 255, 255, 0.41);
@@ -814,7 +814,7 @@ body {
   .sticky__img {
     width: 20rem;
     height: 8rem;
-    background-image: url("../images/logo_new.png");
+    background-image: url("../images/logos/logo_new.png");
     background-size: cover;
     background-position: center; }
     .sticky__img img {

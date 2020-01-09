@@ -1,5 +1,5 @@
 <div class="sticky">
-  <img src="images/logo1.png" class="sticky__img">
+  <img src="images/logos/logo.png" class="sticky__img">
   <ul class="sticky__nav nav">
       <!-- <a href="." class="active"><li>Home</li></a> -->
       <a href="#about" class="scroll"><li>About Us</li></a>
@@ -17,4 +17,4 @@
   </ul>
 </div>
 
-<a href="#top" class="top scroll"><img src="images/circle-up.png" alt=""></a>
+<a href="#top" class="top scroll"><img src="images/icons/circle-up.png" alt=""></a>
