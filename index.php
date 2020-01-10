@@ -14,11 +14,10 @@
 </head>
 <body>
 
-
-
   <div class="container" id="top">
-    <?php require_once 'parts/os.php'; ?>
-    
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/os.js" charset="utf-8"></script>
+
 
     <?php require_once 'parts/header.php'; ?>
 
