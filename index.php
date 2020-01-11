@@ -8,6 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="google-site-verification" content="YQLMsS8l4wrUBkSeBD-4BNuuxzsn7j6gRsowaMovUvc">
   <title>Initium | TechFest of Mining Engineering</title>
+  <meta name="description" content="It is the National Mining Technological Festival of the Department of Mining Engineering, IIEST, Shibpur.">
+  <meta name="keywords" content="initium, initium 6.0 initium iiests, mining TechFest of iiest, iiests shibpur mining techfest, initium 6.0 , initium 2020">
+  <meta name="author" content="Karan Singh Singare">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/logos/logo.png">
 </head>
