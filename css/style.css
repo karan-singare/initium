@@ -582,11 +582,15 @@ body {
   .member__name {
     font-size: 2rem;
     color: #fff;
-    font-weight: 300; }
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize; }
   .member__position {
     font-size: 1.6rem;
     color: #ff006a;
-    font-weight: 300; }
+    font-weight: 300;
+    text-align: center;
+    text-transform: capitalize; }
   .member:hover {
     background: rgba(0, 0, 0, 0.3);
     box-sizing: 0 2rem 4rem rgba(0, 0, 0, 0.88); }
@@ -1282,6 +1286,40 @@ body {
   .site__slogan {
     font-size: 1rem;
     align-self: center; }
+
+.slider {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 85vh;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.56);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-image: url(../images/gallery/gal-1.jpg);
+  background-size: cover;
+  background-position: center; }
+  .slider > * {
+    grid-row: 1/2; }
+  .slider__next {
+    justify-self: end;
+    grid-column: 2/3; }
+  .slider svg {
+    height: 6rem;
+    width: 6rem;
+    cursor: pointer;
+    fill: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.7); }
+  .slider__close {
+    grid-column: 2/3;
+    align-self: start;
+    justify-self: end; }
 
 .admin-btn {
   position: fixed;

@@ -62,6 +62,9 @@
 
 
   <?php require_once 'parts/sticky_header.php'; ?>
+
+  <?php //require_once 'parts/slider.php'; ?>
+
   <?php require_once 'parts/admin_btn.php'; ?>
 
 

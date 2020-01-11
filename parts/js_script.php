@@ -7,4 +7,5 @@
 <script src="js/events.js" charset="utf-8"></script>
 <script src="js/signup.js" charset="utf-8"></script>
 <script src="js/login.js" charset="utf-8"></script>
+<script src="js/slider.js" charset="utf-8"></script>
 <script src="js/event_register.js" charset="utf-8"></script>
