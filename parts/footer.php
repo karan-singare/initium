@@ -30,9 +30,9 @@
       <div class="footer__follow footer__item">
         <div class="footer__item__heading">follow</div>
         <ul>
-          <li><a href="https://www.facebook.com/initium.mining/"><svg><use xlink:href="images/sprite.svg#icon-facebook2"></use></svg></a></li>
-          <li><a href="https://www.instagram.com/initium.mining/?hl=en"><svg><use xlink:href="images/sprite.svg#icon-instagram"></use></svg></a></li>
-          <li><a href="mailto:initium.mining@gmail.com"><svg><use xlink:href="images/sprite.svg#icon-envelope"></use></svg></a></li>
+          <li><a href="https://www.facebook.com/initium.mining/" target="_blank"><svg><use xlink:href="images/sprite.svg#icon-facebook2"></use></svg></a></li>
+          <li><a href="https://www.instagram.com/initium.mining/?hl=en" target="_blank"><svg><use xlink:href="images/sprite.svg#icon-instagram"></use></svg></a></li>
+          <li><a href="mailto:initium.mining@gmail.com" target="_blank"><svg><use xlink:href="images/sprite.svg#icon-envelope"></use></svg></a></li>
 
         </ul>
       </div>
