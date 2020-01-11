@@ -30,6 +30,7 @@
 
     <?php require_once 'parts/events.php'; ?>
 
+    <?php require_once 'parts/keyperson.php'; ?>
 
     <?php require_once 'parts/management.php'; ?>
 

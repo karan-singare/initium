@@ -2,19 +2,6 @@
      <div class="team" id="management">
       <h1 class="team__heading heading__primary">Our Teams</h1>
       <div class="team__members">
-        <div class="team__member team__member--1 member">
-          <figure class="member__photo">
-            <img src="images/profile/team-1.jpg" alt="" class="member__img">
-            <div class="member__contact">
-              <svg>
-                <use xlink:href="images/sprite.svg#icon-phone"></use>
-              </svg>
-              +919340137741
-            </div>
-          </figure>
-          <div class="member__name">Dr.Netai Chandra Dey</div>
-          <div class="member__position">Faculty Conevner</div>
-        </div>
         <div class="team__member team__member--2 member">
           <figure class="member__photo">
             <img src="images/profile/team-1.jpg" alt="" class="member__img">
@@ -131,6 +118,19 @@
         </figure>
         <div class="member__name">Subhrajyoti Mahata</div>
         <div class="member__position">Photo/Video Team Head</div>
+      </div>
+        <div class="team__member team__member--9 member">
+        <figure class="member__photo">
+          <img src="images/profile/karan.png" alt="" class="member__img">
+          <div class="member__contact">
+            <svg>
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            +919340137741
+          </div>
+        </figure>
+        <div class="member__name">Karan Singh Singare</div>
+        <div class="member__position">Web Developer</div>
       </div>
 
       </div>

@@ -74,28 +74,22 @@ $(document).ready(function() {
       }
     });
     /* Header Slider */
-    //
-    // var i = 0;
-    // setInterval(function() {
-    //   i++;
-    //   let url = $('.header').css("background-image");
-    //   let url_part = url.split('background/');
-    //
-    //   if (url !== "") {
-    //     $('.header').css({
-    //       "background-image" : ""
-    //     });
-    //   }
-    //
-    //   $('.header').css({
-    //     'background-image' : `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), ${url_part[0]}background/background${i}.jpg`
-    //   });
-    //
-    //   console.log($('.header').css("background-image"));
-    //   if (i == 3) {
-    //     i = 0;
-    //   }
-    // }, 4000);
+
+    var i = 1;
+    setInterval(function() {
+      i++;
+      let url = $('.header').css("background-image");
+      let url_part = url.split('background/');
+
+      $('.header').css({
+        'background-image' : `${url_part[0]}background/background${i}.jpg`
+      });
+
+      if (i == 3) {
+        i = 0;
+      }
+    }, 3000);
+
 
 });
 

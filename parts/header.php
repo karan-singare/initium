@@ -25,16 +25,12 @@
         <a href="logout.php" class="header__btn btn btn--pink login">Logout</a>
       <?php else: ?>
         <button class="header__btn btn btn--pink login">Login</button>
-        <button class="header__btn btn btn--pink register">Register</button>
+        <button class="header__btn btn btn--pink register">Signup</button>
       <?php endif; ?>
 
     </div>
   </div>
 
-  <div class="header__depart">
-    <h3>department of mining engineering</h3>
-    <h3>iiest shibpur</h3>
-  </div>
 
   <div class="header__details">
     <h1 class="heading__primary">
@@ -51,7 +47,7 @@
     <h4 class="mb-sm">
       5th - 6th february 2020
     </h4>
-    <a href="#events" class="header__btn btn btn--violet login mb-sm">Register for events</a>
+    <a href="#events" class="header__btn btn btn--violet login mb-sm scroll">Register for events</a>
     <button class="header__btn btn btn--violet login mb-sm">Tell us about you</button>
   </div>
 </header>

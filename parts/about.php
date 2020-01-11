@@ -1,7 +1,6 @@
 <div class="about" id="about">
   <h1 class="about__heading heading__primary">About Us</h1>
   <p class="about__details">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    It is the National Mining Technological Festival of the Department of Mining Engineering, IIEST, Shibpur. Started back in 2012, INITIUM 2020 will be the 5th edition of this successful extravaganza to be held on February 5-6, 2020. We expect wide scale participation from the industry and academia. There are events like Enviro Case Study, Mino Case Study and Paper Presentation by students and much more. Seminar speakers will be from eminent industries.It is based on the theme of Mining and Allied Fields.
   </p>
 </div>

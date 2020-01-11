@@ -18,7 +18,7 @@ $(document).ready(function() {
 	        "animation" : "slideInRight .3s ease-in-out",
 	        "visibility" : "visible"
 	      });
-	    }, 500);
+	    }, 100);
 		}
   });
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
           "animation" : "slideInRight .3s ease-in-out",
           "visibility" : "visible"
         });
-      }, 500);
+      }, 100);
     }
   });
 
@@ -65,7 +65,7 @@ $(document).ready(function() {
   });
 
   $('.card--signup a').click(function() {
-    $('.card--signup').css({"animation" : "slideOutUp .3s ease-in-out"});
+    $('.card--signup').css({"animation" : "slideOutDown .3s ease-in-out"});
 
     setTimeout(function(){
       $('.card--signup').css({ "visibility" : "hidden"});
@@ -73,12 +73,12 @@ $(document).ready(function() {
         "animation" : "slideInRight .3s ease-in-out",
         "visibility" : "visible"
       });
-    }, 500);
+    }, 100);
   });
 
 
   $('.card--login a').click(function() {
-    $('.card--login').css({"animation" : "slideOutUp .3s ease-in-out"});
+    $('.card--login').css({"animation" : "slideOutDown .3s ease-in-out"});
 
     setTimeout(function(){
       $('.card--login').css({ "visibility" : "hidden"});
@@ -86,20 +86,21 @@ $(document).ready(function() {
         "animation" : "slideInRight .3s ease-in-out",
         "visibility" : "visible"
       });
-    }, 500);
+    }, 100);
   });
 
   $('.card__close').click(function() {
-    $('.card').css({"animation" : "slideOutUp .3s ease-in-out"});
+    $('.card').css({"animation" : "slideOutDown .3s ease-in-out"});
     setTimeout(function(){
       $('.card').css({ "visibility" : "hidden"});
-    }, 500);
+    }, 100);
   });
 
   /*Events for event rules */
 
   $('.event__cover .info-btn').click(function() {
     let id = $(this).attr("info-id");
+    console.log(id);
     $('#' + id).css({
       "visibility" : "visible",
       "animation" : "bounceIn 1s ease-in"

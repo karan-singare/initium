@@ -103,10 +103,10 @@ body {
     background-color: #feac00;
     color: #fff;
     transition: all .1s;
-    border: 2px solid #feac00; }
+    border: 2px solid #fff; }
     .btn--pink:hover {
       background: #000;
-      border: 2px solid #fff;
+      border: 2px solid #feac00;
       color: #fff; }
   .btn--violet {
     background-color: #ae1ec7;
@@ -117,8 +117,8 @@ body {
     border: 2px solid transparent; }
     .btn--violet:hover {
       background: #000;
-      border: 2px solid #fff;
-      color: #fff; }
+      border: 1px solid #feac00;
+      color: #feac00; }
   .btn--yellow {
     background-color: #ffa116;
     background-color: #ffc845;
@@ -129,7 +129,7 @@ body {
     transition: all .2s ease-in; }
     .btn--yellow:hover {
       background: #000;
-      border: 2px solid #fff;
+      border: 2px solid #000;
       color: #fff; }
   @media only screen and (max-width: 43.75em) {
     .btn {
@@ -439,6 +439,88 @@ body {
   .about__details {
     width: 100%; } }
 
+.keypersons {
+  grid-column: full-start/full-end;
+  position: relative;
+  background-color: #131144;
+  display: grid;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/background/team.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
+  .keypersons__heading {
+    grid-row: 1/span 1;
+    color: #fff; }
+  .keypersons__members {
+    grid-row: 2/span 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 5rem;
+    width: 100%; }
+  .keypersons__btn {
+    margin-top: 4rem;
+    align-self: center;
+    justify-self: center; }
+
+.member {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0rem;
+  box-shadow: 0 2rem 4rem rgba(255, 255, 255, 0.25);
+  border-radius: .5rem;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  transition: all .5s ease-in; }
+  .member__photo {
+    width: 20rem;
+    height: 20rem;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    position: relative; }
+  .member__img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s; }
+  .member__contact {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    text-align: center;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0; }
+    .member__contact svg {
+      fill: #fff;
+      width: 3rem;
+      height: 3rem; }
+  .member__name {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300; }
+  .member__position {
+    font-size: 1.6rem;
+    color: #ff006a;
+    font-weight: 300; }
+  .member:hover {
+    background: rgba(0, 0, 0, 0.3);
+    box-sizing: 0 2rem 4rem rgba(0, 0, 0, 0.88); }
+  .member:hover .member__img {
+    filter: blur(0.1rem) brightness(50%);
+    transform: scale(1.1); }
+  .member:hover .member__contact {
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1; }
+
+@media only screen and (max-width: 43.75em) {
+  .member {
+    grid-gap: 0rem;
+    justify-content: center; } }
+
 .team {
   grid-column: full-start/full-end;
   position: relative;
@@ -480,6 +562,7 @@ body {
     clip-path: circle(50% at 50% 50%);
     position: relative; }
   .member__img {
+    width: 100%;
     height: 100%;
     transition: all .5s; }
   .member__contact {
@@ -933,7 +1016,7 @@ body {
     line-height: 1; }
   .event__contact {
     display: grid;
-    grid-template-columns: repeat(2, min-content);
+    grid-template-columns: repeat(3, min-content);
     justify-content: center;
     align-items: center; }
   .event__cover {
@@ -974,13 +1057,14 @@ body {
   right: 2vw;
   z-index: 12;
   background-image: linear-gradient(rgba(255, 200, 69, 0.81), rgba(255, 200, 69, 0.81));
+  background-image: linear-gradient(rgba(231, 98, 13, 0.4), rgba(231, 98, 13, 0.4));
   color: #fff;
   display: grid;
   grid-template-rows: repeat(2, min-content);
   grid-row-gap: 2rem;
   border-radius: 1rem;
-  border: 2px solid rgba(255, 200, 69, 0.71);
-  box-shadow: 0 2rem 4rem #ffc845;
+  border: 2px solid rgba(231, 98, 13, 0.6);
+  box-shadow: 0 2rem 4rem #e7620d;
   padding: 2rem;
   width: 40rem; }
   .card__header {
@@ -1044,6 +1128,7 @@ body {
       cursor: pointer; }
     .card__body a {
       color: rgba(67, 8, 152, 0.92);
+      color: #fff;
       text-decoration: none; }
       .card__body a:hover {
         color: #fff; }
@@ -1091,6 +1176,9 @@ body {
   border-radius: 1rem;
   color: rgba(33, 32, 32, 0.98);
   color: #fff;
+  border: 2px solid rgba(231, 98, 13, 0.6);
+  box-shadow: 0 2rem 4rem #e7620d;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.83), rgba(231, 98, 13, 0.83));
   display: grid;
   grid-template-columns: minmax(30rem, 1fr) 5rem; }
   .info__heading {
@@ -1108,6 +1196,7 @@ body {
     right: -1rem;
     top: -1rem;
     fill: rgba(226, 25, 25, 0.81);
+    fill: #000;
     z-index: 20; }
   .info__content {
     grid-column: 1/-1;
@@ -1155,10 +1244,10 @@ body {
   justify-content: center;
   grid-template-columns: max-content min-content; }
   .message__text {
-    border: 2px solid rgba(255, 200, 69, 0.71);
-    box-shadow: 0 2rem 4rem #ffc845;
+    border: 2px solid rgba(231, 98, 13, 0.6);
+    box-shadow: 0 2rem 4rem #e7620d;
     width: 100%;
-    background: #ffffff;
+    background: rgba(0, 0, 0, 0.7);
     font-size: 2rem;
     border-radius: .8rem;
     padding: 3rem;
@@ -1167,7 +1256,8 @@ body {
     grid-template-rows: min-content;
     align-content: center;
     justify-items: center;
-    color: #0cd76a; }
+    color: #0cd76a;
+    color: #fff; }
   .message__close {
     fill: red;
     width: 4rem;
