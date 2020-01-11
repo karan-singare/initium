@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-site-verification" content="YQLMsS8l4wrUBkSeBD-4BNuuxzsn7j6gRsowaMovUvc">
   <title>Initium | TechFest of Mining Engineering</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/logos/logo.png">
