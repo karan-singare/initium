@@ -34,23 +34,3 @@
   }
 
  ?>
-<?php
-  $username = "karan_singare";
-  $email = "karan@mail.com";
-  $password = "Karan123";
-  $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-  $sql = "insert into users (username, email, password) values (? ,?, ?)";
-  $query = $db->prepare($sql);
-  $query->execute([$username, $email, $password]);
-  if ($query) {
-    $_SESSION['username'] = $username;
-    $_SESSION['first_time_login'] = "true";
-    $feedback['msg'] = "signup_success";
-
-    echo json_encode($feedback);
-  }
-
-  
-
-
- ?>
