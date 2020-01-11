@@ -1,7 +1,10 @@
 <?php session_start(); ?>
+<?php
+  if (!isset($_SESSION['username'])) {
+    header("location: first.php");
+  }
 
-<?php //require_once 'parts/os.php'; ?>
-
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
