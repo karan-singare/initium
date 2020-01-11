@@ -281,7 +281,7 @@
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
             </svg>
-            +919340137741
+            <a href="tel:+9340137741">+919340137741</a>
           </div>
         </figure>
         <div class="member__name">Karan Singh Singare</div>
