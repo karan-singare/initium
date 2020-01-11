@@ -38,7 +38,7 @@
             </div>
           </figure>
           <div class="member__name">Professor Sudipta Mukhopadhyay</div>
-          <div class="member__position">Chairmam INITIUM 6.0 <br>HOD Mining Engineering <br> IIEST Shibpur</div>
+          <div class="member__position">Chairman INITIUM 6.0 <br>HOD Mining Engineering <br> IIEST Shibpur</div>
         </div>
       </div>
       <!-- <button class="team__btn btn btn--yellow">view all members</button> -->

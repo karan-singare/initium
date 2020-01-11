@@ -3,7 +3,7 @@
       <div class="team__members">
         <div class="team__member team__member--2 member">
           <figure class="member__photo">
-            <img src="images/profile/team-1.jpg" alt="" class="member__img">
+            <img src="images/profile/nab.jpeg" alt="" class="member__img">
             <div class="member__contact">
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
@@ -55,7 +55,7 @@
         </div>
         <div class="team__member team__member--3 member">
           <figure class="member__photo">
-            <img src="images/profile/team-1.jpg" alt="" class="member__img">
+            <img src="images/profile/bikash.jpeg" alt="" class="member__img">
             <div class="member__contact">
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
@@ -224,7 +224,7 @@
       </div>
         <div class="team__member team__member--8 member">
         <figure class="member__photo">
-          <img src="images/profile/team-1.jpg" alt="" class="member__img">
+          <img src="images/profile/subhra.jpeg" alt="" class="member__img">
           <div class="member__contact">
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
@@ -237,7 +237,7 @@
       </div>
         <div class="team__member team__member--8 member">
         <figure class="member__photo">
-          <img src="images/profile/team-1.jpg" alt="" class="member__img">
+          <img src="images/profile/priyam.jpeg" alt="" class="member__img">
           <div class="member__contact">
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
@@ -250,7 +250,7 @@
       </div>
         <div class="team__member team__member--9 member">
         <figure class="member__photo">
-          <img src="images/profile/karan.png" alt="" class="member__img">
+          <img src="images/profile/vansaj.jpeg" alt="" class="member__img">
           <div class="member__contact">
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
@@ -263,7 +263,7 @@
       </div>
         <div class="team__member team__member--9 member">
         <figure class="member__photo">
-          <img src="images/profile/karan.png" alt="" class="member__img">
+          <img src="images/profile/jana.jpeg" alt="" class="member__img">
           <div class="member__contact">
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
