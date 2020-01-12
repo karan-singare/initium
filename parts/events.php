@@ -19,7 +19,8 @@
               beautiful work and out of the box
               thinking.
             </p>
-            <h4 class="">Co-ordinator: <span>Karan Singh Singare</span></h4>
+            <h4 class="">Co-ordinator:</h4>
+            Rabert Pattsion
 
           </div>
           <div class="event__cover">
@@ -30,7 +31,7 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+919340137741</p>
+              <p>+91234567890</p>
             </div>
           </div>
         </div>
@@ -50,7 +51,7 @@
               openings, if found worthy.
             </p>
             <h4 class="">Co-ordinator:</h4>
-            Karan Singh Singare
+            Kristein Stevart
           </div>
           <div class="event__cover">
             <button type="button" class="btn btn--yellow register-btn" name="mino">Register</button>
@@ -60,7 +61,7 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+919340137741</p>
+              <p>+91235623456</p>
             </div>
           </div>
         </div>
@@ -82,7 +83,7 @@
               all livelihood.
             </p>
             <h4 class="">Co-ordinator:</h4>
-            Karan Singh Singare
+            Sandra Bullock
           </div>
           <div class="event__cover">
             <button type="button" class="btn btn--yellow register-btn" name="plantation">Register</button>
@@ -92,7 +93,7 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+919340137741</p>
+              <p>+9190876542</p>
             </div>
           </div>
         </div>
@@ -112,7 +113,7 @@
               mining in various scenarios.
             </p>
             <h4 class="">Co-ordinator:</h4>
-            Karan Singh Singare
+             Natašha Stanković
           </div>
           <div class="event__cover">
             <button type="button" class="btn btn--yellow register-btn" name="exhibition">Register</button>
@@ -122,7 +123,7 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+919340137741</p>
+              <p>+91567234987</p>
             </div>
           </div>
         </div>
@@ -144,7 +145,7 @@
               proceedings.
             </p>
             <h4 class="">Co-ordinator:</h4>
-            Karan Singh Singare
+            Taylor Lautner
           </div>
           <div class="event__cover">
             <button type="button" class="btn btn--yellow register-btn" name="presentation">Register</button>
@@ -154,7 +155,7 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+919340137741</p>
+              <p>+917896548976</p>
             </div>
           </div>
         </div>

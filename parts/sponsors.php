@@ -13,9 +13,6 @@
         <div class="sponsor__item sponsor__item--4">
           <a href="" target="_blank"><img src="images/sponsors/sp4.png" alt=""></a>
         </div>
-        <div class="sponsor__item sponsor__item--5">
-          <a href="" target="_blank"><img src="images/sponsors/sp5.png" alt=""></a>
-        </div>
         <div class="sponsor__item sponsor__item--white">
           <a href="https://datri.org/" target="_blank"><img src="images/sponsors/sp6.png" alt=""></a>
         </div>
