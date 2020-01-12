@@ -16,11 +16,23 @@
         <div class="sponsor__item sponsor__item--5">
           <a href="" target="_blank"><img src="images/sponsors/sp5.png" alt=""></a>
         </div>
-        <div class="sponsor__item sponsor__item--6">
+        <div class="sponsor__item sponsor__item--white">
           <a href="https://datri.org/" target="_blank"><img src="images/sponsors/sp6.png" alt=""></a>
         </div>
         <div class="sponsor__item sponsor__item--7">
           <a href="https://www.facebook.com/thetelegrapht2/" target="_blank"><img src="images/sponsors/sp7.png" alt=""></a>
+        </div>
+        <div class="sponsor__item sponsor__item--white">
+          <a href="https://www.hindustancopper.com/" target="_blank"><img src="images/sponsors/hcl2.png" alt=""></a>
+        </div>
+        <div class="sponsor__item sponsor__item--white">
+          <a href="https://www.dmt-group.com/" target="_blank"><img src="images/sponsors/dmt.png" alt=""></a>
+        </div>
+        <div class="sponsor__item sponsor__item--7">
+          <a href="http://www.gainwellindia.com/" target="_blank"><img src="images/sponsors/gain.png" alt=""></a>
+        </div>
+        <div class="sponsor__item sponsor__item--white">
+          <a href="https://www.iocl.com/" target="_blank"><img src="images/sponsors/iocl.gif" alt=""></a>
         </div>
         <div class="sponsor__item sponsor__item--add">
           <a href="sponsors.php" target="_blank">

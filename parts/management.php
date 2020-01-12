@@ -107,7 +107,7 @@
         </div>
         <div class="team__member team__member--5 member">
           <figure class="member__photo">
-            <img src="images/profile/team-1.jpg" alt="" class="member__img">
+            <img src="images/profile/anand.jpeg" alt="" class="member__img">
             <div class="member__contact">
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
@@ -120,7 +120,7 @@
         </div>
         <div class="team__member team__member--5 member">
           <figure class="member__photo">
-            <img src="images/profile/team-1.jpg" alt="" class="member__img">
+            <img src="images/profile/gorai.jpeg" alt="" class="member__img">
             <div class="member__contact">
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
@@ -172,7 +172,7 @@
         </div>
         <div class="team__member team__member--7 member">
           <figure class="member__photo">
-            <img src="images/profile/team-1.jpg" alt="" class="member__img">
+            <img src="images/profile/pranav.jpeg" alt="" class="member__img">
             <div class="member__contact">
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
