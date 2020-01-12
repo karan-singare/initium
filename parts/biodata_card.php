@@ -50,7 +50,7 @@
         <div class="bio_address-error hint"></div>
       </div>
       <div class="card__submit">
-        <button type="button" name="submit" class="btn btn--violet" id="biodata-submit">Submit</button>
+        <button type="button" name="submit" class="btn btn--yellow" id="biodata-submit">Submit</button>
         <svg class="card__input icon icon--danger">
           <use xlink:href="images/sprite.svg#icon-loader"></use>
         </svg>

@@ -103,7 +103,7 @@ body {
     background-color: #feac00;
     color: #fff;
     transition: all .1s;
-    border: 2px solid #fff; }
+    border: 2px solid transparent; }
     .btn--pink:hover {
       background: #000;
       border: 2px solid #feac00;
@@ -129,7 +129,7 @@ body {
     transition: all .2s ease-in; }
     .btn--yellow:hover {
       background: #000;
-      border: 2px solid #000;
+      border: 2px solid #feac00;
       color: #fff; }
   @media only screen and (max-width: 43.75em) {
     .btn {
@@ -208,6 +208,16 @@ body {
   100% {
     transform: rotate(360deg); } }
 
+@keyframes background-animate {
+  0%, 100% {
+    background-image: url("../images/background/background1.jpg"); }
+  25% {
+    background-image: url("../images/background/background2.jpg"); }
+  50% {
+    background-image: url("../images/background/background3.jpg"); }
+  75% {
+    background-image: url("../images/background/background4.jpg"); } }
+
 .header {
   position: relative;
   grid-column: full-start/full-end;
@@ -219,7 +229,8 @@ body {
   color: #fff;
   z-index: 11;
   display: grid;
-  grid-template-rows: min-content; }
+  grid-template-rows: min-content;
+  animation: background-animate 20s ease-in-out infinite; }
   .header__main {
     grid-row: 1/2;
     grid-column: 1/-1;
@@ -579,6 +590,8 @@ body {
       fill: #fff;
       width: 3rem;
       height: 3rem; }
+    .member__contact a {
+      color: #fff; }
   .member__name {
     font-size: 2rem;
     color: #fff;

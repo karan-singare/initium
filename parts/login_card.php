@@ -22,7 +22,7 @@
         <div class="login-password-error hint"></div>
       </div>
       <div class="card__submit">
-        <button type="button" name="submit" class="btn btn--violet" id="login-submit">Login</button>
+        <button type="button" name="submit" class="btn btn--yellow" id="login-submit">Login</button>
         <svg class="card__input icon icon--danger">
           <use xlink:href="images/sprite.svg#icon-loader"></use>
         </svg>

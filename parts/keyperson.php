@@ -8,7 +8,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +915422369301
+              <a href="tel:+915422369301">+915422369301</a>
             </div>
           </figure>
           <div class="member__name">Professor Parthasarathi Chakrabarti</div>
@@ -21,7 +21,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +919433524339
+              <a href="tel:+919433524339">+919433524339</a>
             </div>
           </figure>
           <div class="member__name">Professor Netai Chandra Dey</div>
@@ -34,7 +34,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-
+              <a href="tel:+919433524339">+919433524339</a>
             </div>
           </figure>
           <div class="member__name">Professor Sudipta Mukhopadhyay</div>

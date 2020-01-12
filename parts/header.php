@@ -47,7 +47,7 @@
     <h4 class="mb-sm">
       5th - 6th february 2020
     </h4>
-    <a href="#events" class="header__btn btn btn--violet login mb-sm scroll">Register for events</a>
-    <button class="header__btn btn btn--violet login mb-sm">Tell us about you</button>
+    <a href="#events" class="header__btn btn btn--yellow login mb-sm scroll">Register for events</a>
+    <button class="header__btn btn btn--yellow login mb-sm">Tell us about you</button>
   </div>
 </header>

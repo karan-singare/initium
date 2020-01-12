@@ -8,7 +8,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +917992285264
+              <a href="tel:+917992285264">+917992285264</a>
             </div>
           </figure>
           <div class="member__name">nabyendu neogi</div>
@@ -21,7 +21,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +918167826249
+              <a href="tel:+918167826249">+918167826249</a>
             </div>
           </figure>
           <div class="member__name">Abhishek Mitra</div>
@@ -34,7 +34,8 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +919110018090
+              <a href="tel:+919110018090">+919110018090</a>
+
             </div>
           </figure>
           <div class="member__name">Rahul Kumar Ojha</div>
@@ -47,7 +48,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +918013946685
+              <a href="tel:+918013946685">+918013946685</a>
             </div>
           </figure>
           <div class="member__name">Sumit Kumar Singh</div>
@@ -60,7 +61,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +918327750692
+              <a href="tel:+918327750692">+918327750692</a>
             </div>
           </figure>
           <div class="member__name">Bikash Jena</div>
@@ -73,7 +74,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +917257855451
+              <a href="tel:+917257855451">+917257855451</a>
             </div>
           </figure>
           <div class="member__name">Satyam Raj</div>
@@ -86,7 +87,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +918240816435
+              <a href="tel:+918240816435">+918240816435</a>
             </div>
           </figure>
           <div class="member__name">Sourav Chal</div>
@@ -95,11 +96,12 @@
         <div class="team__member team__member--4 member">
           <figure class="member__photo">
             <img src="images/profile/team-1.jpg" alt="" class="member__img">
-            <div class="member__contact">
+              <div class="member__contact">
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +918825245193
+              <a href="tel:+918825245193">+918825245193</a>
+
             </div>
           </figure>
           <div class="member__name">Rupesh Kumar</div>
@@ -112,7 +114,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +918709693879
+              <a href="tel:+918709693879">+918709693879</a>
             </div>
           </figure>
           <div class="member__name">Anand Raj</div>
@@ -125,7 +127,8 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +918637531030
+              <a href="tel:+918637531030">+918637531030</a>
+
             </div>
           </figure>
           <div class="member__name">Abhishek Gorai</div>
@@ -138,7 +141,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +919340137741
+              <a href="tel:+9340137741">+919340137741</a>
             </div>
           </figure>
           <div class="member__name">Bhukya Noveen Baba</div>
@@ -151,7 +154,8 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +918017756387
+              <a href="tel:+918017756387">+918017756387</a>
+
             </div>
           </figure>
           <div class="member__name">Agnij Mallick</div>
@@ -164,7 +168,8 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +919832124814
+              <a href="tel:+919832124814">+919832124814</a>
+
             </div>
           </figure>
           <div class="member__name">Debjit Mondal</div>
@@ -177,7 +182,7 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +919340137741
+              <a href="tel:+9340137741">+919340137741</a>
             </div>
           </figure>
           <div class="member__name">Pranav Gupta</div>
@@ -190,7 +195,8 @@
               <svg>
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              +917250727858
+              <a href="tel:+917250727858">+917250727858</a>
+
             </div>
           </figure>
           <div class="member__name">Aniket Prabhakar</div>
@@ -199,11 +205,12 @@
         <div class="team__member team__member--8 member">
         <figure class="member__photo">
           <img src="images/profile/team-1.jpg" alt="" class="member__img">
-          <div class="member__contact">
+            <div class="member__contact">
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
             </svg>
-            +918208615649
+            <a href="tel:+918208615649">+918208615649</a>
+
           </div>
         </figure>
         <div class="member__name">Aniket Haste</div>
@@ -216,7 +223,8 @@
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
             </svg>
-            +917797219369
+            <a href="tel:+917797219369">+917797219369</a>
+
           </div>
         </figure>
         <div class="member__name">Arunava Mondal</div>
@@ -229,7 +237,8 @@
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
             </svg>
-            +919340137741
+            <a href="tel:+919340137741">+919340137741</a>
+
           </div>
         </figure>
         <div class="member__name">Subhrajyoti Mahata</div>
@@ -242,7 +251,8 @@
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
             </svg>
-            +918481952090
+            <a href="tel:+918481952090">+918481952090</a>
+
           </div>
         </figure>
         <div class="member__name">Priyam Dutta</div>
@@ -251,11 +261,12 @@
         <div class="team__member team__member--9 member">
         <figure class="member__photo">
           <img src="images/profile/vansaj.jpeg" alt="" class="member__img">
-          <div class="member__contact">
+            <div class="member__contact">
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
             </svg>
-            +919304119459
+            <a href="tel:+919304119459">+919304119459</a>
+
           </div>
         </figure>
         <div class="member__name">Vansaj Raj</div>
@@ -268,7 +279,8 @@
             <svg>
               <use xlink:href="images/sprite.svg#icon-phone"></use>
             </svg>
-            +918918258046
+            <a href="tel:+918918258046">+918918258046</a>
+
           </div>
         </figure>
         <div class="member__name">Saurav Jana</div>

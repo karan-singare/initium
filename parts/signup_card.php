@@ -38,7 +38,7 @@
       </div>
 
       <div class="card__submit">
-        <button type="button" name="submit" class="btn btn--violet" id="signup-submit">Signup</button>
+        <button type="button" name="submit" class="btn btn--yellow" id="signup-submit">Signup</button>
         <svg class="card__input icon icon--danger">
           <use xlink:href="images/sprite.svg#icon-loader"></use>
         </svg>
