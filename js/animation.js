@@ -75,20 +75,24 @@ $(document).ready(function() {
     });
     /* Header Slider */
 
-    var i = 1;
-    setInterval(function() {
-      i++;
-      let url = $('.header').css("background-image");
-      let url_part = url.split('background/');
+    // var i = 1;
+    // setInterval(function() {
+    //   i++;
+    //   let url = $('.header').css("background-image");
+    //   let url_part = url.split('background/');
+    //
+    //   $('.header').css({
+    //     'background-image' : `${url_part[0]}background/background${i}.jpg`
+    //   });
+    //
+    //   if (i == 4) {
+    //     i = 0;
+    //   }
+    // }, 3000);
 
-      $('.header').css({
-        'background-image' : `${url_part[0]}background/background${i}.jpg`
-      });
+    /* Animation for team member card */
 
-      if (i == 3) {
-        i = 0;
-      }
-    }, 3000);
+
 
 
 });
