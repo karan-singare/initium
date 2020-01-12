@@ -44,12 +44,12 @@ $(document).ready(function() {
       }
     });
     /* Animation for sponsor__item */
-    ScrollOut({
-      targets: ".team__members",
-      onShown: function(el) {
-        gsap.from('.member', {opacity: 0.5, duration: .4, y: -80, stagger: .05});
-      }
-    });
+    // ScrollOut({
+    //   targets: ".team__members",
+    //   onShown: function(el) {
+    //     gsap.from('.member', {opacity: 0.5, duration: .4, y: -80, stagger: .05});
+    //   }
+    // });
     /* Animation for gallery */
     ScrollOut({
       targets: ".gallery",
