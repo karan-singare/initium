@@ -4,12 +4,12 @@ $(document).ready(function() {
   change_event_members("event-memb");
   setInterval(function() {
     change_event_members("event-memb");
-  },6000);
+  },8000);
 
   change_spons_members("spons-memb");
   setInterval(function() {
     change_spons_members("spons-memb");
-  },4000);
+  },8000);
 
   change_conv_members("conv-memb");
   setInterval(function() {
@@ -21,15 +21,15 @@ $(document).ready(function() {
     change_finance_members("finan-memb");
   },4000);
 
-  change_finance_members("tech-memb");
+  change_tech_members("tech-memb");
   setInterval(function() {
-    change_finance_members("tech-memb");
+    change_tech_members("tech-memb");
   },4000);
 
   change_vol_members("vol-memb");
   setInterval(function() {
     change_vol_members("vol-memb");
-  },4000);
+  },6000);
 
   change_design_members("design-memb");
   setInterval(function() {
@@ -39,7 +39,7 @@ $(document).ready(function() {
   change_photo_members("photo-memb");
   setInterval(function() {
     change_photo_members("photo-memb");
-  },4000);
+  },6000);
 
   change_deleg_members("deleg-memb");
   setInterval(function() {
@@ -81,20 +81,12 @@ $(document).ready(function() {
       let event_sub = member_clone("event-memb", "Bhukya Noveen Baba", "3", "+9340137741");
       event_memb.replaceWith(event_sub);
     }, 6000);
-  }
-
-  function change_conv_members(class_name) {
-    setTimeout(function() {
-      let conv_memb = $(`.${class_name}`);
-      let conv_sub = member_clone(class_name, "Rahul Kumar Ojha", "1", "+919110018090");
-      conv_memb.replaceWith(conv_sub);
-    }, 2000);
 
     setTimeout(function() {
-      let conv_memb = $(`.${class_name}`);
-      let conv_sub = member_clone(class_name, "Sumit Kumar Singh", "2", "+918013946685");
-      conv_memb.replaceWith(conv_sub);
-    }, 4000);
+      let event_memb = $(`.${class_name}`);
+      let event_sub = member_clone("event-memb", "Prashant Kumar", "4", "+918584964149");
+      event_memb.replaceWith(event_sub);
+    }, 8000);
   }
   function change_spons_members(class_name) {
     setTimeout(function() {
@@ -108,6 +100,18 @@ $(document).ready(function() {
       let spons_sub = member_clone("spons-memb", "Satyam Raj", "2", "+917257855451");
       spons_memb.replaceWith(spons_sub);
     }, 4000);
+
+    setTimeout(function() {
+      let spons_memb = $(`.${class_name}`);
+      let spons_sub = member_clone("spons-memb", "Anwesa Acharya", "3", "+917001729668");
+      spons_memb.replaceWith(spons_sub);
+    }, 6000);
+
+    setTimeout(function() {
+      let spons_memb = $(`.${class_name}`);
+      let spons_sub = member_clone("spons-memb", "Sayan Dutta", "4", "+919434148922");
+      spons_memb.replaceWith(spons_sub);
+    }, 8000);
   }
   function change_finance_members(class_name) {
     setTimeout(function() {
@@ -120,6 +124,19 @@ $(document).ready(function() {
       let finan_memb = $(`.${class_name}`);
       let finan_sub = member_clone(class_name, "Rupesh Kumar", "2", "+918825245193");
       finan_memb.replaceWith(finan_sub);
+    }, 4000);
+  }
+  function change_conv_members(class_name) {
+    setTimeout(function() {
+      let conv_memb = $(`.${class_name}`);
+      let conv_sub = member_clone(class_name, "Rahul Kumar Ojha", "1", "+919110018090");
+      conv_memb.replaceWith(conv_sub);
+    }, 2000);
+
+    setTimeout(function() {
+      let conv_memb = $(`.${class_name}`);
+      let conv_sub = member_clone(class_name, "Sumit Kumar Singh", "2", "+918013946685");
+      conv_memb.replaceWith(conv_sub);
     }, 4000);
   }
   function change_tech_members(class_name) {
@@ -147,6 +164,11 @@ $(document).ready(function() {
       let vol_sub = member_clone(class_name, "Aniket Prabhakar", "2", "+917250727858");
       vol_memb.replaceWith(vol_sub);
     }, 4000);
+    setTimeout(function() {
+      let vol_memb = $(`.${class_name}`);
+      let vol_sub = member_clone(class_name, "Rahul Chandra Duari", "3", "+918001379425");
+      vol_memb.replaceWith(vol_sub);
+    }, 6000);
   }
   function change_design_members(class_name) {
     setTimeout(function() {
@@ -173,6 +195,12 @@ $(document).ready(function() {
       let photo_sub = member_clone(class_name, "Priyam Dutta", "2", "+918481952090");
       photo_memb.replaceWith(photo_sub);
     }, 4000);
+
+    setTimeout(function() {
+      let photo_memb = $(`.${class_name}`);
+      let photo_sub = member_clone(class_name, "Md Tazbiul Islam Nishat", "3", "+8801521302006");
+      photo_memb.replaceWith(photo_sub);
+    }, 6000);
   }
   function change_deleg_members(class_name) {
     setTimeout(function() {
