@@ -2,6 +2,34 @@
       <h1 class="events__title heading__primary">Our Events</h1>
       <div class="events__items">
 
+        <div class="event event--6">
+          <div class="event__time">
+            time: -:-
+          </div>
+          <div class="event__details">
+            <h1 class="event__name">Seminar</h1>
+            <p class="event__text">
+              Eminent speakers from industry and academia will
+              invite speakers for technical sessions in the seminar
+              interested to speak in the seminar please get in
+              abstract of your topic .
+            </p>
+            <h4 class="">Co-ordinator:</h4>
+            Aniket Haste
+          </div>
+          <div class="event__cover">
+            <button type="button" class="btn btn--yellow register-btn" name="presentation">Register</button>
+            <a href="#" class="btn btn--yellow registered-btn" name="presentation">Registered</a>
+            <button type="button" class="btn btn--yellow info-btn" info-id='seminar'>Rules</button>
+            <div class="event__contact">
+              <svg >
+                <use xlink:href="images/sprite.svg#icon-phone"></use>
+              </svg>
+              <a href="tel:+918208615649">+918208615649</a>
+            </div>
+          </div>
+        </div>
+
         <div class="event event--1">
           <div class="event__time">
             time: -:-
@@ -20,7 +48,7 @@
               thinking.
             </p>
             <h4 class="">Co-ordinator:</h4>
-            Rabert Pattsion
+            Anand Raj
 
           </div>
           <div class="event__cover">
@@ -31,10 +59,11 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+91234567890</p>
+              <a href="tel:+918709693879">+918709693879</a>
             </div>
           </div>
         </div>
+
 
         <div class="event event--2">
           <div class="event__time">
@@ -51,7 +80,7 @@
               openings, if found worthy.
             </p>
             <h4 class="">Co-ordinator:</h4>
-            Kristein Stevart
+            Abhishek Gorai
           </div>
           <div class="event__cover">
             <button type="button" class="btn btn--yellow register-btn" name="mino">Register</button>
@@ -61,7 +90,7 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+91235623456</p>
+              <a href="tel:+918637531030">+918637531030</a>
             </div>
           </div>
         </div>
@@ -83,7 +112,7 @@
               all livelihood.
             </p>
             <h4 class="">Co-ordinator:</h4>
-            Sandra Bullock
+            Bhukya Noveen Baba
           </div>
           <div class="event__cover">
             <button type="button" class="btn btn--yellow register-btn" name="plantation">Register</button>
@@ -93,7 +122,7 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+9190876542</p>
+              <a href="tel:+918584964149">+918584964149</a>
             </div>
           </div>
         </div>
@@ -113,7 +142,7 @@
               mining in various scenarios.
             </p>
             <h4 class="">Co-ordinator:</h4>
-             Natašha Stanković
+             Prashant Kumar
           </div>
           <div class="event__cover">
             <button type="button" class="btn btn--yellow register-btn" name="exhibition">Register</button>
@@ -123,7 +152,7 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+91567234987</p>
+              <a href="tel:+918584964149">+918584964149</a>
             </div>
           </div>
         </div>
@@ -145,7 +174,7 @@
               proceedings.
             </p>
             <h4 class="">Co-ordinator:</h4>
-            Taylor Lautner
+            Agnij Mallick
           </div>
           <div class="event__cover">
             <button type="button" class="btn btn--yellow register-btn" name="presentation">Register</button>
@@ -155,7 +184,7 @@
               <svg >
                 <use xlink:href="images/sprite.svg#icon-phone"></use>
               </svg>
-              <p>+917896548976</p>
+              <a href="tel:+918017756387">+918017756387</a>
             </div>
           </div>
         </div>

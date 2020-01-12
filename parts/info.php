@@ -1,3 +1,49 @@
+<div class="info" id="seminar">
+  <svg class="info__close">
+    <use xlink:href="images/sprite.svg#icon-clear"></use>
+  </svg>
+  <h3 class="info__heading heading__tertiary">Seminar</h3>
+  <div class="info__content">
+    <ul>
+    <li>
+      Topics of the seminar will include but not limited to:
+    </li>
+    <li>
+      Technological, social, and environmental challenges to coal usage and mining.
+    </li>
+    <li>
+      Modern technologies technologies in underground underground and opencast coal mining
+    </li>
+    <li>
+      Advances in exploration techniques
+    </li>
+    <li>
+      Modern IT enabled systems in mining industry.
+    </li>
+    <li>
+      Advances in coal and mineral benificiation.
+    </li>
+    <li>
+      Challenges and Advances to exploitation of ferrous and non=ferrous minerals.
+    </li>
+
+    <li>
+      Developments in instrumentation techniques and machines for enhanced performance.
+    </li>
+    <li>
+      Challenges and developments in coalbed ethane,
+    </li>
+    <li>
+      Teams qualified for second round are required to bring 3 printed copies of their
+      presentation and needed to be submitted before the event starts.
+    </li>
+    <li>
+      The decision of the judges would be final and binding shale gas, coal-to-gas and coal-to-liquid
+    </li>
+  </ul>
+
+  </div>
+</div>
 <div class="info" id="enviro">
   <svg class="info__close">
     <use xlink:href="images/sprite.svg#icon-clear"></use>
@@ -126,7 +172,7 @@
   <svg class="info__close">
     <use xlink:href="images/sprite.svg#icon-clear"></use>
   </svg>
-  <h3 class="info__heading heading__tertiary">Event 3</h3>
+  <h3 class="info__heading heading__tertiary">Paper Presentation</h3>
   <div class="info__content">
     <ul>
     <li>
@@ -188,7 +234,7 @@
   <svg class="info__close">
     <use xlink:href="images/sprite.svg#icon-clear"></use>
   </svg>
-  <h3 class="info__heading heading__tertiary">Event 4</h3>
+  <h3 class="info__heading heading__tertiary">Plantation Drive</h3>
   <div class="info__content">
     <ul>
     <li>
@@ -203,7 +249,7 @@
   <svg class="info__close">
     <use xlink:href="images/sprite.svg#icon-clear"></use>
   </svg>
-  <h3 class="info__heading heading__tertiary">Event 5</h3>
+  <h3 class="info__heading heading__tertiary">Exihibition</h3>
   <div class="info__content">
     <ul>
     <li>

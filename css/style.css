@@ -1023,6 +1023,8 @@ body {
   grid-template-rows: repeat(2, min-content);
   grid-row-gap: 2rem;
   align-items: center; }
+  .event a {
+    color: #fff; }
   .event__time {
     font-size: 2em;
     grid-row: 2/span 1; }
@@ -1068,6 +1070,8 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/events/exhibition.jpg); }
   .event--5 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/events/paper.jpg); }
+  .event--6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/events/seminar.jpg); }
 
 .card {
   visibility: hidden;
