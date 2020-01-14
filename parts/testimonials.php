@@ -18,6 +18,20 @@
         </div>
         <div class="testimonial">
           <div class="testimonial__content">
+            Initium is a platform where students can demonstrate their creativity, innovations and solution to the technical problems.
+          </div>
+          <div class="testimonial__author">
+            <div class="testimonial__photo">
+              <img src="images/profile/pkp.jpeg" alt="">
+            </div>
+            <div class="testimonial__name">
+              <h4 class="heading-4">Professor Prabir Kumar Paul Sir</h4>
+              <h5 class="heading-5">Professor Mining Engineering</h5>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__content">
             The past editions of Initium have  provided a unique platform where the best of the industry and academia  come together. It's has been a great learning opportunity for me. I was highly benefitted with my interactions with the industry
             And the various events always came up with innovative ideas for the mining industry.
             All in all Initium was a great experience for me!
@@ -43,20 +57,6 @@
             <div class="testimonial__name">
               <h4 class="heading-4">Sougata Mazumdar</h4>
               <h5 class="heading-5">Convenor INITIUM 5.0</h5>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial__content">
-            Initium is a platform where students can demonstrate their creativity, innovations and solution to the technical problems.
-          </div>
-          <div class="testimonial__author">
-            <div class="testimonial__photo">
-              <img src="images/profile/pkp.jpeg" alt="">
-            </div>
-            <div class="testimonial__name">
-              <h4 class="heading-4">P.K.P Sir</h4>
-              <h5 class="heading-5">Professor Mining Engineering</h5>
             </div>
           </div>
         </div>
