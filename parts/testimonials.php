@@ -48,15 +48,15 @@
         </div>
         <div class="testimonial">
           <div class="testimonial__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque similique fugit quis magnam. Labore, dicta laborum explicabo, sit quasi cumque aliquam molestiae unde architecto, quibusdam ab animi a optio accusantium?
+            Initium is a platform where students can demonstrate their creativity, innovations and solution to the technical problems.
           </div>
           <div class="testimonial__author">
             <div class="testimonial__photo">
-              <img src="images/profile/team-1.jpg" alt="">
+              <img src="images/profile/pkp.jpeg" alt="">
             </div>
             <div class="testimonial__name">
-              <h4 class="heading-4">Karan Singare</h4>
-              <h5 class="heading-5">Developer</h5>
+              <h4 class="heading-4">P.K.P Sir</h4>
+              <h5 class="heading-5">Professor Mining Engineering</h5>
             </div>
           </div>
         </div>
