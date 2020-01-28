@@ -32,9 +32,8 @@
         </div>
         <div class="testimonial">
           <div class="testimonial__content">
-            The past editions of Initium have  provided a unique platform where the best of the industry and academia  come together. It's has been a great learning opportunity for me. I was highly benefitted with my interactions with the industry
+            It's has been a great learning opportunity for me. I was highly benefitted with my interactions with the industry
             And the various events always came up with innovative ideas for the mining industry.
-            All in all Initium was a great experience for me!
           </div>
           <div class="testimonial__author">
             <div class="testimonial__photo">
@@ -48,7 +47,7 @@
         </div>
         <div class="testimonial">
           <div class="testimonial__content">
-            It's a common perception that Mining has limited scopes for students and is a reason why most of the students don't prefer mining, apart from it's hard and rough working conditions. Here at IIEST Shibpur, we as a Department of Mining Engineering aim at making the horizons broad for students and INITIUM is a forum which makes it possible. With the confluence of various mining industries, their ideas, student interactions with industry leaders, technological events, we aim at providing a platform to the young generation who will lead the Mining industry in the near future. I am proud to be associated with this and lead such a team of young miners filled with zeal and passion to prove their mettle in the mining field. I hope this Platform grows bigger and bigger with days to come.
+             I am proud to be associated with this and lead such a team of young miners filled with zeal and passion to prove their mettle in the mining field. I hope this Platform grows bigger and bigger with days to come.
           </div>
           <div class="testimonial__author">
             <div class="testimonial__photo">
@@ -62,29 +61,29 @@
         </div>
         <div class="testimonial">
           <div class="testimonial__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque similique fugit quis magnam. Labore, dicta laborum explicabo, sit
+             I am proud to be associated with this and lead such a team of young miners filled with zeal and passion to prove their mettle in the mining field. I hope this Platform grows bigger and bigger with days to come.
           </div>
           <div class="testimonial__author">
             <div class="testimonial__photo">
-              <img src="images/profile/team-1.jpg" alt="">
+              <img src="images/profile/mazum.jpeg" alt="">
             </div>
             <div class="testimonial__name">
-              <h4 class="heading-4">Karan Singare</h4>
-              <h5 class="heading-5">Developer</h5>
+              <h4 class="heading-4">Sougata Mazumdar</h4>
+              <h5 class="heading-5">Convenor INITIUM 5.0</h5>
             </div>
           </div>
         </div>
         <div class="testimonial">
           <div class="testimonial__content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque similique fugit quis magnam. Labore, dicta laborum explicabo, sit quasi cumque aliquam molestiae unde architecto, quibusdam ab animi a optio accusantium?
+             I am proud to be associated with this and lead such a team of young miners filled with zeal and passion to prove their mettle in the mining field. I hope this Platform grows bigger and bigger with days to come.
           </div>
           <div class="testimonial__author">
             <div class="testimonial__photo">
-              <img src="images/profile/team-1.jpg" alt="">
+              <img src="images/profile/mazum.jpeg" alt="">
             </div>
             <div class="testimonial__name">
-              <h4 class="heading-4">Karan Singare</h4>
-              <h5 class="heading-5">Developer</h5>
+              <h4 class="heading-4">Sougata Mazumdar</h4>
+              <h5 class="heading-5">Convenor INITIUM 5.0</h5>
             </div>
           </div>
         </div>

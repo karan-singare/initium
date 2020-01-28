@@ -25,7 +25,7 @@
             </div>
           </figure>
           <div class="member__name">Abhishek Mitra</div>
-          <div class="member__position">assitant General Secretary  <br>Treasurer, INITIUM 6.0</div>
+          <div class="member__position">assitant General Secretary  <br>Treasurer</div>
         </div>
         <div class="team__member team__member--2 member conv-memb">
           <figure class="member__photo">
@@ -38,6 +38,19 @@
             </div>
           </figure>
           <div class="member__name">Rahul Kumar Ojha</div>
+          <div class="member__position">Joint student convenor  <br>INITIUM 6.0</div>
+        </div>
+        <div class="team__member team__member--2 member conv-memb">
+          <figure class="member__photo">
+            <img src="images/profile/conv-2.jpeg" alt="" class="member__img">
+            <div class="member__contact">
+              <svg>
+                <use xlink:href="images/sprite.svg#icon-phone"></use>
+              </svg>
+              <a href="tel:+918013946685">+918013946685</a>
+            </div>
+          </figure>
+          <div class="member__name">Sumit Kumar Singh</div>
           <div class="member__position">Joint student convenor  <br>INITIUM 6.0</div>
         </div>
         <div class="team__member team__member--3 member spons-memb">

@@ -22,6 +22,8 @@
 
     <?php require_once 'parts/about.php'; ?>
 
+    <?php require_once 'parts/collabs.php'; ?>
+
     <?php require_once 'parts/sponsors.php'; ?>
     <?php require_once 'parts/sponsors.php'; ?>
 

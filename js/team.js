@@ -11,10 +11,10 @@ $(document).ready(function() {
     change_spons_members("spons-memb");
   },8000);
 
-  change_conv_members("conv-memb");
-  setInterval(function() {
-    change_conv_members("conv-memb");
-  },4000);
+  // change_conv_members("conv-memb");
+  // setInterval(function() {
+  //   change_conv_members("conv-memb");
+  // },4000);
 
   change_finance_members("finan-memb");
   setInterval(function() {
@@ -126,19 +126,19 @@ $(document).ready(function() {
       finan_memb.replaceWith(finan_sub);
     }, 4000);
   }
-  function change_conv_members(class_name) {
-    setTimeout(function() {
-      let conv_memb = $(`.${class_name}`);
-      let conv_sub = member_clone(class_name, "Rahul Kumar Ojha", "1", "+919110018090");
-      conv_memb.replaceWith(conv_sub);
-    }, 2000);
-
-    setTimeout(function() {
-      let conv_memb = $(`.${class_name}`);
-      let conv_sub = member_clone(class_name, "Sumit Kumar Singh", "2", "+918013946685");
-      conv_memb.replaceWith(conv_sub);
-    }, 4000);
-  }
+  // function change_conv_members(class_name) {
+  //   setTimeout(function() {
+  //     let conv_memb = $(`.${class_name}`);
+  //     let conv_sub = member_clone(class_name, "Rahul Kumar Ojha", "1", "+919110018090");
+  //     conv_memb.replaceWith(conv_sub);
+  //   }, 2000);
+  //
+  //   setTimeout(function() {
+  //     let conv_memb = $(`.${class_name}`);
+  //     let conv_sub = member_clone(class_name, "Sumit Kumar Singh", "2", "+918013946685");
+  //     conv_memb.replaceWith(conv_sub);
+  //   }, 4000);
+  // }
   function change_tech_members(class_name) {
     setTimeout(function() {
       let tech_memb = $(`.${class_name}`);

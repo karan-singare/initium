@@ -28,7 +28,13 @@ $(document).ready(function() {
       gsap.from('.about__details', {duration: 1, scale: .25});
     }
   });
-
+  /* Animation for about us */
+  ScrollOut({
+    targets: ".collabs__content",
+    onShown: function(el) {
+      gsap.from('.collabs__item', {opacity: 0, duration: 1.2, x: -200, stagger: .4});
+    }
+  });
 /* Animation for events */
     ScrollOut({
       targets: ".events__items",

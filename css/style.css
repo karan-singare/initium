@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Corben:400,700|Katibeh&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css?family=IM+Fell+English:400i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Orbitron:900&display=swap");
 *,
 *::before,
@@ -96,7 +94,7 @@ body {
   border: none;
   box-shadow: 0px 1rem 3rem rgba(51, 54, 44, 0.8);
   text-transform: uppercase;
-  font-family: "Corben", cursive;
+  font-family: "Montserrat", sans-serif;
   cursor: pointer; }
   .btn--pink {
     background-color: #ff006a;
@@ -270,7 +268,7 @@ body {
       grid-template-columns: 1fr 1fr;
       align-items: start;
       grid-gap: 2rem;
-      font-family: "Corben", cursive;
+      font-family: "Montserrat", sans-serif;
       cursor: pointer; }
       @media only screen and (max-width: 87.5em) {
         .header__main__btns {
@@ -449,6 +447,33 @@ body {
 @media only screen and (max-height: 43.75em) {
   .about__details {
     width: 100%; } }
+
+.collabs {
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/background/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: left;
+  color: #ffffff; }
+  .collabs__heading {
+    font-weight: bold;
+    text-transform: capitalize; }
+  .collabs__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 5rem; }
+  .collabs__item {
+    height: 25rem;
+    border-radius: .5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.85);
+    object-fit: cover;
+    overflow: hidden;
+    filter: brightness(80%); }
+  .collabs__img {
+    width: 100%;
+    height: 100%; }
 
 .keypersons {
   grid-column: full-start/full-end;
