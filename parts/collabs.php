@@ -11,7 +11,7 @@
       <a href="#" target="_blank"><img src="images/icons/sme.jpeg" alt="" class="collabs__img"></a>
     </div>
     <div class="collabs__item">
-      <a href="#" target="_blank"><img src="images/icons/iiest.png" alt="" class="collabs__img"></a>
+      <a href="#" target="_blank"><img src="images/icons/vibha.jpg" alt="" class="collabs__img"></a>
     </div>
   </div>
 </div>

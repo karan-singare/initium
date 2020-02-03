@@ -12,3 +12,4 @@
 <script src="js/team.js" charset="utf-8"></script>
 <script src="js/slider.js" charset="utf-8"></script>
 <script src="js/event_register.js" charset="utf-8"></script>
+<script src="js/load_events.js" charset="utf-8"></script>

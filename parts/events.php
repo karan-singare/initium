@@ -18,8 +18,8 @@
             Aniket Haste
           </div>
           <div class="event__cover">
-            <button type="button" class="btn btn--yellow register-btn" name="presentation">Register</button>
-            <a href="#" class="btn btn--yellow registered-btn" name="presentation">Registered</a>
+            <button type="button" class="btn btn--yellow register-btn" name="semeinar">Register</button>
+            <button type="button" class="btn btn--yellow registered-btn" name="semeinar">Registered</button>
             <button type="button" class="btn btn--yellow info-btn" info-id='seminar'>Rules</button>
             <div class="event__contact">
               <svg >
@@ -178,7 +178,7 @@
           </div>
           <div class="event__cover">
             <button type="button" class="btn btn--yellow register-btn" name="presentation">Register</button>
-            <a href="#" class="btn btn--yellow registered-btn" name="presentation">Registered</a>
+            <button type="button" class="btn btn--yellow registered-btn" name="presentation">Registered</button>
             <button type="button" class="btn btn--yellow info-btn" info-id='presentation'>Rules</button>
             <div class="event__contact">
               <svg >

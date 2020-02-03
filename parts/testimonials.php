@@ -59,34 +59,6 @@
             </div>
           </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial__content">
-             I am proud to be associated with this and lead such a team of young miners filled with zeal and passion to prove their mettle in the mining field. I hope this Platform grows bigger and bigger with days to come.
-          </div>
-          <div class="testimonial__author">
-            <div class="testimonial__photo">
-              <img src="images/profile/mazum.jpeg" alt="">
-            </div>
-            <div class="testimonial__name">
-              <h4 class="heading-4">Sougata Mazumdar</h4>
-              <h5 class="heading-5">Convenor INITIUM 5.0</h5>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial__content">
-             I am proud to be associated with this and lead such a team of young miners filled with zeal and passion to prove their mettle in the mining field. I hope this Platform grows bigger and bigger with days to come.
-          </div>
-          <div class="testimonial__author">
-            <div class="testimonial__photo">
-              <img src="images/profile/mazum.jpeg" alt="">
-            </div>
-            <div class="testimonial__name">
-              <h4 class="heading-4">Sougata Mazumdar</h4>
-              <h5 class="heading-5">Convenor INITIUM 5.0</h5>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
